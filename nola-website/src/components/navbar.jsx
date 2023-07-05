@@ -2,15 +2,15 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 // Linking Functionality
 // css class names and tags
+//<Link to="/" className="site-title">
+//<img class="navbarIcon" src="./favicon.ico"></img><i>EzWatts</i>
+//</Link>
 export default function Navbar() {
   return (
     <nav className="nav">
-      <Link to="/" className="site-title">
-      <img class="navbarIcon" src="./favicon.ico"></img><i>EzWatts</i>
-      </Link>
+      
       <ul>
-        <CustomLink to="create/Create">Create</CustomLink>
-        <CustomLink to="Contact">Contact Us</CustomLink>
+        <CustomLink to="pages/aboutMe">About Me</CustomLink>
       </ul>
     </nav>
   )
