@@ -22,38 +22,25 @@ code {
 }
 
 /* navbar*/
-.nav {
-  /* background-color: #333; */
-  color: black;
-  border-color:  black;
-  border-style: hidden hidden solid hidden;
-  border-width: 0px;
-  display: flex;
-  justify-content: end;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
-  margin-right: auto;
-  
+.Tabs{
+  margin: 5px;
+}
+.About{
+  width: 385px;
+  height: 84px;
+ 
+  background: url("images/about_button.png") no-repeat;
+}
+.About:hover{
+  background: url("images/about_hover.png") no-repeat;
 }
 
-.nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.Home{
+  width: 170px;
+  height: 86px;
+  margin: 4px;
+  background: url("images/home_button.png") no-repeat;
 }
-
-.nav a {
-  color: inherit;
-  text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: .25rem;
-}
-
-.nav li:hover {
-  background-color: rgb(74, 66, 190);
+.Home:hover{
+  background: url("images/home_hover.png") no-repeat;
 }

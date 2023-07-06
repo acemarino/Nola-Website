@@ -1,22 +1,35 @@
 
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+
 import {LinkContainer} from 'react-router-bootstrap'
 
 export default function Navigation() {
   return (
-    <Navbar bg="light" expand="lg">
+    <>
+    <Nav>
+
         <LinkContainer to="/">
-          <Navbar.Brand>Granola</Navbar.Brand>
+          {/*<Navbar.Brand>Granola</Navbar.Brand>*/}
+          <img src="./granola_doodle_logo.png" alt="bug" height={100} />
         </LinkContainer>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <LinkContainer to="/pages/aboutMe">
-                  <Nav.Link>About Me </Nav.Link>
-                </LinkContainer>
-              </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+
+
+        <ul className='navbar-nav ms-auto list-group list-group list-group-horizontal' >
+          
+          <li>
+            <LinkContainer  to="/aboutMe" >
+              <div className='About'></div>
+            </LinkContainer>
+          </li>
+          <li>
+            <LinkContainer  to="/" >
+              <div className='Home'></div>
+            </LinkContainer>
+          </li>
+          
+        </ul> 
+        </Nav>
+    
+    </>
     );
   }
