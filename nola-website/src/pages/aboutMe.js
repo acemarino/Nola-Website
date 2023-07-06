@@ -1,11 +1,6 @@
-
-import React from 'react';
 function About(){
     return(
-        <>
-        <p>About</p>
-        <h1> testing</h1>
-        </>
+        <><p>about</p><h1>wordssss</h1></>
     );
         
 }

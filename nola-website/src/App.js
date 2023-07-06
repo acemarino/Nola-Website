@@ -1,18 +1,19 @@
 import React from 'react';
-import Home from './components/home';
-import Navbar from './components/navbar';
-import About from './pages/aboutMe';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Home from './pages/home.js';
+import Navigation from './components/navbar';
+import About from './pages/aboutMe.js';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
     <div>
     <Router>
-      <Navbar />
+      <Navigation/>
       <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/aboutMe' component={About} />
+        <Route exact path="/" element={<Home />}/>
+        <Route  exact path="/aboutMe" element={<About />}/>
+        
       </Routes>
     </Router>
     </div>

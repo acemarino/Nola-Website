@@ -1,30 +1,22 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
-// Linking Functionality
-// css class names and tags
-//<Link to="/" className="site-title">
-//<img class="navbarIcon" src="./favicon.ico"></img><i>EzWatts</i>
-//</Link>
-export default function Navbar() {
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import {LinkContainer} from 'react-router-bootstrap'
+
+export default function Navigation() {
   return (
-    <nav className="nav">
-      
-      <ul>
-        <CustomLink to="pages/aboutMe">About Me</CustomLink>
-      </ul>
-    </nav>
-  )
-}
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  )
-}
+    <Navbar bg="light" expand="lg">
+        <LinkContainer to="/">
+          <Navbar.Brand>Granola</Navbar.Brand>
+        </LinkContainer>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <LinkContainer to="/pages/aboutMe">
+                  <Nav.Link>About Me </Nav.Link>
+                </LinkContainer>
+              </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+    );
+  }

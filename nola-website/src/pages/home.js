@@ -1,6 +1,6 @@
 function Home(){
     return(
-        <p>testing</p>
+        <><p>testing</p><h1>wordssss</h1></>
     );
         
 }
