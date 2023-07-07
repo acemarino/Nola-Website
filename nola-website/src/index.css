@@ -49,3 +49,32 @@ code {
 #bulk{
   font-family: 'Epilogue';
 }
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 33.333%;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  padding: 10px;
+}
