@@ -1,6 +1,13 @@
 function Home(){
     return(
-        <><p>testing</p><h1>wordssss</h1></>
+        <div >
+            <div id='header'>
+                This is the home page
+            </div>
+            <div id='bulk'>
+                smaller text
+            </div>
+        </div>
     );
         
 }

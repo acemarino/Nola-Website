@@ -1,8 +1,13 @@
 function About(){
     return(
-        <>
-        <p>about</p>
-        </>
+        <div >
+            <div id='header'>
+                This is the about page
+            </div>
+            <div id='bulk'>
+                smaller text
+            </div>
+        </div>
     );
         
 }
