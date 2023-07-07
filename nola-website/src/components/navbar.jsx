@@ -13,12 +13,12 @@ export default function Navigation() {
           <img src="./granola_doodle_logo.png" alt="bug" height={100} />
         </LinkContainer>
 
-
-        <ul className='navbar-nav ms-auto list-group list-group list-group-horizontal' >
+        <ul className='navbar-nav ms-auto list-group list-group list-group-horizontal flex-nowrap'  id="collapse">
           
           <li>
             <LinkContainer  to="/aboutMe" >
-              <div className='About'></div>
+              <div className='About'>
+              </div>
             </LinkContainer>
           </li>
           <li>
@@ -28,6 +28,7 @@ export default function Navigation() {
           </li>
           
         </ul> 
+        
         </Nav>
     
     </>

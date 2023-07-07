@@ -20,7 +20,13 @@ function Gallery(){
             </div>   
             <div class="grid-item">
             <img src="./20230706_163905.jpg" alt="bug" />
-            </div>      
+            </div>  
+            <div class="grid-item">
+            <img src="./20230706_163907.jpg" alt="bug" />
+            </div> 
+            <div class="grid-item">
+            <img src="./20230704_222926.jpg" alt="bug" />
+            </div>     
         </div>
        </> 
     );
