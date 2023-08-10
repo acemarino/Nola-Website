@@ -1,46 +1,13 @@
-/*
-function Gallery(){
-    return(
-        <>
-       <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-        <div >
-            <div id='header'>
-                This is the Gallery
-            </div>
-            
-        </div>
-        
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
-        <div class="grid-sizer"></div>
-            <div class="grid-item">
-            <img src="./20230707_112047.jpg" alt="bug"  />
-            </div> 
-            <div class="grid-item">
-            <img src="./20230701_194324.jpg" alt="bug"  />
-            </div>   
-            <div class="grid-item">
-            <img src="./20230706_163905.jpg" alt="bug" />
-            </div>  
-            <div class="grid-item">
-            <img src="./20230706_163907.jpg" alt="bug" />
-            </div> 
-            <div class="grid-item">
-            <img src="./20230704_222926.jpg" alt="bug" />
-            </div>     
-        </div>
-       </> 
-    );
-        
-}
-export default Gallery;
-*/
+
 
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Masonry from '@mui/lab/Masonry';
-import { styled } from '@mui/material/styles';
 
+import Masonry from '@mui/lab/Masonry';
+
+/*
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -50,11 +17,12 @@ const Label = styled(Paper)(({ theme }) => ({
   borderBottomLeftRadius: 0,
   borderBottomRightRadius: 0,
 }));
+*/
 
 export default function Gallery() {
   return (
-    <Box sx={{ width: 500, minHeight: 829 }}>
-      <Masonry columns={3} spacing={2}>
+    <Box sx={{  pt: 4 }}>
+      <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
         {itemData.map((item, index) => (
           <div key={index}>
             
@@ -79,71 +47,71 @@ export default function Gallery() {
 
 const itemData = [
   {
-    img: './20230707_112047.jpg',
+    img: './IMG_1735.png',
     title: 'Fern',
   },
   {
-    img: './20230701_194324.jpg',
+    img: './IMG_1889.png',
     title: 'Snacks',
   },
   {
-    img: './20230706_163905.jpg',
+    img: './IMG_1890.png',
     title: 'Mushrooms',
   },
   {
-    img: './20230706_163907.jpg',
+    img: './IMG_1956.png',
     title: 'Tower',
   },
   {
-    img: './20230704_222926.jpg',
+    img: './original_98dd96e5-6c4e-4592-a5a7-4daccae54795_PXL_20230412_140853877.jpg',
     title: 'Sea star',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    img: './original_6065cd59-bb65-4529-9490-8106f4caeca5_PXL_20230412_141306890.jpg',
     title: 'Honey',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    img: './original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.jpg',
     title: 'Basketball',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: './original_b43e672f-67f7-440a-b1ab-c14329bd5b79_PXL_20230412_141315077.jpg',
     title: 'Breakfast',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d',
+    img: './original_c96a9dd6-f3f2-4ff1-956f-bab1e54817f0_PXL_20230412_140137425.jpg',
     title: 'Tree',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: './original_e5b0456d-3383-429a-ae43-788f0a70709d_PXL_20230412_141324890.jpg',
     title: 'Burger',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: './original_ef183b23-8ce4-414f-bb91-d46fed1bfd7c_PXL_20230227_144431218.jpg',
     title: 'Camera',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: './original_f0e21930-dd48-4d98-af4e-2851439d28ee_PXL_20230412_140640457.jpg',
     title: 'Coffee',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627000086207-76eabf23aa2e',
+    img: './original_f5353b73-0de3-403c-a980-c9cc2a775b59_PXL_20230412_140350353.jpg',
     title: 'Camping Car',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    img: './PXL_20220209_225308083~2.jpg',
     title: 'Hats',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+    img: './PXL_20220223_193147196.MP.jpg',
     title: 'Tomato basil',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7',
+    img: './PXL_20220428_183020265.jpg',
     title: 'Mountain',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+    img: './PXL_20220525_222305195.jpg',
     title: 'Bike',
   },
 ];
