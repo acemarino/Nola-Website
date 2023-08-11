@@ -22,7 +22,7 @@ const Label = styled(Paper)(({ theme }) => ({
 export default function Gallery() {
   return (
     <Box sx={{  pt: 4 }}>
-      <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
+      <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={3}>
         {itemData.map((item, index) => (
           <div key={index}>
             
