@@ -7,13 +7,13 @@ export default function Navigation() {
   return (
     <>
     <Nav>
-
+    
         <LinkContainer to="/">
           {/*<Navbar.Brand>Granola</Navbar.Brand>*/}
           <img src="./granola_doodle_logo.png" alt="bug" height={100} />
         </LinkContainer>
 
-        <ul className='navbar-nav ms-auto list-group list-group list-group-horizontal flex-nowrap'  id="collapse">
+        <ul className='navbar-nav ms-auto list-group list-group list-group-horizontal flex-nowrap' >
           
           <li>
             <LinkContainer  to="/aboutMe" >
