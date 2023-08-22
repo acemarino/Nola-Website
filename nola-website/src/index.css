@@ -24,24 +24,32 @@ code {
 .Tabs{
   margin: 5px;
 }
+
+.Logo{
+  display: block;
+  max-width:50%;
+  height: auto;
+}
+
+
 .About{
-  width: 385px;
-  height: 84px;
+  display: block;
+  max-width: 100%;
+  height: auto;
  
-  background: url("images/about_button.png") no-repeat;
 }
 .About:hover{
-  background: url("images/about_hover.png") no-repeat;
+
 }
 
 .Home{
-  width: 170px;
-  height: 86px;
-  margin: 4px;
-  background: url("images/home_button.png") no-repeat;
+  display: block;
+  max-width: 100%;
+  
+  height: auto;
 }
 .Home:hover{
-  background: url("images/home_hover.png") no-repeat;
+
 }
 
 #header{
@@ -84,4 +92,8 @@ body { font-family: sans-serif; }
 
 #navbarScroll::-webkit-scrollbar{
   display: none;
+}
+
+.logoCont{
+  max-width: 80%;
 }

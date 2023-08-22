@@ -8,26 +8,26 @@ export default function TopNav() {
     <Navbar expand="lg" >
       <Container fluid>
       <LinkContainer to="/">
-        <Navbar.Brand >
-        <img src="./granola_doodle_logo.png" alt="bug" height={100} />
-        </Navbar.Brand>
+        <Nav.Link className='logoCont'>
+        <img src="./granola_doodle_logo.png" className='Logo' alt="Granola" />
+        </Nav.Link>
         </LinkContainer>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="my-2 my-lg-0  ms-auto"  
-            
-          >
-            
+          <Nav className=" ms-auto"  >
             <LinkContainer  to="/aboutMe" >
             <Nav.Link >
-            <div className='About'></div>
+            <div >
+            <img src="./about_button.png" alt="about" className='About' />
+            </div>
             </Nav.Link>
             </LinkContainer>
            
             <LinkContainer  to="/" >
             <Nav.Link >
-            <div className='Home'></div>
+            <div >
+            <img src="./home_button.png" alt="home" className='Home' />
+            </div>
             </Nav.Link>
             </LinkContainer>
           </Nav>
