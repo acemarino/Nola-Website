@@ -81,3 +81,7 @@ body { font-family: sans-serif; }
   max-width: 100%;
   padding: 10px;
 }
+
+#navbarScroll::-webkit-scrollbar{
+  display: none;
+}

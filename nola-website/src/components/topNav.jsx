@@ -15,9 +15,8 @@ export default function TopNav() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="my-2 my-lg-0  ms-auto  " 
-            style={{ maxHeight: '100px' }}
-            navbarScroll
+            className="my-2 my-lg-0  ms-auto"  
+            
           >
             
             <LinkContainer  to="/aboutMe" >
