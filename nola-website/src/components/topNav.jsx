@@ -25,7 +25,7 @@ export default function TopNav() {
            
             <LinkContainer  to="/" >
             <Nav.Link >
-            <div >
+            <div>
             <img src="./home_button.png" alt="home" className='Home' />
             </div>
             </Nav.Link>
