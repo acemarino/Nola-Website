@@ -17,8 +17,7 @@ export default function Navigation() {
           
           <li>
             <LinkContainer  to="/aboutMe" >
-              <div className='About'>
-              </div>
+              <div className='About'></div>
             </LinkContainer>
           </li>
           <li>
