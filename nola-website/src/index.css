@@ -31,13 +31,18 @@ code {
   height: auto;
 }
 
+.logoCont{
+  max-width: 80%;
+}
 
 .About{
   display: block;
   max-width: 100%;
   height: auto;
- 
+  
 }
+
+
 .About:hover{
 
 }
@@ -46,7 +51,9 @@ code {
   display: block;
   max-width: 100%;
   height: auto;
+
 }
+
 .Home:hover{
 
 }
@@ -93,6 +100,3 @@ body { font-family: sans-serif; }
   display: none;
 }
 
-.logoCont{
-  max-width: 80%;
-}

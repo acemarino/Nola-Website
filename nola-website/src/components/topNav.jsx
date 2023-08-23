@@ -7,28 +7,29 @@ export default function TopNav() {
   return (
     <Navbar expand="lg" >
       <Container fluid>
-      <LinkContainer to="/">
-        <Nav.Link className='logoCont'>
-        <img src="./granola_doodle_logo.png" className='Logo' alt="Granola" />
-        </Nav.Link>
+        <LinkContainer to="/">
+            <Nav.Link className='logoCont'>
+              <img src="./granola_doodle_logo.png" className='Logo' alt="Granola" />
+            </Nav.Link>
         </LinkContainer>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=" ms-auto"  >
             <LinkContainer  to="/aboutMe" >
-            <Nav.Link >
-            <div >
-            <img src="./about_button.png" alt="about" className='About' />
-            </div>
-            </Nav.Link>
+              <Nav.Link >
+                <div>
+                  <img src="./about_button.png" alt="about" className='About' />
+                </div>
+              </Nav.Link>
             </LinkContainer>
            
             <LinkContainer  to="/" >
-            <Nav.Link >
-            <div>
-            <img src="./home_button.png" alt="home" className='Home' />
-            </div>
-            </Nav.Link>
+              <Nav.Link >
+                <div>
+                  <img src="./home_button.png" alt="home" className='Home' />
+                </div>
+              </Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
