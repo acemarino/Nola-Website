@@ -5,8 +5,12 @@
 }
 
 .nav-link{
-    
-    background-color: aqua;
-    max-width: 80%;
-
+    width: 150px;
 }
+
+  @include media-breakpoint-up(md) {
+    .nav-link{
+        width:300px;
+    }
+  }
+

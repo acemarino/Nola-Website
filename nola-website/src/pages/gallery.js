@@ -8,7 +8,7 @@ import Masonry from '@mui/lab/Masonry';
 export default function Gallery() {
   return (
     <Box sx={{  padding: 3 ,}}>
-      <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={3} sx={{ width: "auto" }}>
+      <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={3} sx={{ width: "auto" }}>
         {itemData.map((item, index) => (
           <div key={index}>
             

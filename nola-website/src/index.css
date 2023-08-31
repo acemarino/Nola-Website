@@ -27,9 +27,9 @@ code {
 
 .Logo{
   display: inline-block;
-  max-width:50%;
+  width:100%;
   height: auto;
-  background-color: blueviolet;
+
 
 }
 
