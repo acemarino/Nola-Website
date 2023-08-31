@@ -26,14 +26,14 @@ code {
 }
 
 .Logo{
-  display: block;
+  display: inline-block;
   max-width:50%;
   height: auto;
+  background-color: blueviolet;
+
 }
 
-.logoCont{
-  max-width: 80%;
-}
+
 
 .About{
   display: block;

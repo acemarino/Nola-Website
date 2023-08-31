@@ -24,7 +24,7 @@ function OffCanNav() {
     <Navbar expand="xs" >
       <Container fluid>
         <LinkContainer to="/">
-            <Nav.Link className='logoCont'>
+            <Nav.Link >
               <img src="./granola_doodle_logo.png" className='Logo' alt="Granola" />
             </Nav.Link>
         </LinkContainer>
