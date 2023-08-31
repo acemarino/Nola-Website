@@ -21,20 +21,21 @@ function OffCanNav() {
     }
     `}
       </style>
-    <Navbar expand="lg" >
+    <Navbar expand="xs" >
       <Container fluid>
         <LinkContainer to="/">
             <Nav.Link className='logoCont'>
               <img src="./granola_doodle_logo.png" className='Logo' alt="Granola" />
             </Nav.Link>
         </LinkContainer>
-        </Container>
-      </Navbar>
-      <Button variant="primary" onClick={handleShow} className='ms-auto' >
+        <Button variant="primary" onClick={handleShow} className='float-end' >
         Launch
       </Button>
+        </Container>
+      </Navbar>
+      
 
-      <Offcanvas show={show} onHide={handleClose} placement='end' responsive='sm' offcanvas-horizontal-width='100px'>
+      <Offcanvas show={show} onHide={handleClose} placement='end' >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Site Menu</Offcanvas.Title>
         </Offcanvas.Header>

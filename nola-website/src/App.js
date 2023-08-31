@@ -5,7 +5,7 @@ import About from './pages/aboutMe.js';
 import Timeline from './components/timeline.jsx';
 import TopNav from './components/topNav.jsx';
 import OffCanNav from './components/OffCanNav.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './custom.scss'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
