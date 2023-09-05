@@ -7,18 +7,28 @@ export default function Timeline() {
   return (
     <>
   
-<Nav>
-        <ul className='navbar-nav ms-auto list-group list-group list-group-horizontal flex-nowrap'  id="collapse">
 
-          <li>
-              <div className='freshman'>freshman</div>
+        <ul className='nav '  role="tablist">
+
+          <li className='nav-item'>
+              <div id='Freshman' aria-controls="Freshman" aria-selected="true">Freshman</div>
           </li>
-          <li>
-              <div className='sophomore'>sophomore</div>
+          <li className='nav-item'>
+              <div id='Sophomore' aria-controls="Sophomore" aria-selected="true">Sophomore</div>
+          </li>
+          <li className='nav-item'>
+              <div id='Junior' aria-controls="home" aria-selected="true">Junior</div>
+          </li>
+          <li className='nav-item'>
+              <div className='Senior'>Senior</div>
           </li>
         </ul> 
-
-        </Nav>
+        <div className="tab-content" id="pills-tabContent">
+          <div className="tab-pane fade "  aria-labelledby='Freshman'>tesitng fresh</div>
+          <div className="tab-pane fade" aria-labelledby='Sophomore'>tesitng soph</div>
+          <div className="tab-pane fade"  aria-labelledby='Junior'>tesitng junior</div>
+        </div>
+   
     </>
     );
   }

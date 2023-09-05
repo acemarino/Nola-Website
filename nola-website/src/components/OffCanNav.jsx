@@ -37,13 +37,13 @@ function OffCanNav() {
 
       <Offcanvas show={show} onHide={handleClose} placement='end' >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Site Menu</Offcanvas.Title>
+          <Offcanvas.Title>GRANOLA!</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
         <LinkContainer  to="/aboutMe" >
               <Nav.Link >
                 <div>
-                  <img src="./about_button.png" alt="about" className='About' />
+                  About the Artist
                 </div>
               </Nav.Link>
             </LinkContainer>
@@ -51,7 +51,7 @@ function OffCanNav() {
             <LinkContainer  to="/" >
               <Nav.Link >
                 <div>
-                  <img src="./home_button.png" alt="home" className='Home' />
+                  Home
                 </div>
               </Nav.Link>
             </LinkContainer>

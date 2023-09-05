@@ -3,14 +3,52 @@
 .offcanvas{
     --bs-offcanvas-width:300px;
 }
-
+//smaller than md logo
 .nav-link{
     width: 150px;
+    padding-left: 28px;
 }
 
-  @include media-breakpoint-up(md) {
+//md and up for logo
+@include media-breakpoint-up(md) {
     .nav-link{
         width:300px;
     }
-  }
+}
 
+
+//smaller than md for timeline
+.nav-item{
+    text-align: center;
+    
+    flex:1;
+}
+.nav{
+    justify-content: center;
+    width:100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.Freshman{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+//md and up for timeline
+@include media-breakpoint-up(sm) {
+    .nav-item{
+        text-align: center;
+        
+        flex:1;
+    }
+    .nav{
+        justify-content: center;
+        width:100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .Freshman{
+        padding-left:opx;
+        padding-right:0px;
+    }
+}

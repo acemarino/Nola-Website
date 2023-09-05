@@ -4,12 +4,10 @@ function Home(){
         <>
         <div >
             <div id='header'>
-                This is the home page
+                Freshman
             </div>
             
-            <div id='bulk'>
-                smaller text
-            </div>
+       
         </div>
         <Gallery />
         </>
