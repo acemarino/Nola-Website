@@ -1,34 +1,46 @@
 
 import Nav from 'react-bootstrap/Nav';
-
+import React, {Component} from 'react'
+import { Tabs, Tab } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap'
+import { NavLink } from 'react-router-dom';
 
-export default function Timeline() {
-  return (
+export default class Timeline extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      key: 2
+    };
+   this.handleSelect = this.handleSelect.bind(this)
+  }
+  handleSelect(key) {
+    this.setState({key});
+  }
+  render () {
+    return (
     <>
-  
-
-        <ul className='nav '  role="tablist">
-
-          <li className='nav-item'>
-              <div id='Freshman' aria-controls="Freshman" aria-selected="true">Freshman</div>
-          </li>
-          <li className='nav-item'>
-              <div id='Sophomore' aria-controls="Sophomore" aria-selected="true">Sophomore</div>
-          </li>
-          <li className='nav-item'>
-              <div id='Junior' aria-controls="home" aria-selected="true">Junior</div>
-          </li>
-          <li className='nav-item'>
-              <div className='Senior'>Senior</div>
-          </li>
-        </ul> 
-        <div className="tab-content" id="pills-tabContent">
-          <div className="tab-pane fade "  aria-labelledby='Freshman'>tesitng fresh</div>
-          <div className="tab-pane fade" aria-labelledby='Sophomore'>tesitng soph</div>
-          <div className="tab-pane fade"  aria-labelledby='Junior'>tesitng junior</div>
+    <div>
+          <Nav variant="underline" activeKey={this.state.key} onSelect={this.handleSelect} 
+          id="controlled-tab-example">
+            <Nav.Item>
+              <Nav.Link eventKey={1} title="Freshman"> Freshman </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey={2} title="Sophmore"> Sophmore </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey={3} title="Junior"> Junior </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey={4} title="Senior"> Senior </Nav.Link>
+            </Nav.Item>
+          </Nav>
+               
         </div>
+
+        
    
     </>
-    );
-  }
+     )
+    }
+   }

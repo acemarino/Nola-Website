@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/home.js';
-
+import TabPuzzle from './components/tabTest.jsx';
 import About from './pages/aboutMe.js';
 import Timeline from './components/timeline.jsx';
 import TopNav from './components/topNav.jsx';
@@ -22,7 +22,7 @@ function App() {
     </Router>
     
     </div>
-    
+
     </>
   );
 }
