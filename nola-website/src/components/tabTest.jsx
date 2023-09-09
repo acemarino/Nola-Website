@@ -22,7 +22,7 @@ render () {
               <Tab eventKey={2} title="Tab 2"> Tab Content 2 </Tab>
               <Tab eventKey={3} title="Tab 3"> Tab Content 3 </Tab>
       </Tabs>
-            <button onClick={()=>this.handleSelect(3)}>Go to tab 3</button> 
+            
     </div>
   )
  }

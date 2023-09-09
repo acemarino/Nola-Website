@@ -52,3 +52,21 @@
         padding-right:0px;
     }
 }
+
+.nav-tabs .nav-link {
+   
+    border: none; 
+    border-top-left-radius: none; 
+    background-color: none;
+    color:black;
+   
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+   
+    background-color: #fff0;
+    
+}

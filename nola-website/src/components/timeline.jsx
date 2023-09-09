@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import React, {Component} from 'react'
 import { Tabs, Tab } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap'
-import { NavLink } from 'react-router-dom';
 
 export default class Timeline extends Component {
   constructor(props) {
@@ -20,21 +19,13 @@ export default class Timeline extends Component {
     return (
     <>
     <div>
-          <Nav variant="underline" activeKey={this.state.key} onSelect={this.handleSelect} 
+          <Tabs activeKey={this.state.key} onSelect={this.handleSelect} 
           id="controlled-tab-example">
-            <Nav.Item>
-              <Nav.Link eventKey={1} title="Freshman"> Freshman </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={2} title="Sophmore"> Sophmore </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={3} title="Junior"> Junior </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={4} title="Senior"> Senior </Nav.Link>
-            </Nav.Item>
-          </Nav>
+                  <Tab eventKey={1} title="Freshman"> Freshman </Tab>
+                  <Tab eventKey={2} title="Sophmore"> Sophmore </Tab>
+                  <Tab eventKey={3} title="Junior"> Junior </Tab>
+                  <Tab eventKey={4} title="Senior"> Senior </Tab>
+          </Tabs>
                
         </div>
 
