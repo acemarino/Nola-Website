@@ -12,7 +12,7 @@ function App() {
     <div>
     <Router>
     <OffCanNav></OffCanNav>
-    <Timeline></Timeline>
+    
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/aboutMe" element={<About />} />

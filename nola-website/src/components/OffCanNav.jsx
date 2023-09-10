@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Timeline from './timeline.jsx';
+import Gallery from '../pages/gallery.js';
 
 function OffCanNav() {
   const [show, setShow] = useState(false);
@@ -56,7 +57,13 @@ function OffCanNav() {
                 </div>
               </Nav.Link>
             </LinkContainer>
+           
             
+                <div>
+                  Freshman
+                  
+                </div>
+              
         </Offcanvas.Body>
       </Offcanvas>
     </>

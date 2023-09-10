@@ -1,4 +1,5 @@
 import Gallery from "./gallery";
+import Timeline from "../components/timeline";
 function Home(props){
     //<Gallery num={props.word}/>
     return(
@@ -8,7 +9,7 @@ function Home(props){
             homepage
        
         </div>
-        
+        <Gallery num={1}></Gallery>
         </>
     );
         

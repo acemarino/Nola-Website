@@ -34,7 +34,7 @@ export default class Timeline extends Component {
                
         </div>
         
-        <Gallery num={this.state.key}/>
+        
     </>
      );
     }
