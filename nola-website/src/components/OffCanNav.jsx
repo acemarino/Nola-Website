@@ -27,7 +27,7 @@ function OffCanNav() {
       <Container fluid>
         <LinkContainer to="/">
             <Nav.Link >
-              <img src="./granola_doodle_logo.png" className='Logo' alt="Granola" />
+              <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
             </Nav.Link>
         </LinkContainer>
         <Button variant="primary" onClick={handleShow} className='float-end' >
@@ -57,13 +57,7 @@ function OffCanNav() {
                 </div>
               </Nav.Link>
             </LinkContainer>
-           
-            
-                <div>
-                  Freshman
-                  
-                </div>
-              
+           <Timeline></Timeline>
         </Offcanvas.Body>
       </Offcanvas>
     </>

@@ -70,3 +70,11 @@
     background-color: #fff0;
     
 }
+#show{
+    visibility: visible;
+}
+@include media-breakpoint-down(sm){
+    #show{
+        visibility: visible;
+    }
+}

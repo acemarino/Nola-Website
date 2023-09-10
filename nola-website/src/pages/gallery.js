@@ -30,8 +30,9 @@ export default function Gallery(props) {
   
   return (
     <>
-    <div id="header">{grade}</div>
-    <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }}>
+   
+    <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show'>
+     <div id="header">{grade}</div>
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
         {year.map((item, index) => (
           <div key={index}>

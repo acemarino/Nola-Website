@@ -4,10 +4,14 @@ import { useState } from 'react';
 import React, {Component} from 'react'
 import { Tabs, Tab } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap'
-import Gallery from '../pages/gallery';
+import { useContext } from 'react';
+import { yearContext } from './yearcontext';
 import Home from '../pages/home';
+import Gallery from '../pages/gallery';
+
+const YearContext = React.createContext(1);
 export default class Timeline extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -33,8 +37,8 @@ export default class Timeline extends Component {
           </Tabs>
                
         </div>
-        
-        
+       
+        <Gallery num={this.state.key}></Gallery>
     </>
      );
     }
