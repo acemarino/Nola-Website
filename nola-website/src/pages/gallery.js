@@ -5,13 +5,37 @@ import Box from '@mui/material/Box';
 
 import Masonry from '@mui/lab/Masonry';
 
-export default function Gallery() {
+export default function Gallery(props) {
+  var year=Freshman;
+  var grade="Freshman";
+  console.log(props.num);
+  if(props.num === "1"){
+    year=Freshman;
+    grade="Freshman";
+  }
+  if(props.num === "2"){
+    year=Sophmore;
+    grade="Sophmore";
+  }
+  if(props.num === "3"){
+    year=Junior;
+    grade="Junior";
+  }
+  if(props.num === "4"){
+    year=Senior;
+    grade="Senior";
+  }
+  console.log(year);
+ 
+  
   return (
-    <Box sx={{  pl: 5 , pr: 5, pt:3,pb:3}}>
+    <>
+    <div id="header">{grade}</div>
+    <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }}>
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
-        {itemData.map((item, index) => (
+        {year.map((item, index) => (
           <div key={index}>
-            
+
             <img
               src={`${item.img}?w=162&auto=format`}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
@@ -22,82 +46,154 @@ export default function Gallery() {
                 borderBottomRightRadius: 4,
                 display: 'block',
                 width: '100%',
-              }}
-            />
+              }} />
           </div>
         ))}
       </Masonry>
-    </Box>
+    </Box></>
   );
 }
 
-const itemData = [
+const Freshman = [
+  
   {
-    img: './IMG_1735.png',
-    title: 'Fern',
-  },
-  {
-    img: './IMG_1889.png',
-    title: 'Snacks',
-  },
-  {
-    img: './IMG_1890.png',
-    title: 'Mushrooms',
-  },
-  {
-    img: './IMG_1956.png',
-    title: 'Tower',
-  },
-  {
-    img: './original_98dd96e5-6c4e-4592-a5a7-4daccae54795_PXL_20230412_140853877.jpg',
-    title: 'Sea star',
-  },
-  {
-    img: './original_6065cd59-bb65-4529-9490-8106f4caeca5_PXL_20230412_141306890.jpg',
-    title: 'Honey',
-  },
-  {
-    img: './original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.jpg',
-    title: 'Basketball',
-  },
-  {
-    img: './original_b43e672f-67f7-440a-b1ab-c14329bd5b79_PXL_20230412_141315077.jpg',
+    img: './Freshman/PXL_20210119_202642726.jpg',
     title: 'Breakfast',
   },
   {
-    img: './original_c96a9dd6-f3f2-4ff1-956f-bab1e54817f0_PXL_20230412_140137425.jpg',
+    img: './Freshman/PXL_20210125_012622218.jpg',
     title: 'Tree',
   },
   {
-    img: './original_e5b0456d-3383-429a-ae43-788f0a70709d_PXL_20230412_141324890.jpg',
-    title: 'Burger',
+    img: './Freshman/PXL_20210210_201301713.jpg',
+    title: 'Tree',
   },
   {
-    img: './original_ef183b23-8ce4-414f-bb91-d46fed1bfd7c_PXL_20230227_144431218.jpg',
-    title: 'Camera',
+    img: './Freshman/PXL_20210318_114612865.jpg',
+    title: 'Tree',
   },
   {
-    img: './original_f0e21930-dd48-4d98-af4e-2851439d28ee_PXL_20230412_140640457.jpg',
-    title: 'Coffee',
+    img: './Freshman/PXL_20210428_180832469.jpg',
+    title: 'Tree',
   },
   {
-    img: './original_f5353b73-0de3-403c-a980-c9cc2a775b59_PXL_20230412_140350353.jpg',
-    title: 'Camping Car',
+    img: './Freshman/PXL_20210505_221456227.jpg',
+    title: 'Tree',
   },
   {
-    img: './PXL_20220209_225308083~2.jpg',
-    title: 'Hats',
+    img: './Freshman/PXL_20210513_135241681.jpg',
+    title: 'Tree',
   },
   {
-    img: './PXL_20220223_193147196.MP.jpg',
-    title: 'Tomato basil',
+    img: './Freshman/PXL_20210516_204939130.jpg',
+    title: 'Tree',
+  },
+ 
+];
+
+const Sophmore = [
+  {
+    img: './Sophmore/PXL_20210912_211226408.jpg',
+    title: '1',
   },
   {
-    img: './PXL_20220428_183020265.jpg',
-    title: 'Mountain',
+    img: './Sophmore/PXL_20211006_200309614.jpg',
+    title: '2',
   },
   {
-    img: './PXL_20220525_222305195.jpg',
-    title: 'Bike',
+    img: './Sophmore/PXL_20211201_192753409.jpg',
+    title: '3',
   },
+  {
+    img: './Sophmore/PXL_20211203_191510482.jpg',
+    title: '4',
+  },
+  {
+    img: './Sophmore/PXL_20220111_205656515.jpg',
+    title: '5',
+  },
+  {
+    img: './Sophmore/PXL_20220209_225308083~2.jpg',
+    title: '6',
+  },
+  {
+    img: './Sophmore/PXL_20220223_193147196.MP.jpg',
+    title: '7',
+  },
+  {
+    img: './Sophmore/PXL_20220225_192420313.jpg',
+    title: '8',
+  },
+  {
+    img: './Sophmore/PXL_20220331_182231806.jpg',
+    title: '9',
+  },
+  {
+    img: './Sophmore/PXL_20220405_183204302.jpg',
+    title: '10',
+  },
+  {
+    img: './Sophmore/PXL_20220428_183020265.jpg',
+    title: '11',
+  },
+  {
+    img: './Sophmore/PXL_20220525_222305195.jpg',
+    title: '12',
+  },
+  {
+    img: './Sophmore/PXL_20220603_181724794.jpg',
+    title: '13',
+  },
+  {
+    img: './Sophmore/PXL_20221029_193509607.jpg',
+    title: '14',
+  },
+
+];
+
+const Junior =[
+  {
+    img: './Junior/IMG_1735.png',
+    title: '1',
+  },
+  {
+    img: './Junior/IMG_1956.png',
+    title: '2',
+  },
+  {
+    img: './Junior/IMG_2075.png',
+    title: '3',
+  },
+  {
+    img: './Junior/original_98dd96e5-6c4e-4592-a5a7-4daccae54795_PXL_20230412_140853877.jpg',
+    title: '4',
+  },
+  {
+    img: './Junior/original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.jpg',
+    title: '5',
+  },
+  {
+    img: './Junior/original_c96a9dd6-f3f2-4ff1-956f-bab1e54817f0_PXL_20230412_140137425.jpg',
+    title: '6',
+  },
+  {
+    img: './Junior/original_f0e21930-dd48-4d98-af4e-2851439d28ee_PXL_20230412_140640457.jpg',
+    title: '7',
+  },
+  {
+    img: './Junior/original_f5353b73-0de3-403c-a980-c9cc2a775b59_PXL_20230412_140350353.jpg',
+    title: '8',
+  },
+  {
+    img: './Junior/PXL_20220823_134007063.jpg',
+    title: '9',
+  },
+  {
+    img: './Junior/PXL_20230601_151540870.jpg',
+    title: '10',
+  },
+];
+
+const Senior =[
+
 ];

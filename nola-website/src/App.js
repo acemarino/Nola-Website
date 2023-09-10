@@ -1,9 +1,7 @@
 import React from 'react';
 import Home from './pages/home.js';
-import TabPuzzle from './components/tabTest.jsx';
 import About from './pages/aboutMe.js';
 import Timeline from './components/timeline.jsx';
-import TopNav from './components/topNav.jsx';
 import OffCanNav from './components/OffCanNav.jsx'
 import './custom.scss'
 
@@ -13,16 +11,17 @@ function App() {
     <>
     <div>
     <Router>
-      <OffCanNav></OffCanNav>
-      <Timeline></Timeline>
+    <OffCanNav></OffCanNav>
+    <Timeline></Timeline>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/aboutMe" element={<About />} />
       </Routes>
     </Router>
     
+      
     </div>
-    <TabPuzzle></TabPuzzle>
+    
     </>
   );
 }

@@ -1,15 +1,14 @@
 import Gallery from "./gallery";
-function Home(){
+function Home(props){
+    //<Gallery num={props.word}/>
     return(
         <>
         <div >
-            <div id='header'>
-                Freshman
-            </div>
-            
+    
+            homepage
        
         </div>
-        <Gallery />
+        
         </>
     );
         
