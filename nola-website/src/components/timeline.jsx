@@ -3,14 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import { useState } from 'react';
 import React, {Component} from 'react'
 import { Tabs, Tab } from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap'
+
 import { useContext } from 'react';
-import Home from '../pages/home';
-import Gallery from '../pages/gallery';
+
+import Test, {Value} from './test';
 
 export const yearContext = React.createContext();
 export default class Timeline extends Component {
-
+//<Value value={this.state.key}/>
   constructor(props) {
     super(props);
     this.state = {
@@ -37,9 +37,8 @@ export default class Timeline extends Component {
           </Tabs>
                
         </div>
-       <yearContext.Provider value={this.state.key}>
-        <Home />
-       </yearContext.Provider>
+       
+        <Test value= {this.state.key}/>
         
     </>
      );

@@ -8,7 +8,7 @@ import Masonry from '@mui/lab/Masonry';
 export default function Gallery(props) {
   var year=Freshman;
   var grade="Freshman";
-  console.log(props.num);
+  console.log("year"+props.num);
   if(props.num === "1"){
     year=Freshman;
     grade="Freshman";
@@ -25,7 +25,7 @@ export default function Gallery(props) {
     year=Senior;
     grade="Senior";
   }
-  console.log(year);
+  console.log(grade);
  
   
   return (
@@ -59,35 +59,35 @@ const Freshman = [
   
   {
     img: './Freshman/PXL_20210119_202642726.jpg',
-    title: 'Breakfast',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210125_012622218.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210210_201301713.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210318_114612865.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210428_180832469.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210505_221456227.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210513_135241681.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
   {
     img: './Freshman/PXL_20210516_204939130.jpg',
-    title: 'Tree',
+    title: 'Freshman',
   },
  
 ];
