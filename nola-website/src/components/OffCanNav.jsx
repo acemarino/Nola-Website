@@ -57,7 +57,7 @@ function OffCanNav() {
                 </div>
               </Nav.Link>
             </LinkContainer>
-           <Timeline></Timeline>
+            <Timeline></Timeline>
         </Offcanvas.Body>
       </Offcanvas>
     </>

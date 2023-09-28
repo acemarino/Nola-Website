@@ -9,7 +9,7 @@ import Home from '../pages/home';
 import Gallery from '../pages/gallery';
 
 export const yearContext = React.createContext();
-export default class Timeline extends Component {
+export default class MTimeline extends Component {
 
   constructor(props) {
     super(props);
@@ -37,9 +37,7 @@ export default class Timeline extends Component {
           </Tabs>
                
         </div>
-       <yearContext.Provider value={this.state.key}>
-        <Home />
-       </yearContext.Provider>
+      
         
     </>
      );

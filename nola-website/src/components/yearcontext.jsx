@@ -1,3 +1,20 @@
-import { createContext } from "react";
+import React from 'react';
 
-export const yearContext =createContext(1);
+export const UserContext = React.createContext();
+
+export default function YearContext() {
+  return (
+    <UserContext.Provider value="Reed">
+      <User />
+    </UserContext.Provider>
+  )
+}
+
+function User() {
+  return (
+    <UserContext.Consumer>
+      {value => <h1>{value}</h1>} 
+      {/* prints: Reed */}
+    </UserContext.Consumer>
+  )
+}

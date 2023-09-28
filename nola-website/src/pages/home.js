@@ -1,18 +1,21 @@
 import Gallery from "./gallery";
-import Timeline from "../components/timeline";
+import Timeline, { yearContext } from "../components/timeline";
 import { useState } from 'react';
+import React from 'react';
 function Home(props){
-    //<Gallery num={props.word}/>
+    //<Gallery num={value}></Gallery>
+    const value = React.useContext(yearContext);
     return(
         <>
         
         
         
         <div >
-    
-            homepage
+    homepage
+            <h1>{value}</h1>
        
         </div>
+        
         </>
     );
         

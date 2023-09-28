@@ -7,18 +7,18 @@ import './custom.scss'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
+  //<Route path="/" element={<Home />}/>
   return (
     <>
     <div>
     <Router>
     <OffCanNav></OffCanNav>
-    <Timeline></Timeline>
+   
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Timeline />}/>
         <Route path="/aboutMe" element={<About />} />
       </Routes>
     </Router>
-    
       
     </div>
     
