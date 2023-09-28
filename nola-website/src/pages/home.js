@@ -1,23 +1,37 @@
 import Gallery from "./gallery";
-import Timeline, { yearContext } from "../components/timeline";
-import { useState } from 'react';
+import { Component, useState } from 'react';
 import React from 'react';
-import Test,{Value} from "../components/test";
-function Home(props){
-    //<Gallery num={value}></Gallery>
-    
+import {Value} from "../components/test";
 
-   const NUM= Value;
+
+
+export default class Home extends Component{
+    //<Gallery num={value}></Gallery>
+   
+    constructor(props){
+        super(props);
+        this.state = {
+            NUM: "1",
+            reload: false
+        }
+    }
+    handleReload(reload) {
+        this.setState({reload: true});
+        this.setState({NUM: Value})
+      }
+      
+render(){
+   
     return(
         <>
-        <div >
+        <div>
             homepage
-        <h1>{NUM}</h1>
+        <h1 >{Value}</h1>
        
         </div>
-        <Gallery num={Value}></Gallery>
+        <Gallery reload={this.handleReload} num={Value}></Gallery>
         </>
     );
-        
+      
 }
-export default Home;
+}
