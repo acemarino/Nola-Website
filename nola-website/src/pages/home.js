@@ -1,7 +1,6 @@
 import Gallery from "./gallery";
-import { Component, useState } from 'react';
+
 import React from 'react';
-import Test, {Value} from "../components/test";
 import About from "./aboutMe";
 
 

@@ -8,7 +8,7 @@ import OffCanNav from './components/OffCanNav.jsx'
 import './custom.scss'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-export default class App extends Component {
+export default function App() {
   //<Route path="/" element={<Home />}/>
   /*
    
@@ -17,9 +17,7 @@ export default class App extends Component {
         <Route path="/aboutMe" element={<About />} />
       </Routes>
     </Router>   
-      
-*/
-  constructor(props) {
+     constructor(props) {
     super(props);
     this.state = {
       key: 1,
@@ -32,20 +30,18 @@ export default class App extends Component {
     this.setState({key});
     console.log("App.js handleSelect")
   }
-  render(){
+      
+*/
+ 
   return (
     <>
     <div>
-  
-
-    <OffCanNav></OffCanNav>
-      
-      
+      <OffCanNav></OffCanNav>
     </div>
     
     </>
   );
-}
+
 }
 
 
