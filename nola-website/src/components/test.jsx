@@ -2,14 +2,14 @@ import React from 'react';
 import Timeline, { yearContext } from "../components/timeline";
 
 
-var Value="3";
+var Value=3;
  function Test(props) {
      Value = props.value;
-     console.log("props test: "+Value)
+     console.log(props);
      
 }
 
 export default Test;
-console.log("post Export:" +Value)
+console.log(Value)
 export {Value};
 

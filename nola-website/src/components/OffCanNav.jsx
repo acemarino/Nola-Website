@@ -33,11 +33,10 @@ export default class OffCanNav extends Component {
  
   }
   handleSelect(key) {
-    this.setState({key});
+    this.setState({key: key});
     this.setState({show: false});
-    
-    
   }
+
   handleClose(show) {
     this.setState({show: false});
   }
@@ -86,11 +85,12 @@ export default class OffCanNav extends Component {
                   Home
                 </div>
               </Nav.Link>
+
       
                   <Tab.Container activeKey={this.state.key} onSelect={this.handleSelect} 
                   id="controlled-tab-example" transition={true}>
                                 <Nav.Link as={Link} to="/" eventKey={1}>
-                                Freshman
+                                Freshman 1
                                 </Nav.Link>
                                 <Nav.Link as={Link} to="/" eventKey={2}>
                                 Sophmore

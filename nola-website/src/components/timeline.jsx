@@ -17,12 +17,14 @@ export default class Timeline extends Component {
       key: 1,
       title: "year"
     };
-   this.handleSelect = this.handleSelect.bind(this)
-  }
+  this.handleSelect = this.handleSelect.bind(this)
+  };
+
   handleSelect(key) {
-    this.setState({key});
+    this.setState({key: key});
     
   }
+  
   render () {
     return (
       
@@ -35,12 +37,12 @@ export default class Timeline extends Component {
                   <Tab eventKey={3} title="Junior"> </Tab>
                   <Tab eventKey={4} title="Senior"> </Tab>
           </Tabs>
-               
+          
         </div>
        
         <Test value= {this.state.key}/>
         
     </>
      );
-    }
-   }
+  }
+}

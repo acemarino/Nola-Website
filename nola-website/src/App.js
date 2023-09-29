@@ -21,18 +21,19 @@ export default class App extends Component {
       key: 1,
       title: "year"
     };
-   this.handleSelect = this.handleSelect.bind(this)
+   this.handleSelect = this.handleSelect.bind(this);
+   
   }
   handleSelect(key) {
     this.setState({key});
-    
+    console.log("App.js handleSelect")
   }
   render(){
   return (
     <>
     <div>
   
-    <Router forceRefresh>
+    <Router >
     <OffCanNav></OffCanNav>
       <Routes>
         <Route path="/" element={<Home />}/>

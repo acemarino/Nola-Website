@@ -8,6 +8,7 @@ import Masonry from '@mui/lab/Masonry';
 export default function Gallery(props) {
   var year=Freshman;
   var grade="Freshman";
+  console.log(props);
   if(props.num === "1"){
     year=Freshman;
     grade="Freshman";

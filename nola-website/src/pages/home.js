@@ -11,38 +11,39 @@ export default class Home extends Component{
     constructor(props){
         super(props);
         this.state = {
-            NUM: "1",
+            key: "1",
             reload: false
         };
-        this.handleChange= this.handleChange.bind(this)
+        //this.handleChange= this.handleChange.bind(this)
     }
 
     
     handleChange() {
-        this.setState({NUM: Value});
+        this.setState({key: Value});
+        console.log("home.js handleChange:"+Value)
+
       }
      
       
-render(){
-
-    if(Value!==this.state.NUM){
+    render(){
+        console.log("Value:" + Value);
+        if(Value!==this.state.key){
         this.handleChange()
-       
-    }
-    console.log("inside render");
-    return(
-        <>
+        console.log("key Changed");
+        }
+        console.log("inside render");
+        return(
+            <>
+            
+            <div>
+                homepage
+            <h1 >key: {this.state.key}</h1>
+            <h1 >Value: {Value}</h1>
         
-        <div>
-            homepage
-        <h1 >Num: {this.state.NUM}</h1>
-        <h1 >Value: {Value}</h1>
-       
-        </div>]
-        <div></div>
-       
-        </>
-    );
-      
-}
+            </div>
+            <Gallery num={Value}></Gallery>
+            </>
+        );
+        
+    }
 } 
