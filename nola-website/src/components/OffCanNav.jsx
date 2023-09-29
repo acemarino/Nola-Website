@@ -8,6 +8,7 @@ import React, {Component} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import { Tab} from 'react-bootstrap';
 import Test from './test';
+import Home from '../pages/home';
 import { Link } from "react-router-dom";
 
 export default class OffCanNav extends Component {
@@ -23,7 +24,7 @@ export default class OffCanNav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      key: 1,
+      num: 1,
       title: "year",
       show:false
     };
@@ -33,7 +34,8 @@ export default class OffCanNav extends Component {
  
   }
   handleSelect(key) {
-    this.setState({key: key});
+    console.log(key);
+    this.setState({num: key});
     this.setState({show: false});
   }
 
@@ -46,27 +48,22 @@ export default class OffCanNav extends Component {
   
 
   render () {
+    
   return (
     <>
-    <style type="text/css">
-        {`
-    .offcanvas-horizontal-width {
-      width:100%;
-    }
-    `}
-      </style>
+    
     <Navbar expand="xs" >
       <Container fluid>
-        <LinkContainer to="/">
-            <Nav.Link >
-              <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
-            </Nav.Link>
-        </LinkContainer>
-        <Button variant="primary" onClick={this.handleShow} className='float-end d-lg-none' >
-        Launch
-      </Button>
-        </Container>
-      </Navbar>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)}>
+              <Nav.Link as={Link}  to="/" eventKey="5">
+                <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
+              </Nav.Link>
+            <Button variant="primary" onClick={this.handleShow} className='float-end d-lg-none' >
+            Launch
+            </Button>
+        </Nav>
+      </Container>
+    </Navbar>
       
 
       <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'  >
@@ -74,46 +71,55 @@ export default class OffCanNav extends Component {
           <Offcanvas.Title>GRANOLA!</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
-              <Nav.Link  as={Link} to="/aboutMe" onClick={this.handleClose}>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)}>
+              <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
                 <div>
                   About the Artist
                 </div>
               </Nav.Link>
            
-              <Nav.Link as={Link}  to="/" onClick={this.handleClose}>
+              <Nav.Link as={Link}  to="/" eventKey="5">
                 <div>
                   Home
                 </div>
               </Nav.Link>
-
-      
-                  <Tab.Container activeKey={this.state.key} onSelect={this.handleSelect} 
-                  id="controlled-tab-example" transition={true}>
-                                <Nav.Link as={Link} to="/" eventKey={1}>
-                                Freshman 1
-                                </Nav.Link>
-                                <Nav.Link as={Link} to="/" eventKey={2}>
-                                Sophmore
-                                </Nav.Link>
-                                <Nav.Link as={Link} to="/" eventKey={3}>
-                                Junior
-                                </Nav.Link>
-                                <Nav.Link as={Link} to="/" eventKey={4}>
-                                Senior
-                                </Nav.Link>
-                    <Tab.Content>
-                      <Tab.Pane eventKey={1} title="Freshman"  > </Tab.Pane>
-                      <Tab.Pane eventKey={2} title="Sophmore" > </Tab.Pane>
-                      <Tab.Pane eventKey={3} title="Junior" ></Tab.Pane>
-                      <Tab.Pane eventKey={4} title="Senior"> </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
-               
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" eventKey="1" >
+                  <div>
+                    Freshman 
+                  </div>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" eventKey="2" >
+                  <div>
+                    Sophmore
+                  </div>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" eventKey="3" >
+                  <div>
+                    Junior 
+                  </div>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" eventKey="4" >
+                  <div>
+                    Senior
+                  </div>
+                </Nav.Link>
+              </Nav.Item>
+             </Nav>
                 
-                  <Test value= {this.state.key}/>
+                 
         </Offcanvas.Body>
       </Offcanvas>
+      <Home value= {this.state.num}/>
     </>
+   
   );
+  
 }
 }

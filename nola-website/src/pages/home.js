@@ -2,48 +2,31 @@ import Gallery from "./gallery";
 import { Component, useState } from 'react';
 import React from 'react';
 import Test, {Value} from "../components/test";
+import About from "./aboutMe";
 
 
 
-export default class Home extends Component{
-    //<Gallery num={value}></Gallery>
-
-    constructor(props){
-        super(props);
-        this.state = {
-            key: "1",
-            reload: false
-        };
-        //this.handleChange= this.handleChange.bind(this)
-    }
-
+export default function Home (props){
+if(props.value==="6"){
+    return(
+        <>
+            <About></About>
+        </>
+    );
+}else{
+    return(
+        <>
+        
+        <div>
+        <div id="header">Homepage</div>
     
-    handleChange() {
-        this.setState({key: Value});
-        console.log("home.js handleChange:"+Value)
-
-      }
-     
+        </div>
+        <Gallery num={props.value}></Gallery>
+        </>
+    );
+}
       
-    render(){
-        console.log("Value:" + Value);
-        if(Value!==this.state.key){
-        this.handleChange()
-        console.log("key Changed");
-        }
-        console.log("inside render");
-        return(
-            <>
-            
-            <div>
-                homepage
-            <h1 >key: {this.state.key}</h1>
-            <h1 >Value: {Value}</h1>
+       
         
-            </div>
-            <Gallery num={Value}></Gallery>
-            </>
-        );
-        
-    }
+    
 } 

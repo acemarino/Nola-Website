@@ -12,7 +12,11 @@ export default class App extends Component {
   //<Route path="/" element={<Home />}/>
   /*
    
-        
+     <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/aboutMe" element={<About />} />
+      </Routes>
+    </Router>   
       
 */
   constructor(props) {
@@ -21,7 +25,7 @@ export default class App extends Component {
       key: 1,
       title: "year"
     };
-   this.handleSelect = this.handleSelect.bind(this);
+   //this.handleSelect = this.handleSelect.bind(this);
    
   }
   handleSelect(key) {
@@ -33,13 +37,9 @@ export default class App extends Component {
     <>
     <div>
   
-    <Router >
+
     <OffCanNav></OffCanNav>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/aboutMe" element={<About />} />
-      </Routes>
-    </Router>
+      
       
     </div>
     
