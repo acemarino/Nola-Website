@@ -1,13 +1,9 @@
-import React, {Component} from 'react'
-import Home from './pages/home.js';
-import About from './pages/aboutMe.js';
-import Timeline from './components/timeline.jsx';
-import { Tabs, Tab } from 'react-bootstrap';
-import Test, {Value} from './components/test';
+import React from 'react'
+
 import OffCanNav from './components/OffCanNav.jsx'
 import './custom.scss'
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 export default function App() {
   //<Route path="/" element={<Home />}/>
   /*
