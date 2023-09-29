@@ -1,13 +1,9 @@
-import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import {LinkContainer} from 'react-router-bootstrap'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import React, {Component} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
-import { Tab} from 'react-bootstrap';
-import Test from './test';
 import Home from '../pages/home';
 import { Link } from "react-router-dom";
 
@@ -54,35 +50,40 @@ export default class OffCanNav extends Component {
     
     <Navbar expand="xs" >
       <Container fluid>
-        <Nav activeKey="/home" onSelect={(this.handleSelect)}>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)} variant='underline'>
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
               </Nav.Link>
-            <Button variant="primary" onClick={this.handleShow} className='float-end d-lg-none' >
-            Launch
-            </Button>
+            
         </Nav>
+        <Button variant="primary" onClick={this.handleShow} className='float-end d-lg-none' >
+            Launch
+          </Button>
       </Container>
     </Navbar>
       
-
-      <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'  >
+   
+      <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>GRANOLA!</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
-        <Nav activeKey="/home" onSelect={(this.handleSelect)}>
-              <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
-                <div>
-                  About the Artist
-                </div>
-              </Nav.Link>
-           
-              <Nav.Link as={Link}  to="/" eventKey="5">
-                <div>
-                  Home
-                </div>
-              </Nav.Link>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)}  variant='underline' >
+             
+              <Nav.Item>
+                <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
+                  <div>
+                    About the Artist
+                  </div>
+                </Nav.Link>
+              </Nav.Item> 
+              <Nav.Item>
+                <Nav.Link as={Link}  to="/" eventKey="5">
+                  <div>
+                    Home
+                  </div>
+                </Nav.Link>
+              </Nav.Item>
               <Nav.Item>
                 <Nav.Link as={Link} to="/" eventKey="1" >
                   <div>
