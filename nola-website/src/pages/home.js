@@ -27,8 +27,9 @@ render(){
 
     if(Value!==this.state.NUM){
         this.handleChange()
-        this.forceUpdate();
+       
     }
+    console.log("inside render");
     return(
         <>
         
@@ -37,8 +38,9 @@ render(){
         <h1 >Num: {this.state.NUM}</h1>
         <h1 >Value: {Value}</h1>
        
-        </div>
-        <Gallery  num={this.state.NUM}></Gallery>
+        </div>]
+        <div></div>
+       
         </>
     );
       

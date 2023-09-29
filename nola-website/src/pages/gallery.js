@@ -11,6 +11,7 @@ export default function Gallery(props) {
   if(props.num === "1"){
     year=Freshman;
     grade="Freshman";
+    
   }
   if(props.num === "2"){
     year=Sophmore;

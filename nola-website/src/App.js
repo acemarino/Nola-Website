@@ -11,18 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default class App extends Component {
   //<Route path="/" element={<Home />}/>
   /*
-   <div>
-          <Tabs activeKey={this.state.key} onSelect={this.handleSelect} 
-          id="controlled-tab-example" transition={false} variant='underline'>
-                  <Tab eventKey={1} title="Freshman"> </Tab>
-                  <Tab eventKey={2} title="Sophmore"> </Tab>
-                  <Tab eventKey={3} title="Junior"> </Tab>
-                  <Tab eventKey={4} title="Senior"> </Tab>
-          </Tabs>
-               
-        </div>
-       
-        <Test value= {this.state.key}/>
+   
         
       
 */

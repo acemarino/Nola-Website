@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import React, {Component} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
-import { Tabs, Tab, TabContainer, TabContent, TabPane } from 'react-bootstrap';
+import { Tab} from 'react-bootstrap';
 import Test from './test';
 import { Link } from "react-router-dom";
 
@@ -102,15 +102,15 @@ export default class OffCanNav extends Component {
                                 Senior
                                 </Nav.Link>
                     <Tab.Content>
-                      <Tab.Pane eventKey={1} title="Freshman" > <Test value= {this.state.key}/></Tab.Pane>
-                      <Tab.Pane eventKey={2} title="Sophmore" ><Test value= {this.state.key}/> </Tab.Pane>
-                      <Tab.Pane eventKey={3} title="Junior" > <Test value= {this.state.key}/></Tab.Pane>
-                      <Tab.Pane eventKey={4} title="Senior"> <Test value= {this.state.key}/></Tab.Pane>
+                      <Tab.Pane eventKey={1} title="Freshman"  > </Tab.Pane>
+                      <Tab.Pane eventKey={2} title="Sophmore" > </Tab.Pane>
+                      <Tab.Pane eventKey={3} title="Junior" ></Tab.Pane>
+                      <Tab.Pane eventKey={4} title="Senior"> </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                
                 
-        
+                  <Test value= {this.state.key}/>
         </Offcanvas.Body>
       </Offcanvas>
     </>
