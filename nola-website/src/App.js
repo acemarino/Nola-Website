@@ -10,6 +10,22 @@ import './custom.scss'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default class App extends Component {
   //<Route path="/" element={<Home />}/>
+  /*
+   <div>
+          <Tabs activeKey={this.state.key} onSelect={this.handleSelect} 
+          id="controlled-tab-example" transition={false} variant='underline'>
+                  <Tab eventKey={1} title="Freshman"> </Tab>
+                  <Tab eventKey={2} title="Sophmore"> </Tab>
+                  <Tab eventKey={3} title="Junior"> </Tab>
+                  <Tab eventKey={4} title="Senior"> </Tab>
+          </Tabs>
+               
+        </div>
+       
+        <Test value= {this.state.key}/>
+        
+      
+*/
   constructor(props) {
     super(props);
     this.state = {
@@ -26,24 +42,9 @@ export default class App extends Component {
   return (
     <>
     <div>
-    
-    <Router>
+  
+    <Router forceRefresh>
     <OffCanNav></OffCanNav>
-     
-    <div>
-          <Tabs activeKey={this.state.key} onSelect={this.handleSelect} 
-          id="controlled-tab-example" transition={false} variant='underline'>
-                  <Tab eventKey={1} title="Freshman"> </Tab>
-                  <Tab eventKey={2} title="Sophmore"> </Tab>
-                  <Tab eventKey={3} title="Junior"> </Tab>
-                  <Tab eventKey={4} title="Senior"> </Tab>
-          </Tabs>
-               
-        </div>
-       
-        <Test value= {this.state.key}/>
-        
-      
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/aboutMe" element={<About />} />
