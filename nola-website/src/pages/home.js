@@ -11,17 +11,18 @@ export default class Home extends Component{
     constructor(props){
         super(props);
         this.state = {
-            NUM: "1",
+            NUM: Value,
             reload: false
         }
     }
-    handleReload(reload) {
+
+    
+    handleReload() {
         this.setState({reload: true});
-        this.setState({NUM: Value})
       }
-      
+     
 render(){
-   
+
     return(
         <>
         <div>
@@ -29,9 +30,9 @@ render(){
         <h1 >{Value}</h1>
        
         </div>
-        <Gallery reload={this.handleReload} num={Value}></Gallery>
+        <Gallery  num={Value}></Gallery>
         </>
     );
       
 }
-}
+} 
