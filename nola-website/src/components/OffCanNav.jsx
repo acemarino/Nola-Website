@@ -32,7 +32,6 @@ export default class OffCanNav extends Component {
   handleSelect(key) {
     console.log(key);
     this.setState({num: key});
-    this.setState({show: false});
   }
 
   handleClose(show) {
@@ -50,14 +49,14 @@ export default class OffCanNav extends Component {
     
     <Navbar expand="xs" >
       <Container fluid>
-        <Nav activeKey="/home" onSelect={(this.handleSelect)} variant='underline'>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)} >
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
               </Nav.Link>
             
         </Nav>
         <Button variant="primary" onClick={this.handleShow} className='float-end d-lg-none' >
-            Launch
+            Menu
           </Button>
       </Container>
     </Navbar>
@@ -68,44 +67,44 @@ export default class OffCanNav extends Component {
           <Offcanvas.Title>GRANOLA!</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
-        <Nav activeKey="/home" onSelect={(this.handleSelect)}  variant='underline' >
+        <Nav activeKey="/home" onSelect={(this.handleSelect)}  className='navigationBar'>
              
-              <Nav.Item>
-                <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
-                  <div>
-                    About the Artist
-                  </div>
-                </Nav.Link>
-              </Nav.Item> 
-              <Nav.Item>
+              <Nav.Item id="topR">
                 <Nav.Link as={Link}  to="/" eventKey="5">
                   <div>
                     Home
                   </div>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item id="topR">
+                <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
+                  <div>
+                    About the Artist
+                  </div>
+                </Nav.Link>
+              </Nav.Item> 
+              <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="1" >
                   <div>
                     Freshman 
                   </div>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="2" >
                   <div>
                     Sophmore
                   </div>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="3" >
                   <div>
                     Junior 
                   </div>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="4" >
                   <div>
                     Senior

@@ -1,58 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.offcanvas{
-    --bs-offcanvas-width:300px;
-}
-//smaller than md logo
-.nav-link{
-    width: 150px;
-    padding-left: 28px;
-}
-
-//md and up for logo
-@include media-breakpoint-up(md) {
-    .nav-link{
-        width:300px;
-    }
-}
-
-
-//smaller than md for timeline
-.nav-item{
-    text-align: center;
-    
-    flex:1;
-}
-.nav{
-    justify-content: center;
-    width:100%;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.Freshman{
-    padding-left:10px;
-    padding-right:10px;
-}
-
-//md and up for timeline
-@include media-breakpoint-up(sm) {
-    .nav-item{
-        text-align: center;
-        
-        flex:1;
-    }
-    .nav{
-        justify-content: center;
-        width:100%;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .Freshman{
-        padding-left:opx;
-        padding-right:0px;
-    }
-}
-
+/*
 .nav-tabs .nav-link {
    
     border: none; 
@@ -68,8 +16,98 @@
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
    
     background-color: #fff0;
+
+  .Freshman{
+    padding-left:10px;
+    padding-right:10px;
+}  
+    .Freshman{
+        padding-left:0px;
+        padding-right:0px;
+    }
     
 }
+*/
+
+
+.offcanvas-lg{
+    --bs-offcanvas-width:250px;
+}
+
+//navigation bar container
+.navigationBar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// top row(home and About)
+#topR{
+
+}
+
+//bottome row(school years)
+#botR{
+
+}
+
+//smaller than md logo
+.nav-link{
+    width: 150px;
+    padding-left: 28px;
+    color:black;
+    background-color: #fff0;
+}
+
+//md and up for logo
+@include media-breakpoint-up(md) {
+    .nav-link{
+        width:300px;
+        color:black;
+        background-color: #fff0;
+    }
+  
+}
+
+
+//smaller than md for timeline
+.nav-item{
+    text-align: center;
+    color:black;
+    background-color: #fff0;
+    flex:1;
+   
+}
+.nav{
+    justify-content: center;
+    width:100%;
+    color:black;
+    background-color: #fff0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+//md and up for timeline
+@include media-breakpoint-up(sm) {
+    .nav-item{
+        text-align: center;
+        color:black;
+        background-color: #fff0;
+        flex:1;
+       
+    }
+    .nav{
+        justify-content: center;
+        width:100%;
+        color:black;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+   
+}
+
+
 #show{
     visibility: visible;
 }
@@ -77,4 +115,5 @@
     #show{
         visibility: visible;
     }
+
 }
