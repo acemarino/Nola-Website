@@ -4,8 +4,11 @@ import React from 'react';
 import About from "./aboutMe";
 
 
-
+var year;
 export default function Home (props){
+console.log("year: "+ props.value)
+
+
 if(props.value==="6"){
     return(
         <>
@@ -15,11 +18,6 @@ if(props.value==="6"){
 }else{
     return(
         <>
-        
-        <div>
-        <div id="header">Homepage</div>
-    
-        </div>
         <Gallery num={props.value}></Gallery>
         </>
     );

@@ -79,7 +79,7 @@ export default class OffCanNav extends Component {
               <Nav.Item id="topR">
                 <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
                   <div>
-                    About the Artist
+                    About Me
                   </div>
                 </Nav.Link>
               </Nav.Item> 

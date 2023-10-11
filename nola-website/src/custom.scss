@@ -67,6 +67,10 @@
     }
   
 }
+.nav-link:hover, .nav-link:focus {
+    color:black;
+    text-decoration: underline;
+}
 
 
 //smaller than md for timeline
