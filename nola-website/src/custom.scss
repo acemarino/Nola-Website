@@ -67,10 +67,15 @@
     }
   
 }
-.nav-link:hover, .nav-link:focus {
-    color:black;
-    text-decoration: underline;
+.linkObj:hover, .linkObj:focus {
+    color: black;
+    border-bottom: 2px solid #F23E71;
 }
+
+.nav-link:hover, .nav-link:focus {
+    color: black;
+}
+
 
 
 //smaller than md for timeline

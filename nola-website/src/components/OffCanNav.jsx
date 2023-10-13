@@ -71,44 +71,44 @@ export default class OffCanNav extends Component {
              
               <Nav.Item id="topR">
                 <Nav.Link as={Link}  to="/" eventKey="5">
-                  <div>
+                  <span className='linkObj'>
                     Home
-                  </div>
+                  </span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item id="topR">
                 <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
-                  <div>
+                  <span className='linkObj'>
                     About Me
-                  </div>
+                  </span>
                 </Nav.Link>
               </Nav.Item> 
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="1" >
-                  <div>
+                  <span className='linkObj'>
                     Freshman 
-                  </div>
+                  </span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="2" >
-                  <div>
+                  <span className='linkObj'>
                     Sophmore
-                  </div>
+                  </span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="3" >
-                  <div>
+                  <span className='linkObj'>
                     Junior 
-                  </div>
+                  </span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="4" >
-                  <div>
+                  <span className='linkObj'>
                     Senior
-                  </div>
+                  </span>
                 </Nav.Link>
               </Nav.Item>
              </Nav>
