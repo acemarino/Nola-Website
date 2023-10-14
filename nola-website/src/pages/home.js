@@ -6,7 +6,7 @@ import About from "./aboutMe";
 
 var year;
 export default function Home (props){
-console.log("year: "+ props.value)
+
 
 
 if(props.value==="6"){

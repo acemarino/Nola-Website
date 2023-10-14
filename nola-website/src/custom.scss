@@ -27,6 +27,15 @@
     }
     
 }
+
+ .nav-item{
+        text-align: center;
+        width:fit-content;
+        color:black;
+        background-color: #fff0;
+        flex:1;
+       
+    }
 */
 
 
@@ -36,22 +45,15 @@
 
 //navigation bar container
 .navigationBar{
-    display: flex;
-    flex-wrap: wrap;
+   
 }
-
-// top row(home and About)
-#topR{
-
-}
-
-//bottome row(school years)
-#botR{
-
+.offcanvas-body{
+    width: 100%;
+    justify-content: center;
 }
 
 //smaller than md logo
-.nav-link{
+.Logo{
     width: 150px;
     padding-left: 28px;
     color:black;
@@ -60,57 +62,73 @@
 
 //md and up for logo
 @include media-breakpoint-up(md) {
-    .nav-link{
+    .Logo{
         width:300px;
         color:black;
         background-color: #fff0;
     }
   
 }
+
+.linkObj{
+    color:black;
+    font-size: 20px;
+    
+}
 .linkObj:hover, .linkObj:focus {
     color: black;
     border-bottom: 2px solid #F23E71;
+    
+}
+.nav-link{
+    width:fit-content;
+    
 }
 
 .nav-link:hover, .nav-link:focus {
     color: black;
+    
 }
 
-
-
-//smaller than md for timeline
 .nav-item{
     text-align: center;
+    width:fit-content;
+    justify-content: center;
+    display: flex;
     color:black;
     background-color: #fff0;
     flex:1;
+    
    
 }
 .nav{
-    justify-content: center;
-    width:100%;
+    justify-content: space-between;
     color:black;
+    display: flex;
     background-color: #fff0;
     padding-left: 40px;
     padding-right: 40px;
+   
 }
 
 
 //md and up for timeline
 @include media-breakpoint-up(sm) {
-    .nav-item{
-        text-align: center;
-        color:black;
-        background-color: #fff0;
-        flex:1;
-       
-    }
-    .nav{
+   .nav-item{
         justify-content: center;
-        width:100%;
+        display: flex;
+   }
+    .nav{
+        justify-content: space-between;
+        display: flex;
         color:black;
+        width: 100%;
         padding-left: 40px;
         padding-right: 40px;
+    }
+    .linkObj{
+        color:black;
+        font-size: 30px;
     }
 
    

@@ -15,6 +15,17 @@ export default class OffCanNav extends Component {
 /*      <Tab eventKey={2} title="Sophmore"> </Tab>
                           <Tab eventKey={3} title="Junior" > </Tab>
                           <Tab eventKey={4} title="Senior"> </Tab>
+                          
+        <Nav.Item id="topR">
+                <Nav.Link as={Link}  to="/" eventKey="5">
+                  <span className='linkObj'>
+                    Home
+                  </span>
+                </Nav.Link>
+              </Nav.Item>                  
+                          
+                          
+                          
                           */
  
   constructor(props) {
@@ -67,22 +78,8 @@ export default class OffCanNav extends Component {
           <Offcanvas.Title>GRANOLA!</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
-        <Nav activeKey="/home" onSelect={(this.handleSelect)}  className='navigationBar'>
-             
-              <Nav.Item id="topR">
-                <Nav.Link as={Link}  to="/" eventKey="5">
-                  <span className='linkObj'>
-                    Home
-                  </span>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item id="topR">
-                <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
-                  <span className='linkObj'>
-                    About Me
-                  </span>
-                </Nav.Link>
-              </Nav.Item> 
+        <Nav activeKey="/home" onSelect={(this.handleSelect)}  className='navigationBar '>
+              
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="1" >
                   <span className='linkObj'>
@@ -108,6 +105,13 @@ export default class OffCanNav extends Component {
                 <Nav.Link as={Link} to="/" eventKey="4" >
                   <span className='linkObj'>
                     Senior
+                  </span>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item id="topR">
+                <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
+                  <span className='linkObj'>
+                    About Me
                   </span>
                 </Nav.Link>
               </Nav.Item>
