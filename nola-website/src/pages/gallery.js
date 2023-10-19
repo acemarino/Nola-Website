@@ -26,6 +26,10 @@ export default function Gallery(props) {
     year=Senior;
     grade="Senior";
   }
+  if(props.num === "5"){
+    year=Home;
+    grade="Home";
+  }
  
  
   
@@ -33,7 +37,7 @@ export default function Gallery(props) {
     <>
    
     <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show'>
-     <div id="header">{grade}</div>
+     
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
         {year.map((item, index) => (
           <div key={index}>
@@ -198,4 +202,19 @@ const Junior =[
 
 const Senior =[
 
+];
+
+const Home=[
+  {
+    img: './Freshman/PXL_20210210_201301713.jpg',
+    title: 'Freshman',
+  },
+  {
+    img: './Junior/PXL_20230601_151540870.jpg',
+    title: '10',
+  },
+  {
+    img: './Sophmore/PXL_20220428_183020265.jpg',
+    title: '11',
+  },
 ];

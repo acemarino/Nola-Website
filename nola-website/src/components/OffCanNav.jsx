@@ -41,7 +41,6 @@ export default class OffCanNav extends Component {
  
   }
   handleSelect(key) {
-    console.log(key);
     this.setState({num: key});
   }
 
