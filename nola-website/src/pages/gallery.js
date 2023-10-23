@@ -1,9 +1,23 @@
 
-
-import * as React from 'react';
+import React, { useState } from "react"
 import Box from '@mui/material/Box';
 
 import Masonry from '@mui/lab/Masonry';
+
+export const Modal = ({ src, alt, caption, onClose }) => {
+  console.log("reached Modal")
+  return (
+    <><div id="header">modal</div>
+    <div className="modal-box">
+      <span className="close" onClick={onClose}>
+        &times;
+      </span>
+      <img className="modal-content" src={src} alt={alt} />
+      {caption.length > 0 && <div className="caption">{caption}</div>}
+      </div>
+    </>
+  )
+}
 
 export default function Gallery(props) {
   var year=Freshman;
@@ -32,7 +46,9 @@ export default function Gallery(props) {
   }
  
  
-  
+  const [isOpen, setIsOpen] = useState(false)
+  const showModal = () => setIsOpen(true)
+  console.log("open: "+isOpen)
   return (
     <>
    
@@ -44,6 +60,7 @@ export default function Gallery(props) {
 
             <img
               src={`${item.img}?w=162&auto=format`}
+              onClick={showModal}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
@@ -52,7 +69,17 @@ export default function Gallery(props) {
                 borderBottomRightRadius: 4,
                 display: 'block',
                 width: '100%',
+                cursor: 'pointer',
               }} />
+              {isOpen && (
+              <Modal
+                src={`${item.img}?w=162&auto=format`}
+                srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                alt={item.title}
+                caption={item.title}
+                onClose={() => setIsOpen(false)}
+              />
+              )}
           </div>
         ))}
       </Masonry>

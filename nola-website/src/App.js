@@ -2,7 +2,7 @@ import React from 'react'
 
 import OffCanNav from './components/OffCanNav.jsx'
 import './custom.scss'
-
+import  ImgClick  from './testImgClick.jsx';
 
 export default function App() {
   //<Route path="/" element={<Home />}/>
@@ -33,6 +33,7 @@ export default function App() {
     <>
     <div>
       <OffCanNav></OffCanNav>
+    
     </div>
     
     </>
