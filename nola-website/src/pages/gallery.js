@@ -56,9 +56,10 @@ export default function Gallery(props) {
      
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
         {year.map((item, index) => (
-          <div key={index}>
-
+          <div>
+            <div> index:{index}</div>
             <img
+              key={index}
               src={`${item.img}?w=162&auto=format`}
               onClick={showModal}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
@@ -71,19 +72,22 @@ export default function Gallery(props) {
                 width: '100%',
                 cursor: 'pointer',
               }} />
-              {isOpen && (
+             {isOpen && (
               <Modal
                 src={`${item.img}?w=162&auto=format`}
-                srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                srcSet={`${item.img}}}?w=162&auto=format&dpr=2 2x`}
                 alt={item.title}
                 caption={item.title}
                 onClose={() => setIsOpen(false)}
               />
               )}
           </div>
+          
         ))}
+        
       </Masonry>
-    </Box></>
+    </Box>
+            </>
   );
 }
 
