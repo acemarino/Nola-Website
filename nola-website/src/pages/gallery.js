@@ -59,7 +59,7 @@ export default function Gallery(props) {
           <div>
             <div> index:{index}</div>
             <img
-               key={index}
+              key={index}
               src={`${item.img}?w=162&auto=format`}
               onClick={showModal}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
