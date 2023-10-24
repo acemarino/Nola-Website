@@ -3,14 +3,28 @@ import React, { useState } from "react"
 import Box from '@mui/material/Box';
 
 import Masonry from '@mui/lab/Masonry';
-
-export const Modal = ({ src, alt, caption, onClose }) => {
-  console.log("reached Modal")
+/*{isOpen && (
+              <Modal
+                src={`${year[2].img}?w=162&auto=format`}
+                srcSet={`${year[2].img}}}?w=162&auto=format&dpr=2 2x`}
+                alt={year[2].title}
+                caption={year[2].title}
+                onClose={() => setIsOpen(false)}
+              />
+              )}
+              */
+export const Modal = ({ src, alt, caption, onClose ,onLeft,onRight}) => {
   return (
-    <><div id="header">modal</div>
+    <>
     <div className="modal-box">
       <span className="close" onClick={onClose}>
         &times;
+      </span>
+      <span className="left" onClick={onLeft}>
+        &lt;
+      </span>
+      <span className="right" onClick={onRight}>
+        &gt;
       </span>
       <img className="modal-content" src={src} alt={alt} />
       {caption.length > 0 && <div className="caption">{caption}</div>}
@@ -22,33 +36,59 @@ export const Modal = ({ src, alt, caption, onClose }) => {
 export default function Gallery(props) {
   var year=Freshman;
   var grade="Freshman";
+  var max=0;
 
   if(props.num === "1"){
     year=Freshman;
     grade="Freshman";
+    max=7;
     
   }
   if(props.num === "2"){
     year=Sophmore;
-    grade="Sophmore";
+    grade="Sophomore";
+    max=12;
   }
   if(props.num === "3"){
     year=Junior;
     grade="Junior";
+    max=9;
   }
   if(props.num === "4"){
     year=Senior;
     grade="Senior";
+    max=7;
   }
   if(props.num === "5"){
     year=Home;
     grade="Home";
+    max=2;
   }
  
  
   const [isOpen, setIsOpen] = useState(false)
-  const showModal = () => setIsOpen(true)
-  console.log("open: "+isOpen)
+  const [curValue, setcurValue] = useState(0)
+  const showModal = (value) => {
+    setIsOpen(true)
+    setcurValue(value)
+  }
+  //left carousel navigation
+  const leftNav = () => {
+    
+    if((curValue-1)<0){
+      setcurValue(max)
+    }else{
+      setcurValue(curValue-1)
+    }
+  }
+  //right carousel navigation
+  const rightNav = () => {
+    if((curValue+1)>max){
+      setcurValue(0)
+    }else{
+    setcurValue(curValue+1)
+    }
+  }
   return (
     <>
    
@@ -56,12 +96,10 @@ export default function Gallery(props) {
      
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
         {year.map((item, index) => (
-          <div>
-            <div> index:{index}</div>
+            <div key={index}>
             <img
-              key={index}
+              onClick={() => showModal(index)}
               src={`${item.img}?w=162&auto=format`}
-              onClick={showModal}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
@@ -72,21 +110,27 @@ export default function Gallery(props) {
                 width: '100%',
                 cursor: 'pointer',
               }} />
-             {isOpen && (
-              <Modal
-                src={`${year[2].img}?w=162&auto=format`}
-                srcSet={`${year[2].img}}}?w=162&auto=format&dpr=2 2x`}
-                alt={year[2].title}
-                caption={year[2].title}
-                onClose={() => setIsOpen(false)}
-              />
-              )}
+              
           </div>
           
         ))}
         
       </Masonry>
     </Box>
+          {isOpen && (
+              <Modal
+                src={`${year[curValue].img}?w=162&auto=format`}
+                srcSet={`${year[curValue].img}}}?w=162&auto=format&dpr=2 2x`}
+                alt={year[curValue].title}
+                caption={year[curValue].title}
+                onClose={() => setIsOpen(false)}
+                onLeft={()=> leftNav()}
+                onRight={()=> rightNav()}
+              />
+              )}
+    
+    
+          
             </>
   );
 }
@@ -96,6 +140,7 @@ const Freshman = [
   {
     img: './Freshman/PXL_20210119_202642726.jpg',
     title: 'Freshman',
+    
   },
   {
     img: './Freshman/PXL_20210125_012622218.jpg',

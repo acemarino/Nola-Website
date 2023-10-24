@@ -142,6 +142,12 @@ body { font-family: sans-serif; }
 }
 
 /* Add Animation */
+.modal-content::-webkit-scrollbar{
+  display: none;
+}
+.caption ::-webkit-scrollbar{
+  display: none;
+}
 .modal-content, .caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -184,6 +190,50 @@ body { font-family: sans-serif; }
   text-decoration: none;
   cursor: pointer;
 }
+
+
+/*left button*/
+.left {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.left:hover,
+.left:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*right button*/
+.right {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.right:hover,
+.right:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
