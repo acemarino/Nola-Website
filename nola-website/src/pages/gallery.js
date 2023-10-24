@@ -59,7 +59,7 @@ export default function Gallery(props) {
           <div>
             <div> index:{index}</div>
             <img
-              key={index}
+               key={index}
               src={`${item.img}?w=162&auto=format`}
               onClick={showModal}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
@@ -74,10 +74,10 @@ export default function Gallery(props) {
               }} />
              {isOpen && (
               <Modal
-                src={`${item.img}?w=162&auto=format`}
-                srcSet={`${item.img}}}?w=162&auto=format&dpr=2 2x`}
-                alt={item.title}
-                caption={item.title}
+                src={`${year[2].img}?w=162&auto=format`}
+                srcSet={`${year[2].img}}}?w=162&auto=format&dpr=2 2x`}
+                alt={year[2].title}
+                caption={year[2].title}
                 onClose={() => setIsOpen(false)}
               />
               )}
