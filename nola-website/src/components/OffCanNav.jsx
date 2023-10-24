@@ -74,7 +74,13 @@ export default class OffCanNav extends Component {
    
       <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>GRANOLA!</Offcanvas.Title>
+          <Offcanvas.Title>
+            <Nav activeKey="/home" onSelect={(this.handleSelect)}>
+              <Nav.Link as={Link}  to="/" eventKey="5">
+                <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
+              </Nav.Link>
+            </Nav>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
         <Nav activeKey="/home" onSelect={(this.handleSelect)}  className='navigationBar '>

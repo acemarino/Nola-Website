@@ -54,8 +54,8 @@
 
 //smaller than md logo
 .Logo{
-    width: 150px;
-    padding-left: 28px;
+    width: 200px;
+    
     color:black;
     background-color: #fff0;
 }
@@ -64,6 +64,7 @@
 @include media-breakpoint-up(md) {
     .Logo{
         width:300px;
+        padding-left: 28px;
         color:black;
         background-color: #fff0;
     }
