@@ -240,5 +240,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[MUI-url]:https://mui.com/
-[MUI.com]:https://mui.com/static/logo.png
+[MUI-url]: https://mui.com/
+[MUI.com]: https://img.shields.io/badge/MUI-0769AD?style=for-the-badge&logo=MUI&logoColor=white
