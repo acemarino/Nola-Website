@@ -29,7 +29,7 @@
   <h3 align="center">Granola Portfolio Website</h3>
 
   <p align="center">
-   Art Portfolio website for Nola Marino aka Granola
+   Art Portfolio website for Nola Marino aka <a href="https://www.instagram.com/granola.815?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==">Granola</a>
     <br />
   </p>
 </div>
