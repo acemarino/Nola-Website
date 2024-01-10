@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nola-webiste/static/css/main.f78ae9ec.css",
+    "main.js": "/nola-webiste/static/js/main.98d05f52.js",
+    "index.html": "/nola-webiste/index.html",
+    "main.f78ae9ec.css.map": "/nola-webiste/static/css/main.f78ae9ec.css.map",
+    "main.98d05f52.js.map": "/nola-webiste/static/js/main.98d05f52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f78ae9ec.css",
+    "static/js/main.98d05f52.js"
+  ]
+}
