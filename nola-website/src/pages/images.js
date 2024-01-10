@@ -1,3 +1,5 @@
+//other
+
 //freshman
 import img1 from "./images/Freshman/first.jpg"
 import img2 from "./images/Freshman/PXL_20210125_012622218.jpg"
