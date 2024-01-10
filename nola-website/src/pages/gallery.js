@@ -138,7 +138,7 @@ export default function Gallery(props) {
 const Freshman = [
   
   {
-    img:'nola-website/src/pages/images/Freshman/first.jpg',
+    img:'./Freshman/PXL_20210119_202642726.jpg',
     title: 'target',
     
   },
