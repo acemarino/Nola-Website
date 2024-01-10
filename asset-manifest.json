@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nola-Website/static/css/main.fb06b0eb.css",
-    "main.js": "/Nola-Website/static/js/main.9e801cb0.js",
+    "main.js": "/Nola-Website/static/js/main.b8de0d8f.js",
     "static/media/IMG_1956.png": "/Nola-Website/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
     "static/media/PXL_20210210_201301713.jpg": "/Nola-Website/static/media/PXL_20210210_201301713.14bc2095f4ead4f2e681.jpg",
     "static/media/first.jpg": "/Nola-Website/static/media/first.18d62a404c6a8b4d98e1.jpg",
@@ -36,10 +36,10 @@
     "static/media/PXL_20210516_204939130.jpg": "/Nola-Website/static/media/PXL_20210516_204939130.5abf947a9ba052c10d7b.jpg",
     "index.html": "/Nola-Website/index.html",
     "main.fb06b0eb.css.map": "/Nola-Website/static/css/main.fb06b0eb.css.map",
-    "main.9e801cb0.js.map": "/Nola-Website/static/js/main.9e801cb0.js.map"
+    "main.b8de0d8f.js.map": "/Nola-Website/static/js/main.b8de0d8f.js.map"
   },
   "entrypoints": [
     "static/css/main.fb06b0eb.css",
-    "static/js/main.9e801cb0.js"
+    "static/js/main.b8de0d8f.js"
   ]
 }
