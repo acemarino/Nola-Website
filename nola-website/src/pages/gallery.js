@@ -1,7 +1,11 @@
 
 import React, { useState } from "react"
 import Box from '@mui/material/Box';
-import img1 from "./images/Freshman/first.jpg"
+import { Freshman } from "./images";
+import { Senior } from "./images";
+import { Home } from "./images";
+import { Sophmore } from "./images";
+import { Junior } from "./images";
 import Masonry from '@mui/lab/Masonry';
 /*{isOpen && (
               <Modal
@@ -134,7 +138,7 @@ export default function Gallery(props) {
             </>
   );
 }
-
+/*
 const Freshman = [
   
   {
@@ -294,3 +298,4 @@ const Home=[
     title: '11',
   },
 ];
+*/
