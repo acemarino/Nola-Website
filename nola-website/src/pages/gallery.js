@@ -2,7 +2,6 @@
 import React, { useState } from "react"
 import Box from '@mui/material/Box';
 import img1 from "./images/Freshman/first.jpg"
-
 import Masonry from '@mui/lab/Masonry';
 /*{isOpen && (
               <Modal
@@ -13,8 +12,6 @@ import Masonry from '@mui/lab/Masonry';
                 onClose={() => setIsOpen(false)}
               />
               )}
-               src={`${item.default}?w=162&auto=format`}
-              srcSet={`${item.default}?w=162&auto=format&dpr=2 2x`}
               */
 export const Modal = ({ src, alt, caption, onClose ,onLeft,onRight}) => {
   return (
@@ -37,8 +34,6 @@ export const Modal = ({ src, alt, caption, onClose ,onLeft,onRight}) => {
 }
 
 export default function Gallery(props) {
-  const images = require.context('../pages/images/Freshman', true);
-  const imageList = images.keys().map(image => images(image));
   var year=Freshman;
   var grade="Freshman";
   var max=0;
@@ -100,14 +95,13 @@ export default function Gallery(props) {
     <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show'>
      
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
-        {imageList.map((image, index) => (
+        {year.map((item, index) => (
             <div key={index}>
-            <p>{index}</p>
             <img
               onClick={() => showModal(index)}
-              src={`${image.default}?w=162&auto=format`}
-              srcSet={`${image.default}?w=162&auto=format`}
-              alt={image.title}
+              src={process.env.PUBLIC_URL+`${item.img}?w=162&auto=format`}
+              srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+              alt={item.title}
               loading="lazy"
               style={{
                 borderBottomLeftRadius: 4,
@@ -144,7 +138,7 @@ export default function Gallery(props) {
 const Freshman = [
   
   {
-    img:img1 ,
+    img:'./Freshman/PXL_20210119_202642726.jpg',
     title: 'target',
     
   },
