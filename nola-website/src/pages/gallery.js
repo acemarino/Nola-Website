@@ -138,7 +138,7 @@ export default function Gallery(props) {
 const Freshman = [
   
   {
-    img: './Freshman/PXL_20210119_202642726.jpg',
+    img: 'src/images/Freshman/PXL_20210119_202642726.jpg',
     title: 'Freshman',
     
   },
