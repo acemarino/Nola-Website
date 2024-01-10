@@ -139,7 +139,7 @@ const Freshman = [
   
   {
     img:'./Freshman/PXL_20210119_202642726.jpg',
-    title: 'tame',
+    title: 'target',
     
   },
   {
