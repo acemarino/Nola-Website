@@ -99,7 +99,7 @@ export default function Gallery(props) {
             <div key={index}>
             <img
               onClick={() => showModal(index)}
-              src={process.env.PUBLIC_URL+`${item.img}?w=162&auto=format`}
+              src={`${item.img}?w=162&auto=format`}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
@@ -139,7 +139,7 @@ const Freshman = [
   
   {
     img:'./Freshman/PXL_20210119_202642726.jpg',
-    title: 'target',
+    title: 'tame',
     
   },
   {
