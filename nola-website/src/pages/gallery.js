@@ -99,7 +99,7 @@ export default function Gallery(props) {
             <div key={index}>
             <img
               onClick={() => showModal(index)}
-              src={process.env.PUBLIC_URL +`${item.img}?w=162&auto=format`}
+              src={`${item.img}?w=162&auto=format`}
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
@@ -138,12 +138,12 @@ export default function Gallery(props) {
 const Freshman = [
   
   {
-    img:'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+    img:'nola-website/src/pages/images/Freshman/first.jpg',
     title: 'target',
     
   },
   {
-    img: '/Freshman/PXL_20210125_012622218.jpg',
+    img: './Freshman/PXL_20210125_012622218.jpg',
     title: 'Freshman',
   },
   {
