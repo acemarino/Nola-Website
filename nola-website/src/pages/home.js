@@ -5,6 +5,7 @@ import About from "./aboutMe";
 
 
 var year;
+const load="5";
 export default function Home (props){
 if(props.value==="6"){
     return(
@@ -51,8 +52,7 @@ if(props.value==="3"){
 else{
     return(
         <>
-       
-        <Gallery num={props.value}></Gallery>
+        <Gallery num={load}></Gallery>
         </>
     );
 }
