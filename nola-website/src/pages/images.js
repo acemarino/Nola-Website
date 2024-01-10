@@ -4,7 +4,7 @@ import img2 from "./images/Freshman/PXL_20210125_012622218.jpg"
 import img3 from "./images/Freshman/PXL_20210210_201301713.jpg"
 import img4 from "./images/Freshman/PXL_20210318_114612865.jpg"
 import img5 from "./images/Freshman/PXL_20210428_180832469.jpg"
-import img6 from ".images/Freshman/PXL_20210505_221456227.jpg"
+import img6 from "./images/Freshman/PXL_20210505_221456227.jpg"
 import img7 from "./images/Freshman/PXL_20210513_135241681.jpg"
 import img8 from "./images/Freshman/PXL_20210516_204939130.jpg"
 
