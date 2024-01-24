@@ -52,7 +52,10 @@ if(props.value==="3"){
 else{
     return(
         <>
-        <img src={splash} alt="clucky" className="galleryImg"></img>
+        
+        <div className="splashArt">
+        <img src={splash} alt="clucky" ></img>
+        </div>
         <Gallery num={onLoad}></Gallery>
         </>
     );

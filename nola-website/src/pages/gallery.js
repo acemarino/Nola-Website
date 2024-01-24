@@ -7,6 +7,9 @@ import { Home } from "./images";
 import { Sophmore } from "./images";
 import { Junior } from "./images";
 import Masonry from '@mui/lab/Masonry';
+import Switch from '@mui/material/Switch';
+import { Fade } from "@mui/material";
+import FormControlLabel from '@mui/material/FormControlLabel';
 /*{isOpen && (
               <Modal
                 src={`${year[2].img}?w=162&auto=format`}
@@ -68,8 +71,12 @@ export default function Gallery(props) {
     grade="Home";
     max=2;
   }
- 
- 
+  const [checked, setChecked] = React.useState(false);
+
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
+
   const [isOpen, setIsOpen] = useState(false)
   const [curValue, setcurValue] = useState(0)
   const showModal = (value) => {
@@ -97,10 +104,13 @@ export default function Gallery(props) {
     <>
    
     <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show' >
-     
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }} className="galleryImg">
         {year.map((item, index) => (
             <div key={index}>
+            <Fade in={year.length>0} 
+                  timeout={{ enter: 500, exit: 250 }}
+                  style={{ transitionDelay: `${index * 100}ms` }}
+                  key={`asi-${item.key}-${index}`}>
             <img
               onClick={() => showModal(index)}
               src={`${item.img}?w=162&auto=format`}
@@ -114,8 +124,9 @@ export default function Gallery(props) {
                 width: '100%',
                 cursor: 'pointer',
               }} 
-              className="galleryImg"
               />
+            </Fade>
+            
               
           </div>
           
@@ -136,7 +147,7 @@ export default function Gallery(props) {
               )}
     
     
-          
+            
             </>
   );
 }
