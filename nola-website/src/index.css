@@ -54,9 +54,6 @@ body { font-family: sans-serif; }
 }
 
 .splashArt{
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   text-align: center;
 
 }

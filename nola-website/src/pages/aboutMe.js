@@ -20,8 +20,8 @@ function About(){
                     Artist Statement
                 </div>
                 <div id='bulk'>
-                La la la artist stament here yadada yadada lalalalalala text text text paragraph here lots of words brrr.
-    wowwww lots of words so crazy so amazing wowo so cool. so many words.
+                 artist stament here 
+    
                 </div>
             </div>
         </div>
