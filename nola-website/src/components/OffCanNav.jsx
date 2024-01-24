@@ -6,6 +6,7 @@ import React, {Component} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../pages/home';
 import { Link } from "react-router-dom";
+import logo from "./images/Other/granola_doodle_logo.png"
 
 export default class OffCanNav extends Component {
 
@@ -61,7 +62,7 @@ export default class OffCanNav extends Component {
       <Container fluid>
         <Nav activeKey="/home" onSelect={(this.handleSelect)} >
               <Nav.Link as={Link}  to="/" eventKey="5">
-                <img src='./granola_doodle_logo.png' className='Logo' alt="Granola" />
+                <img src= {logo} className='Logo' alt="Granola" />
               </Nav.Link>
             
         </Nav>

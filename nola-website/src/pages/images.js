@@ -1,5 +1,5 @@
 //other
-
+// Sp_LightOfMyLife
 //freshman
 import img1 from "./images/Freshman/first.jpg"
 import img2 from "./images/Freshman/PXL_20210125_012622218.jpg"
@@ -44,6 +44,7 @@ export const Freshman = [
     {
       img:img1,
       title: 'target',
+     
       
     },
     {
