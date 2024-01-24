@@ -2,10 +2,10 @@ import Gallery from "./gallery";
 
 import React from 'react';
 import About from "./aboutMe";
-
+import splash from "./images/Other/cluckySplash.png"
 
 var year;
-const load="5";
+const onLoad="5";
 export default function Home (props){
 if(props.value==="6"){
     return(
@@ -52,7 +52,8 @@ if(props.value==="3"){
 else{
     return(
         <>
-        <Gallery num={load}></Gallery>
+        <img src={splash} alt="clucky" className="galleryImg"></img>
+        <Gallery num={onLoad}></Gallery>
         </>
     );
 }

@@ -96,9 +96,9 @@ export default function Gallery(props) {
   return (
     <>
    
-    <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show'>
+    <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show' >
      
-      <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }}>
+      <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }} className="galleryImg">
         {year.map((item, index) => (
             <div key={index}>
             <img
@@ -113,7 +113,9 @@ export default function Gallery(props) {
                 display: 'block',
                 width: '100%',
                 cursor: 'pointer',
-              }} />
+              }} 
+              className="galleryImg"
+              />
               
           </div>
           

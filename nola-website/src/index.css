@@ -23,9 +23,6 @@ code {
 /* navbar*/
 
 
-
-
-
 body { font-family: sans-serif; }
 
 /* ---- grid ---- */
@@ -56,6 +53,11 @@ body { font-family: sans-serif; }
   display: none;
 }
 
+.splashArt{
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 /* about me page css */
 .aboutPage{

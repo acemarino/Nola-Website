@@ -41,11 +41,16 @@ import img32 from "./images/Junior/PXL_20230601_151540870.jpg"
 
 //other
 import logo from "./images/Other/granola_doodle_logo.png"
+import splash from "./images/Other/cluckySplash.png"
 
 export const extra=[
   {
     img:logo,
     title: 'Granola',
+  },
+  {
+    img:splash,
+    title: 'CluckySplash',
   }
 
 ];
@@ -55,8 +60,6 @@ export const Freshman = [
     {
       img:img1,
       title: 'target',
-     
-      
     },
     {
       img:img2,
@@ -197,16 +200,5 @@ export const Freshman = [
   ];
   
   export const Home=[
-    {
-      img: img3,
-      title: 'Freshman',
-    },
-    {
-      img: img20,
-      title: '10',
-    },
-    {
-      img: img32,
-      title: '11',
-    },
+    
   ];
