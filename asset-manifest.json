@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nola-Website/static/css/main.fb06b0eb.css",
-    "main.js": "/Nola-Website/static/js/main.b8de0d8f.js",
+    "main.css": "/Nola-Website/static/css/main.6db77b4e.css",
+    "main.js": "/Nola-Website/static/js/main.62119f6c.js",
     "static/media/IMG_1956.png": "/Nola-Website/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
     "static/media/PXL_20210210_201301713.jpg": "/Nola-Website/static/media/PXL_20210210_201301713.14bc2095f4ead4f2e681.jpg",
     "static/media/first.jpg": "/Nola-Website/static/media/first.18d62a404c6a8b4d98e1.jpg",
@@ -34,12 +34,14 @@
     "static/media/original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.jpg": "/Nola-Website/static/media/original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.d60c306c4f46255652ac.jpg",
     "static/media/PXL_20230601_151540870.jpg": "/Nola-Website/static/media/PXL_20230601_151540870.faee952f025227ed480d.jpg",
     "static/media/PXL_20210516_204939130.jpg": "/Nola-Website/static/media/PXL_20210516_204939130.5abf947a9ba052c10d7b.jpg",
+    "static/media/cluckySplash.png": "/Nola-Website/static/media/cluckySplash.1d61282e9acfa9e4c0f6.png",
+    "static/media/granola_doodle_logo.png": "/Nola-Website/static/media/granola_doodle_logo.87531614e1aafbfa9236.png",
     "index.html": "/Nola-Website/index.html",
-    "main.fb06b0eb.css.map": "/Nola-Website/static/css/main.fb06b0eb.css.map",
-    "main.b8de0d8f.js.map": "/Nola-Website/static/js/main.b8de0d8f.js.map"
+    "main.6db77b4e.css.map": "/Nola-Website/static/css/main.6db77b4e.css.map",
+    "main.62119f6c.js.map": "/Nola-Website/static/js/main.62119f6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb06b0eb.css",
-    "static/js/main.b8de0d8f.js"
+    "static/css/main.6db77b4e.css",
+    "static/js/main.62119f6c.js"
   ]
 }
