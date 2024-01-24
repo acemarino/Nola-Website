@@ -19,6 +19,7 @@ if(props.value==="1"){
     return(
         <>
         <div id="header">{year}</div>
+    
         <Gallery num={props.value}></Gallery>
         </>
     );
@@ -56,7 +57,6 @@ else{
         <div className="splashArt">
         <img src={splash} alt="clucky" ></img>
         </div>
-        <Gallery num={onLoad}></Gallery>
         </>
     );
 }

@@ -99,10 +99,11 @@ export default function Gallery(props) {
       <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }} className="galleryImg">
         {year.map((item, index) => (
             <div key={index}>
-            <Fade in={year.length>0} 
-                  timeout={{ enter: 500, exit: 250 }}
-                  style={{ transitionDelay: `${index * 100}ms` }}
-                  key={`asi-${item.key}-${index}`}>
+            <Fade 
+              in={year.length>0} 
+              timeout={{ enter: 1000, exit: 500 }}
+              style={{ transitionDelay: `${index * 150}ms` }}
+              key={`asi-${item.key}-${index}`}>
             <img
               onClick={() => showModal(index)}
               src={`${item.img}?w=162&auto=format`}
