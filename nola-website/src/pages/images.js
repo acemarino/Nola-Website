@@ -39,6 +39,17 @@ import img31 from "./images/Junior/PXL_20220823_134007063.jpg"
 import img32 from "./images/Junior/PXL_20230601_151540870.jpg"
 
 
+//other
+import logo from "./images/Other/granola_doodle_logo.png"
+
+export const extra=[
+  {
+    img:logo,
+    title: 'Granola',
+  }
+
+];
+    
 export const Freshman = [
   
     {

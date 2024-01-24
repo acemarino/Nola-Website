@@ -1,11 +1,12 @@
 
 import React from 'react';
+import { Home } from './images';
 function About(){
     return(
 
         <div className="aboutPage">
             <div className="pictSide">
-                <img src="./Junior/PXL_20230601_151540870.jpg" alt="Logo" className='aboutImg'></img>
+                <img src={Home[2].img} alt="Logo" className='aboutImg'></img>
             </div>
             <div className="txtSide">
                 <div id='header'>
