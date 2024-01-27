@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Epilogue');
 
+
 body {
   margin: 0;
   background-color: #FFF8EE !important;
@@ -82,6 +83,7 @@ body { font-family: sans-serif; }
   margin-top: 40px;
   color: #3158E2;
 }
+
 /*bulk text*/
 #bulk{
   font-family: 'Epilogue';
