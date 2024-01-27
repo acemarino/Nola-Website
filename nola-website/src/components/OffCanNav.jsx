@@ -2,7 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
+
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../pages/home';
 import { Link } from "react-router-dom";
@@ -34,12 +35,13 @@ export default class OffCanNav extends Component {
     this.state = {
       num: 1,
       title: "year",
-      show:false
+      show:false,
+      load:false
     };
-   this.handleSelect = this.handleSelect.bind(this)
-   this.handleClose = this.handleClose.bind(this)
-   this.handleShow = this.handleShow.bind(this)
- 
+  this.handleSelect = this.handleSelect.bind(this)
+  this.handleClose = this.handleClose.bind(this)
+  this.handleShow = this.handleShow.bind(this)
+  this.handleChange=this.handleChange.bind(this)
   }
   handleSelect(key) {
     this.setState({num: key});
@@ -52,16 +54,19 @@ export default class OffCanNav extends Component {
   handleShow(show) {
     this.setState({show: true});
   }
-  
+
+  handleChange(load){
+    this.setState((prev) => !prev);
+  };
 
   render () {
-    
+  
   return (
     <>
     
     <Navbar expand="xs" >
       <Container fluid>
-        <Nav activeKey="/home" onSelect={(this.handleSelect)} >
+        <Nav activeKey="/home" onSelect={(this.handleSelect)} className='justify-content-evenly'>
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src= {logo} className='Logo' alt="Granola" />
               </Nav.Link>
@@ -85,15 +90,16 @@ export default class OffCanNav extends Component {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
-        <Nav activeKey="/home" onSelect={(this.handleSelect)}  className='navigationBar '>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)} className='justify-content-evenly' >
               
               <Nav.Item id="botR">
-                <Nav.Link as={Link} to="/" eventKey="1" >
+                <Nav.Link as={Link} to="/" eventKey="1"  >
                   <span className='linkObj'>
                     Freshman 
                   </span>
                 </Nav.Link>
               </Nav.Item>
+
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="2" >
                   <span className='linkObj'>
@@ -101,6 +107,7 @@ export default class OffCanNav extends Component {
                   </span>
                 </Nav.Link>
               </Nav.Item>
+
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="3" >
                   <span className='linkObj'>
@@ -108,6 +115,7 @@ export default class OffCanNav extends Component {
                   </span>
                 </Nav.Link>
               </Nav.Item>
+
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="4" >
                   <span className='linkObj'>
@@ -115,6 +123,7 @@ export default class OffCanNav extends Component {
                   </span>
                 </Nav.Link>
               </Nav.Item>
+              
               <Nav.Item id="topR">
                 <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
                   <span className='linkObj'>
@@ -127,7 +136,7 @@ export default class OffCanNav extends Component {
                  
         </Offcanvas.Body>
       </Offcanvas>
-      <Home value= {this.state.num}/>
+      <Home value= {this.state.num} />
     </>
    
   );

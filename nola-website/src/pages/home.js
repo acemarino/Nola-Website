@@ -6,7 +6,14 @@ import splash from "./images/Other/cluckySplash.png"
 
 var year;
 const onLoad="5";
+var test="false"
 export default function Home (props){
+    if(props.cur===true){
+       test="true"
+    }
+    else{
+        test="false"
+    }
 if(props.value==="6"){
     return(
         <>
@@ -14,17 +21,17 @@ if(props.value==="6"){
         </>
     );
 }
-if(props.value==="1"){
+else if(props.value==="1"){
     year="Freshman";
+   
     return(
-        <>
+        <> 
         <div id="header">{year}</div>
-    
-        <Gallery num={props.value}></Gallery>
+        <Gallery num={props.value} ></Gallery>
         </>
     );
 }
-if(props.value==="2"){
+else if(props.value==="2"){
     year="Sophmore";
     return(
         <>
@@ -33,7 +40,7 @@ if(props.value==="2"){
         </>
     );
 }
-if(props.value==="3"){
+else if(props.value==="3"){
     year="Junior";
     return(
         <>
@@ -41,7 +48,8 @@ if(props.value==="3"){
         <Gallery num={props.value}></Gallery>
         </>
     );
-}if(props.value==="4"){
+}
+else if(props.value==="4"){
     year="Senior";
     return(
         <>
@@ -53,8 +61,8 @@ if(props.value==="3"){
 else{
     return(
         <>
-        
         <div className="splashArt">
+       
         <img src={splash} alt="clucky" ></img>
         </div>
         </>

@@ -1,5 +1,5 @@
 
-import React, { useState } from "react"
+import React, { useState} from "react"
 import Box from '@mui/material/Box';
 import { Freshman } from "./images";
 import { Senior } from "./images";
@@ -42,12 +42,12 @@ export default function Gallery(props) {
   var year=Freshman;
   var grade="Freshman";
   var max=0;
+  
 
   if(props.num === "1"){
     year=Freshman;
     grade="Freshman";
     max=7;
-    
   }
   if(props.num === "2"){
     year=Sophmore;
@@ -70,7 +70,12 @@ export default function Gallery(props) {
     max=2;
   }
   const [isOpen, setIsOpen] = useState(false)
+  const [load, setLoad] = useState(true)
   const [curValue, setcurValue] = useState(0)
+  const handleChange = () => {
+    setLoad((prev) => !prev);
+  };
+
   const showModal = (value) => {
     setIsOpen(true)
     setcurValue(value)
@@ -94,13 +99,12 @@ export default function Gallery(props) {
   }
   return (
     <>
-   
     <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show' >
-      <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }} className="galleryImg">
+      <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }} className="galleryImg" >
         {year.map((item, index) => (
             <div key={index}>
             <Fade 
-              in={year.length>0} 
+              in={load} 
               timeout={{ enter: 1000, exit: 500 }}
               style={{ transitionDelay: `${index * 150}ms` }}
               key={`asi-${item.key}-${index}`}>
@@ -119,8 +123,6 @@ export default function Gallery(props) {
               }} 
               />
             </Fade>
-            
-              
           </div>
           
         ))}
