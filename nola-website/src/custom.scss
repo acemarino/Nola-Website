@@ -83,6 +83,7 @@
 }
 .nav-link{
     width:fit-content;
+    --bs-nav-link-padding-x:3rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -100,7 +101,7 @@
    
 }
 .nav{
-    justify-content: space-between;
+
     color:black;
     display: flex;
     background-color: #fff0;
@@ -117,7 +118,6 @@
         display: flex;
    }
     .nav{
-        justify-content: space-between;
         display: flex;
         color:black;
         width: 100%;

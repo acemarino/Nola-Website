@@ -66,7 +66,7 @@ export default class OffCanNav extends Component {
     
     <Navbar expand="xs" >
       <Container fluid>
-        <Nav activeKey="/home" onSelect={(this.handleSelect)} className='justify-content-evenly'>
+        <Nav activeKey="/home" onSelect={(this.handleSelect)} className='justify-content-center'>
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src= {logo} className='Logo' alt="Granola" />
               </Nav.Link>
@@ -90,7 +90,7 @@ export default class OffCanNav extends Component {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body >
-        <Nav activeKey="/home" onSelect={(this.handleSelect)} className='justify-content-evenly' >
+        <Nav activeKey="/home" onSelect={(this.handleSelect)} className='justify-content-center' >
               
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="1"  >
