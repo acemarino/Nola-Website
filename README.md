@@ -73,7 +73,7 @@ This website is a portfolio style site desginned to showcase s;lected artwroks a
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -85,7 +85,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![MUI][MUI.com]][MUI-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -93,30 +93,21 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [X] Change Navbar Spacing
+- [ ] Update Mobile Breakpoints
+- [ ] Refromat Main Splash Art
+- [ ] Fix Gallery Fade in
+- [ ] Fix Offcanvas Header
+- [ ] Update Modal Style and Buttons
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 
 
@@ -133,14 +124,11 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 Project Link: [https://acemarino.github.io/Nola-Website/#/](https://acemarino.github.io/Nola-Website/#/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
