@@ -46,19 +46,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+
   </ol>
 </details>
 
@@ -67,14 +55,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This website is a portfolio style site desginned to showcase s;lected artwroks across four years. It also is a representation of the artitst's indivuald brand and serves as a launchpad for public viewing of their art.
-
-
-
-
-
+This website is a portfolio style site desginned to showcase selected artwroks across four years. It also is a representation of the artitst's individual brand and serves as a launchpad for public viewing of their art.
 
 
 ### Built With
