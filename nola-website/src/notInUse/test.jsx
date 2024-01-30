@@ -1,5 +1,5 @@
 import React from 'react';
-import Timeline, { yearContext } from "../components/timeline";
+import Timeline, { yearContext } from "./timeline";
 
 
 var Value=3;

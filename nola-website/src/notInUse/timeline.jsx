@@ -6,7 +6,7 @@ import { Tabs, Tab } from 'react-bootstrap';
 
 import { useContext } from 'react';
 
-import Test, {Value} from '../notInUse/test';
+import Test, {Value} from './test';
 
 export const yearContext = React.createContext();
 export default class Timeline extends Component {
