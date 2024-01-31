@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.69319afa.css",
-    "main.js": "/static/js/main.fd347b82.js",
+    "main.js": "/static/js/main.e62da430.js",
+    "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.2808eeed7718fa5692c5.jpg",
+    "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.14b074f3d2661885ee85.png",
+    "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.210f3cc9f12970be7c63.png",
+    "static/media/SrTheJellyfishAndTheDragon.png": "/static/media/SrTheJellyfishAndTheDragon.97b50280f3554faaad45.png",
+    "static/media/SrCherryCoke.PNG": "/static/media/SrCherryCoke.d08a97bb6c72fb577a7b.PNG",
     "static/media/IMG_1956.png": "/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
     "static/media/PXL_20210210_201301713.jpg": "/static/media/PXL_20210210_201301713.14bc2095f4ead4f2e681.jpg",
     "static/media/first.jpg": "/static/media/first.18d62a404c6a8b4d98e1.jpg",
@@ -10,10 +15,12 @@
     "static/media/PXL_20220223_193147196.jpg": "/static/media/PXL_20220223_193147196.7b3a5e9c9eb4c2860456.jpg",
     "static/media/PXL_20220823_134007063.jpg": "/static/media/PXL_20220823_134007063.e3df295105903d568f37.jpg",
     "static/media/PXL_20211203_191510482.jpg": "/static/media/PXL_20211203_191510482.d97a2b2bac1ef89c0814.jpg",
+    "static/media/SrTheComicBookShop.jpg": "/static/media/SrTheComicBookShop.2f9fb95116715e867e74.jpg",
     "static/media/PXL_20210513_135241681.jpg": "/static/media/PXL_20210513_135241681.b393f6373bedaa1f6e06.jpg",
     "static/media/PXL_20210505_221456227.jpg": "/static/media/PXL_20210505_221456227.318c2e62fcb1450e306b.jpg",
     "static/media/original_c96a9dd6-f3f2-4ff1-956f-bab1e54817f0_PXL_20230412_140137425.jpg": "/static/media/original_c96a9dd6-f3f2-4ff1-956f-bab1e54817f0_PXL_20230412_140137425.e5f845466d716d7a121d.jpg",
     "static/media/PXL_20220111_205656515.jpg": "/static/media/PXL_20220111_205656515.ca313d2eb20e3d9f7245.jpg",
+    "static/media/SrLoveLetter.jpg": "/static/media/SrLoveLetter.3cfe9221fd750e34c538.jpg",
     "static/media/PXL_20220331_182231806.jpg": "/static/media/PXL_20220331_182231806.7e06154ac689110cb81a.jpg",
     "static/media/original_98dd96e5-6c4e-4592-a5a7-4daccae54795_PXL_20230412_140853877.jpg": "/static/media/original_98dd96e5-6c4e-4592-a5a7-4daccae54795_PXL_20230412_140853877.522870b6ec5e2440fbc2.jpg",
     "static/media/PXL_20210125_012622218.jpg": "/static/media/PXL_20210125_012622218.78c5604608d003ef40aa.jpg",
@@ -26,11 +33,13 @@
     "static/media/PXL_20221029_193509607.jpg": "/static/media/PXL_20221029_193509607.c5f23b094aef4d40b299.jpg",
     "static/media/PXL_20220209_2253080832.jpg": "/static/media/PXL_20220209_2253080832.7f3954db11804ac2856a.jpg",
     "static/media/PXL_20220225_192420313.jpg": "/static/media/PXL_20220225_192420313.bb9cd31e91ea6d3488c2.jpg",
+    "static/media/SrCalpicoMockAds.jpg": "/static/media/SrCalpicoMockAds.a5566bd02f928397694f.jpg",
     "static/media/PXL_20210912_211226408.jpg": "/static/media/PXL_20210912_211226408.e15bd373fa4a8f26b280.jpg",
     "static/media/PXL_20210318_114612865.jpg": "/static/media/PXL_20210318_114612865.451c9385b034c9874c6c.jpg",
     "static/media/PXL_20220405_183204302.jpg": "/static/media/PXL_20220405_183204302.e3adf7d83c1eb366ee92.jpg",
     "static/media/PXL_20211201_192753409.jpg": "/static/media/PXL_20211201_192753409.ab78f4f70269a4f2b347.jpg",
     "static/media/PXL_20220603_181724794.jpg": "/static/media/PXL_20220603_181724794.afe380f8f45239cf9a6a.jpg",
+    "static/media/SrJeanTalonMarket.jpg": "/static/media/SrJeanTalonMarket.63544ee1d0c40908d476.jpg",
     "static/media/original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.jpg": "/static/media/original_a6379bfc-c9e5-4614-b4b0-b923d5627d7b_PXL_20230412_141053482.d60c306c4f46255652ac.jpg",
     "static/media/PXL_20230601_151540870.jpg": "/static/media/PXL_20230601_151540870.faee952f025227ed480d.jpg",
     "static/media/PXL_20210516_204939130.jpg": "/static/media/PXL_20210516_204939130.5abf947a9ba052c10d7b.jpg",
@@ -38,10 +47,10 @@
     "static/media/granola_doodle_logo.png": "/static/media/granola_doodle_logo.87531614e1aafbfa9236.png",
     "index.html": "/index.html",
     "main.69319afa.css.map": "/static/css/main.69319afa.css.map",
-    "main.fd347b82.js.map": "/static/js/main.fd347b82.js.map"
+    "main.e62da430.js.map": "/static/js/main.e62da430.js.map"
   },
   "entrypoints": [
     "static/css/main.69319afa.css",
-    "static/js/main.fd347b82.js"
+    "static/js/main.e62da430.js"
   ]
 }
