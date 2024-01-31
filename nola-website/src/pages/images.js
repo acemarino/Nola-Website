@@ -38,7 +38,16 @@ import img30 from "./images/Junior/original_f5353b73-0de3-403c-a980-c9cc2a775b59
 import img31 from "./images/Junior/PXL_20220823_134007063.jpg"
 import img32 from "./images/Junior/PXL_20230601_151540870.jpg"
 
-
+//senior
+import img33 from "./images/Senior/SrASummerDay.jpg"
+import img34 from "./images/Senior/SrCalpicoMockAds.jpg"
+import img35 from "./images/Senior/SrCherryCoke.PNG"
+import img36 from "./images/Senior/SrJeanTalonMarket.jpg"
+import img37 from "./images/Senior/SrLoveLetter.jpg"
+import img38 from "./images/Senior/SrLoversWaltz.png"
+import img39 from "./images/Senior/SrPrincessAurelia.png"
+import img40 from "./images/Senior/SrTheComicBookShop.jpg"
+import img41 from "./images/Senior/SrTheJellyfishAndTheDragon.png"
 //other
 import logo from "./images/Other/granola_doodle_logo.png"
 import splash from "./images/Other/cluckySplash.png"
@@ -196,7 +205,43 @@ export const Freshman = [
   ];
   
   export const Senior =[
-  
+    {
+      img: img33,
+      title: '1',
+    },
+    {
+      img: img34,
+      title: '2',
+    },
+    {
+      img: img35,
+      title: '3',
+    },
+    {
+      img: img36,
+      title: '4',
+    },
+    {
+      img: img37,
+      title: '5',
+    },
+    {
+      img: img38,
+      title: '6',
+    },
+    {
+      img: img39,
+      title: '7',
+    },
+    {
+      img: img40,
+      title: '8',
+    },
+    {
+      img: img41,
+      title: '9',
+    },
+
   ];
   
   export const Home=[

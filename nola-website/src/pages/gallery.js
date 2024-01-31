@@ -62,7 +62,7 @@ export default function Gallery(props) {
   if(props.num === "4"){
     year=Senior;
     grade="Senior";
-    max=7;
+    max=8;
   }
   if(props.num === "5"){
     year=Home;
