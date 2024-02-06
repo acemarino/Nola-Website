@@ -7,6 +7,7 @@ function About(){
         <div className="aboutPage">
             <div className="pictSide">
                 <img src={Junior[9].img} alt="Logo" className='aboutImg'></img>
+                <img src={Junior[5].img} alt="Logo" className='aboutImg'></img>
             </div>
             <div className="txtSide">
                 <div id='header'>
