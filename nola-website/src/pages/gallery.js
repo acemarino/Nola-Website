@@ -18,22 +18,29 @@ import { Fade } from "@mui/material";
               />
               )}
               */
-export const Modal = ({ src, alt, caption, onClose ,onLeft,onRight}) => {
+export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onRight}) => {
   return (
     <>
     <div className="modal-box">
+    <div className="modalstuff">
       <span className="close" onClick={onClose}>
         &times;
       </span>
       <span className="left" onClick={onLeft}>
         &lt;
       </span>
-      <span className="right" onClick={onRight}>
+      <div className="right" onClick={onRight}>
         &gt;
+      </div>
+      <span className="modal-content" >
+        <img src={src} alt={alt} />
       </span>
-      <div className="modalstuff">
-      <img className="modal-content" src={src} alt={alt} />
-      {caption.length > 0 && <div className="caption">{caption}</div>}
+      <div className="caption">
+      {title.length > 0 && <div >Title: {title}</div>}
+      {size.length > 0 && <div >Size: {size}</div>}
+      {medium.length > 0 && <div >Medium: {medium}</div>}
+      {desc.length > 0 && <div >Description: {desc}</div>}
+      </div>
       </div>
       
       </div>
@@ -135,7 +142,10 @@ export default function Gallery(props) {
                 src={`${year[curValue].img}?w=162&auto=format`}
                 srcSet={`${year[curValue].img}}}?w=162&auto=format&dpr=2 2x`}
                 alt={year[curValue].Title}
-                caption={year[curValue].Title}
+                title={year[curValue].Title}
+                size={year[curValue].Size}
+                medium={year[curValue].Medium}
+                desc={year[curValue].Desc}
                 onClose={() => setIsOpen(false)}
                 onLeft={()=> leftNav()}
                 onRight={()=> rightNav()}
