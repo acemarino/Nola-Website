@@ -48,6 +48,7 @@ import img38 from "./images/Senior/SrLoversWaltz.png"
 import img39 from "./images/Senior/SrPrincessAurelia.png"
 import img40 from "./images/Senior/SrTheComicBookShop.jpg"
 import img41 from "./images/Senior/SrTheJellyfishAndTheDragon.png"
+import img42 from "./images/Senior/SrMayIHaveThisDance.jpg"
 //other
 import logo from "./images/Other/granola_doodle_logo.png"
 import splash from "./images/Other/cluckySplash.png"
@@ -55,11 +56,11 @@ import splash from "./images/Other/cluckySplash.png"
 export const extra=[
   {
     img:logo,
-    title: 'Granola',
+    Title: 'Granola',
   },
   {
     img:splash,
-    title: 'CluckySplash',
+    Title: 'CluckySplash',
   }
 
 ];
@@ -68,35 +69,35 @@ export const Freshman = [
   
     {
       img:img1,
-      title: 'target',
+      Title: 'target',
     },
     {
       img:img2,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
     {
       img: img3,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
     {
       img: img4,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
     {
       img:img5,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
     {
       img: img6,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
     {
       img: img7,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
     {
       img: img8,
-      title: 'Freshman',
+      Title: 'Freshman',
     },
    
   ];
@@ -104,59 +105,59 @@ export const Freshman = [
   export const Sophmore = [
     {
       img: img9,
-      title: '1',
+      Title: '1',
     },
     {
       img: img10,
-      title: '2',
+      Title: '2',
     },
     {
       img:img11,
-      title: '3',
+      Title: '3',
     },
     {
       img: img12,
-      title: '4',
+      Title: '4',
     },
     {
       img:img13,
-      title: '5',
+      Title: '5',
     },
     {
       img: img14,
-      title: '6',
+      Title: '6',
     },
     {
       img:img15,
-      title: '7',
+      Title: '7',
     },
     {
       img: img16,
-      title: '8',
+      Title: '8',
     },
     {
       img: img17,
-      title: '9',
+      Title: '9',
     },
     {
       img: img18,
-      title: '10',
+      Title: '10',
     },
     {
       img: img19,
-      title: '11',
+      Title: '11',
     },
     {
       img: img20,
-      title: '12',
+      Title: '12',
     },
     {
       img:img21,
-      title: '13',
+      Title: '13',
     },
     {
       img: img22,
-      title: '14',
+      Title: '14',
     },
   
   ];
@@ -164,83 +165,123 @@ export const Freshman = [
   export const Junior =[
     {
       img: img23,
-      title: '1',
+      Title: '1',
+
     },
     {
       img: img24,
-      title: '2',
+      Title: '2',
     },
     {
       img: img25,
-      title: '3',
+      Title: '3',
     },
     {
       img: img26,
-      title: '4',
+      Title: '4',
     },
     {
       img: img27,
-      title: '5',
+      Title: '5',
     },
     {
       img: img28,
-      title: '6',
+      Title: '6',
     },
     {
       img: img29,
-      title: '7',
+      Title: '7',
     },
     {
       img: img30,
-      title: '8',
+      Title: '8',
     },
     {
       img: img31,
-      title: '9',
+      Title: '9',
     },
     {
       img: img32,
-      title: '10',
+      Title: '10',
     },
   ];
   
   export const Senior =[
     {
       img: img33,
-      title: '1',
+      Title: 'A Summer Day',
+      Medium: 'Digital art',
+      Size: '19x13 in.',
+      Desc: ''
+
     },
     {
       img: img34,
-      title: '2',
+      Title: 'Calpico Mock Ads',
+      Medium: 'Colored pencil',
+      Size: '4.5 x 6.5 in. ea.',
+      Desc:''
+
     },
     {
       img: img35,
-      title: '3',
+      Title: 'Cherry Coke',
+      Medium: 'Digital art',
+      Size: '2600 x 3800 px',
+      Desc: ''
+
     },
     {
       img: img36,
-      title: '4',
+      Title: 'Jean Talon Market',
+      Medium: 'Paper',
+      Size: '9x12 in.',
+      Desc: ''
+
     },
     {
       img: img37,
-      title: '5',
+      Title: 'Love Letter',
+      Medium: 'Colored pencil, alcohol marker, Posca marker, photos',
+      Size: '18x24 in.',
+      Desc: 'Collage of my friends to imitate a scrapbook. Each drawing of a friend has a personal “love letter” on the back that cannot be seen.',
     },
     {
       img: img38,
-      title: '6',
+      Title: 'Lover’s Waltz',
+      Medium: 'Digital art',
+      Size: '', 
+      Desc: 'My two original characters.'
     },
     {
       img: img39,
-      title: '7',
+      Title: 'Princess Aurelia',
+      Medium: 'Digital art',
+      Size: '13x19 in.',
+      Desc: 'My original character, Aurelia, who is based on a moon jellyfish and is the princess of the jellyfish kingdom.'
     },
     {
       img: img40,
-      title: '8',
+      Title: 'The Comic Book Shop',
+      Medium: 'Acrylic paint, Posca marker',
+      size: '24x18 in.',
+      Desc: ''
+
     },
     {
       img: img41,
-      title: '9',
+      Title: 'The Jellyfish and the Dragon',
+      Medium:'Colored pencil, paper',
+      Size: '12x9 in.',
+      Desc: 'A pop-up book illustrating an introduction to my original characters.'
     },
+    {
+      img: img42,
+      Title: 'May I Have This Dance?',
+      Medium: 'Acrylic paint',
+      Size: '5x4 ft.',
+      Desc: 'Depicts the first meeting of my original characters, which takes place at a gala held once every decade for all the kingdoms of the sea.'
+    }
 
   ];
   

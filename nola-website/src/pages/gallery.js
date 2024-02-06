@@ -31,8 +31,11 @@ export const Modal = ({ src, alt, caption, onClose ,onLeft,onRight}) => {
       <span className="right" onClick={onRight}>
         &gt;
       </span>
+      <div className="modalstuff">
       <img className="modal-content" src={src} alt={alt} />
       {caption.length > 0 && <div className="caption">{caption}</div>}
+      </div>
+      
       </div>
     </>
   )
@@ -62,7 +65,7 @@ export default function Gallery(props) {
   if(props.num === "4"){
     year=Senior;
     grade="Senior";
-    max=8;
+    max=9;
   }
   if(props.num === "5"){
     year=Home;
@@ -115,8 +118,6 @@ export default function Gallery(props) {
               alt={item.title}
               loading="lazy"
               style={{
-                borderBottomLeftRadius: 4,
-                borderBottomRightRadius: 4,
                 display: 'block',
                 width: '100%',
                 cursor: 'pointer',
@@ -133,8 +134,8 @@ export default function Gallery(props) {
               <Modal
                 src={`${year[curValue].img}?w=162&auto=format`}
                 srcSet={`${year[curValue].img}}}?w=162&auto=format&dpr=2 2x`}
-                alt={year[curValue].title}
-                caption={year[curValue].title}
+                alt={year[curValue].Title}
+                caption={year[curValue].Title}
                 onClose={() => setIsOpen(false)}
                 onLeft={()=> leftNav()}
                 onRight={()=> rightNav()}
