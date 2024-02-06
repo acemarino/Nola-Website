@@ -99,8 +99,8 @@ export default function Gallery(props) {
   }
   return (
     <>
-    <Box sx={{ pl: 5, pr: 5, pt: 3, pb: 3 }} id='show' >
-      <Masonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} sx={{ width: "auto" }} className="galleryImg" >
+    <Box sx={{ pl: 11, pr: 11, pt: 3, pb: 3 }} id='show' >
+      <Masonry columns={{ sm: 1, md: 2, lg: 4 }} spacing={5} sx={{ width: "auto" }} className="galleryImg" >
         {year.map((item, index) => (
             <div key={index}>
             <Fade 

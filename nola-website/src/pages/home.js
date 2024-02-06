@@ -26,7 +26,7 @@ else if(props.value==="1"){
    
     return(
         <> 
-        <div id="header">{year}</div>
+        <div id="gradeY">{year}</div>
         <Gallery num={props.value} ></Gallery>
         </>
     );
@@ -35,7 +35,7 @@ else if(props.value==="2"){
     year="Sophmore";
     return(
         <>
-        <div id="header">{year}</div>
+        <div id="gradeY">{year}</div>
         <Gallery num={props.value}></Gallery>
         </>
     );
@@ -44,7 +44,7 @@ else if(props.value==="3"){
     year="Junior";
     return(
         <>
-        <div id="header">{year}</div>
+        <div id="gradeY">{year}</div>
         <Gallery num={props.value}></Gallery>
         </>
     );
@@ -53,7 +53,7 @@ else if(props.value==="4"){
     year="Senior";
     return(
         <>
-        <div id="header">{year}</div>
+        <div id="gradeY">{year}</div>
         <Gallery num={props.value}></Gallery>
         </>
     );
