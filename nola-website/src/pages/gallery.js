@@ -18,12 +18,17 @@ import { Fade } from "@mui/material";
               />
               )}
               */
+             var description;
 export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onRight}) => {
+  if(desc.length===0 ){
+    description= <div></div>;
+  }else{
+   description= <div >Description: {desc}</div>;
+  }
   return (
     <>
     <div className="modal-box">
-    <div className="modalstuff">
-      <span className="close" onClick={onClose}>
+    <span className="close" onClick={onClose}>
         &times;
       </span>
       <span className="left" onClick={onLeft}>
@@ -32,15 +37,18 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
       <div className="right" onClick={onRight}>
         &gt;
       </div>
+    <div className="modalstuff">
+      
       <span className="modal-content" >
         <img src={src} alt={alt} />
       </span>
       <div className="caption">
-      {title.length > 0 && <div >Title: {title}</div>}
-      {size.length > 0 && <div >Size: {size}</div>}
-      {medium.length > 0 && <div >Medium: {medium}</div>}
-      {desc.length > 0 && <div >Description: {desc}</div>}
+        <div >Title: {title}</div>
+        <div >Size: {size}</div>
+        <div >Medium: {medium}</div>
+       {description}
       </div>
+     
       </div>
       
       </div>
