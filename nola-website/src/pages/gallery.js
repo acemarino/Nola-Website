@@ -28,17 +28,8 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   return (
     <>
     <div className="modal-box">
-    <span className="close" onClick={onClose}>
-        &times;
-      </span>
-      <span className="left" onClick={onLeft}>
-        &lt;
-      </span>
-      <div className="right" onClick={onRight}>
-        &gt;
-      </div>
+   
     <div className="modalstuff">
-      
       <span className="modal-content" >
         <img src={src} alt={alt} />
       </span>
@@ -48,7 +39,15 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
         <div >Medium: {medium}</div>
        {description}
       </div>
-     
+      <span className="close" onClick={onClose}>
+       {'X'}
+      </span>
+      <span className="left" onClick={onLeft}>
+      {'<'}
+      </span>
+      <div className="right" onClick={onRight}>
+      {'>'}
+      </div>
       </div>
       
       </div>

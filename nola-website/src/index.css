@@ -126,7 +126,6 @@ body { font-family: sans-serif; }
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   /* Location of the box */
-
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -139,6 +138,7 @@ body { font-family: sans-serif; }
 /* Modal Content (image) */
 
 .modalstuff{
+  max-width: 100%;
   display: flex;
   position: absolute;
   top:50%;
@@ -146,21 +146,87 @@ body { font-family: sans-serif; }
   transform: translate(-50%, -50%);
 
 }
+
+/*img of the modal*/
 .modal-content {
   padding: 10px;
   max-width: 800px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* Caption of Modal Image */
 .caption {
   width: 500px;
-  margin-left: 50px;
+  margin-left: 20px;
+  margin-right: 30px;
   color: #ccc;
+  align-items: center;
   padding: 10px 0;
   font-size: 200%;
   font-family: 'Epilogue';
-  height: 150px;
+  
 }
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  font-family: 'Epilogue';
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*left button*/
+.left {
+  position: absolute;
+  font-family: 'Epilogue';
+  top:50%;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.left:hover,
+.left:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*right button*/
+.right {
+  position: absolute;
+  border-radius: 3px 0 0 3px;
+  color: #f1f1f1;
+  font-family: 'Epilogue';
+  font-size: 40px;
+  right:0;
+  top:50%;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.right:hover,
+.right:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* Add Animation */
 .modal-content::-webkit-scrollbar{
@@ -172,7 +238,7 @@ body { font-family: sans-serif; }
 .caption ::-webkit-scrollbar{
   display: none;
 }
-.modal-content, .caption {
+.modal-content, .caption, .right, .left, .close{
 
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -198,65 +264,25 @@ body { font-family: sans-serif; }
   }
 }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+
+@-webkit-keyframes Czoom {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+  }
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+@keyframes Czoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
 
-
-/*left button*/
-.left {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  left: 0;
-  border-radius: 3px 0 0 3px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.left:hover,
-.left:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-/*right button*/
-.right {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.right:hover,
-.right:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 
 

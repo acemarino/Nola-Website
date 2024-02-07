@@ -58,7 +58,7 @@ export const extra=[
     img:logo,
     Title: 'Granola',
     Medium: '',
-    size: '',
+    Size: '',
     Desc: ''
 
   },
@@ -66,7 +66,7 @@ export const extra=[
     img:splash,
     Title: 'CluckySplash',
     Medium: '',
-    size: '',
+    Size: '',
     Desc: ''
   }
 
@@ -78,56 +78,56 @@ export const Freshman = [
       img:img1,
       Title: 'target',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img:img2,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img3,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img4,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img:img5,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img6,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img7,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img8,
       Title: 'Freshman',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
    
@@ -138,98 +138,98 @@ export const Freshman = [
       img: img9,
       Title: '1',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img10,
       Title: '2',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img:img11,
       Title: '3',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img12,
       Title: '4',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img:img13,
       Title: '5',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img14,
       Title: '6',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img:img15,
       Title: '7',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img16,
       Title: '8',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img17,
       Title: '9',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img18,
       Title: '10',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img19,
       Title: '11',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img20,
       Title: '12',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img:img21,
       Title: '13',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img22,
       Title: '14',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
   
@@ -240,7 +240,7 @@ export const Freshman = [
       img: img23,
       Title: '1',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
 
     },
@@ -248,63 +248,63 @@ export const Freshman = [
       img: img24,
       Title: '2',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img25,
       Title: '3',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img26,
       Title: '4',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img27,
       Title: '5',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img28,
       Title: '6',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img29,
       Title: '7',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img30,
       Title: '8',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img31,
       Title: '9',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
     {
       img: img32,
       Title: '10',
       Medium: '',
-      size: '',
+      Size: '',
       Desc: ''
     },
   ];
@@ -367,7 +367,7 @@ export const Freshman = [
       img: img40,
       Title: 'The Comic Book Shop',
       Medium: 'Acrylic paint, Posca marker',
-      size: '24x18 in.',
+      Size: '24x18 in.',
       Desc: ''
 
     },
