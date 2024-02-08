@@ -118,7 +118,9 @@ body { font-family: sans-serif; }
   padding-bottom: 30px;
 }
 
-
+#menuButton{
+  width: 50px;
+}
 
 /* The Modal (background) */
 
@@ -282,6 +284,11 @@ body { font-family: sans-serif; }
   .modal-content {
     width: 100%;
   }
+  
+  #splash{
+    width: 100%;
+  }
+  
 }
 *,
 *::before,

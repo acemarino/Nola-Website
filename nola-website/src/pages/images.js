@@ -55,6 +55,7 @@ import splash from "./images/Other/cluckySplash.png"
 import leftA from "./images/Other/LeftArrow.png"
 import rightA from "./images/Other/RightArrow.png"
 import closeX from "./images/Other/CloseIcon.png"
+import menu from "./images/Other/hamburger.png"
 
 export const extra=[
   {
@@ -89,6 +90,13 @@ export const extra=[
   {
     img:closeX,
     Title: 'CloseButton',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:menu,
+    Title: 'MenuButton',
     Medium: '',
     Size: '',
     Desc: ''

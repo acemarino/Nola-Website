@@ -61,9 +61,9 @@ else if(props.value==="4"){
 else{
     return(
         <>
-        <div className="splashArt">
+        <div  className="splashArt">
        
-        <img src={splash} alt="clucky" ></img>
+        <img src={splash} alt="clucky" id="splash"></img>
         </div>
         </>
     );

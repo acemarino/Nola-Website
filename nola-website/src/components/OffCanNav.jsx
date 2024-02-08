@@ -7,6 +7,7 @@ import React, {Component, useState} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../pages/home';
 import { Link } from "react-router-dom";
+import { extra } from '../pages/images';
 import logo from "../pages/images/Other/granola_doodle_logo.png"
 
 export default class OffCanNav extends Component {
@@ -72,9 +73,7 @@ export default class OffCanNav extends Component {
               </Nav.Link>
             
         </Nav>
-        <Button variant="primary" onClick={this.handleShow} className='float-end d-lg-none' >
-            Menu
-          </Button>
+          <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end d-lg-none'></img>
       </Container>
     </Navbar>
       
