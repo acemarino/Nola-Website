@@ -38,7 +38,6 @@
     }
 */
 
-
 .offcanvas-lg{
     --bs-offcanvas-width:250px;
 }
@@ -49,24 +48,23 @@
 }
 .offcanvas-body{
     width: 100%;
-  
+    background-color: #f8f7f3;
+}
+.offcanvas-header{
+    background-color: #f8f7f3;
 }
 
 //smaller than md logo
 .Logo{
-    width: 200px;
+    max-width: 200px;
     color:black;
-    background-color: #fff0;
+
 }
 
-
-//md and up for logo
-@include media-breakpoint-up(md) {
-    .Logo{
-        width:300px;
-        padding-left: 28px;
-    }
-  
+.linkObj:hover, .linkObj:focus {
+    color: black;
+    border-bottom: 2px solid #F23E71;
+    
 }
 
 .linkObj{
@@ -74,14 +72,10 @@
     font-size: 20px;
     
 }
-.linkObj:hover, .linkObj:focus {
-    color: black;
-    border-bottom: 2px solid #F23E71;
-    
-}
+
 .nav-link{
     width:fit-content;
-    --bs-nav-link-padding-x:3rem;
+  
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -90,45 +84,47 @@
 
 .nav-item{
     text-align: center;
-    width:fit-content;
-    text-align: center;
-    color:black;
-    background-color: #fff0;
-
-    
-   
 }
 .nav{
+
     font-family: 'Epilogue';
-    color:black;
-
-    display: flex;
-    background-color: #fff0;
-    padding-left: 40px;
-    padding-right: 40px;
-   
+    display: block;
 }
-
 
 //md and up for timeline
 @include media-breakpoint-up(sm) {
    .nav-item{
         justify-content: center;
+        font-family: 'Epilogue';
         display: flex;
    }
     .nav{
         display: flex;
-        color:black;
+        justify-content: center;
+        font-family: 'Epilogue';
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
     }
     .linkObj{
         color:black;
+        font-family: 'Epilogue';
         font-size: 30px;
     }
+    .nav-link{
+        width:fit-content;
+        --bs-nav-link-padding-x:3rem;
+    }
 
-   
+}
+
+//md and up for logo
+@include media-breakpoint-up(md) {
+    .Logo{
+        max-width:300px;
+        padding-left: 28px;
+    }
+  
 }
 
 
