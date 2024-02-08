@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.69319afa.css",
-    "main.js": "/static/js/main.e62da430.js",
+    "main.css": "/static/css/main.4a2d2ff1.css",
+    "main.js": "/static/js/main.3528cfd0.js",
     "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.2808eeed7718fa5692c5.jpg",
     "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.14b074f3d2661885ee85.png",
     "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.210f3cc9f12970be7c63.png",
     "static/media/SrTheJellyfishAndTheDragon.png": "/static/media/SrTheJellyfishAndTheDragon.97b50280f3554faaad45.png",
+    "static/media/SrMayIHaveThisDance.jpg": "/static/media/SrMayIHaveThisDance.a53eb7167b8b357c1a48.jpg",
     "static/media/SrCherryCoke.PNG": "/static/media/SrCherryCoke.d08a97bb6c72fb577a7b.PNG",
     "static/media/IMG_1956.png": "/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
     "static/media/PXL_20210210_201301713.jpg": "/static/media/PXL_20210210_201301713.14bc2095f4ead4f2e681.jpg",
@@ -46,11 +47,11 @@
     "static/media/cluckySplash.png": "/static/media/cluckySplash.1d61282e9acfa9e4c0f6.png",
     "static/media/granola_doodle_logo.png": "/static/media/granola_doodle_logo.87531614e1aafbfa9236.png",
     "index.html": "/index.html",
-    "main.69319afa.css.map": "/static/css/main.69319afa.css.map",
-    "main.e62da430.js.map": "/static/js/main.e62da430.js.map"
+    "main.4a2d2ff1.css.map": "/static/css/main.4a2d2ff1.css.map",
+    "main.3528cfd0.js.map": "/static/js/main.3528cfd0.js.map"
   },
   "entrypoints": [
-    "static/css/main.69319afa.css",
-    "static/js/main.e62da430.js"
+    "static/css/main.4a2d2ff1.css",
+    "static/js/main.3528cfd0.js"
   ]
 }
