@@ -52,6 +52,9 @@ import img42 from "./images/Senior/SrMayIHaveThisDance.jpg"
 //other
 import logo from "./images/Other/granola_doodle_logo.png"
 import splash from "./images/Other/cluckySplash.png"
+import leftA from "./images/Other/LeftArrow.png"
+import rightA from "./images/Other/RightArrow.png"
+import closeX from "./images/Other/CloseIcon.png"
 
 export const extra=[
   {
@@ -65,6 +68,27 @@ export const extra=[
   {
     img:splash,
     Title: 'CluckySplash',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:leftA,
+    Title: 'LeftArrow',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:rightA,
+    Title: 'RightArrow',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:closeX,
+    Title: 'CloseButton',
     Medium: '',
     Size: '',
     Desc: ''

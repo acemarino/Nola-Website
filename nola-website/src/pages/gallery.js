@@ -8,6 +8,7 @@ import { Sophmore } from "./images";
 import { Junior } from "./images";
 import Masonry from '@mui/lab/Masonry';
 import { Fade } from "@mui/material";
+import { extra } from "./images";
 /*{isOpen && (
               <Modal
                 src={`${year[2].img}?w=162&auto=format`}
@@ -18,7 +19,7 @@ import { Fade } from "@mui/material";
               />
               )}
               */
-             var description;
+var description;
 export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onRight}) => {
   if(desc.length===0 ){
     description= <div></div>;
@@ -28,7 +29,9 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   return (
     <>
     <div className="modal-box">
-   
+      <div  onClick={onClose}>
+        <img src={extra[4].img} alt={extra[4].Title} className="close" />
+      </div>
     <div className="modalstuff">
       <span className="modal-content" >
         <img src={src} alt={alt} />
@@ -39,14 +42,12 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
         <div >Medium: {medium}</div>
        {description}
       </div>
-      <span className="close" onClick={onClose}>
-       {'X'}
-      </span>
-      <span className="left" onClick={onLeft}>
-      {'<'}
-      </span>
+      
+      <div className="left" onClick={onLeft}>
+        <img src={extra[3].img} alt={extra[2].Title} className="left"  />
+      </div>
       <div className="right" onClick={onRight}>
-      {'>'}
+        <img src={extra[2].img} alt={extra[3].Title}  className="right"/>
       </div>
       </div>
       
