@@ -1,26 +1,27 @@
 
 import React, { useState} from "react"
-import Box from '@mui/material/Box';
+
+//image imports
 import { Freshman } from "./images";
-import { Senior } from "./images";
+import { Senior } from "./images"; //note: images are large and loading is choppy as a result
 import { Home } from "./images";
 import { Sophmore } from "./images";
 import { Junior } from "./images";
+import { extra } from "./images";
+
+//import mui libraries
 import Masonry from '@mui/lab/Masonry';
 import { Fade } from "@mui/material";
-import { extra } from "./images";
-/*{isOpen && (
-              <Modal
-                src={`${year[2].img}?w=162&auto=format`}
-                srcSet={`${year[2].img}}}?w=162&auto=format&dpr=2 2x`}
-                alt={year[2].title}
-                caption={year[2].title}
-                onClose={() => setIsOpen(false)}
-              />
-              )}
-              */
+import Box from '@mui/material/Box';
+
+
+//art description, var since the infromation changes based on the piece 
 var description;
+
+//modal component with parameters
 export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onRight}) => {
+  
+  //handles empty descriptions and non empty descriptions
   if(desc.length===0 ){
     description= <div></div>;
   }else{
@@ -28,6 +29,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   }
   return (
     <>
+    {/*modal box for caroseul gallery viewing*/}
     <div className="modal-box">
       <div  onClick={onClose}>
         <img src={extra[4].img} alt={extra[4].Title} className="close" />
@@ -44,24 +46,23 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
       </div>
       
       <div className="left" onClick={onLeft}>
-        <img src={extra[3].img} alt={extra[2].Title} className="left"  />
+        <img src={extra[2].img} alt={extra[2].Title} className="left"  />
       </div>
       <div className="right" onClick={onRight}>
-        <img src={extra[2].img} alt={extra[3].Title}  className="right"/>
+        <img src={extra[3].img} alt={extra[3].Title}  className="right"/>
       </div>
       </div>
       
-      </div>
+    </div>
     </>
   )
 }
-
+//gallery function, display images in a masonry format using MUI Masonry
 export default function Gallery(props) {
   var year=Freshman;
-  var grade="Freshman";
+  var grade;
   var max=0;
   
-
   if(props.num === "1"){
     year=Freshman;
     grade="Freshman";
@@ -87,26 +88,26 @@ export default function Gallery(props) {
     grade="Home";
     max=2;
   }
+  
   const [isOpen, setIsOpen] = useState(false)
   const [load, setLoad] = useState(true)
   const [curValue, setcurValue] = useState(0)
-  const handleChange = () => {
-    setLoad((prev) => !prev);
-  };
 
   const showModal = (value) => {
+    //takes in index from year.map((item, index) to set curValue
     setIsOpen(true)
     setcurValue(value)
   }
+ 
   //left carousel navigation
   const leftNav = () => {
-    
     if((curValue-1)<0){
       setcurValue(max)
     }else{
       setcurValue(curValue-1)
     }
   }
+  
   //right carousel navigation
   const rightNav = () => {
     if((curValue+1)>max){
@@ -117,6 +118,7 @@ export default function Gallery(props) {
   }
   return (
     <>
+    {/*MUI box to contain MUI masonry gallery*/}
     <Box sx={{ pl: 11, pr: 11, pt: 3, pb: 3 }} id='show' >
       <Masonry columns={{ sm: 1, md: 2, lg:3 , xl: 4 }} spacing={5} sx={{ width: "auto" }} className="galleryImg" >
         {year.map((item, index) => (
@@ -140,11 +142,11 @@ export default function Gallery(props) {
               />
             </Fade>
           </div>
-          
         ))}
-        
       </Masonry>
     </Box>
+          
+    {/*conditional rendering to display modal gallery*/}
           {isOpen && (
               <Modal
                 src={`${year[curValue].img}?w=162&auto=format`}
@@ -159,9 +161,6 @@ export default function Gallery(props) {
                 onRight={()=> rightNav()}
               />
               )}
-    
-    
-            
-            </>
+    </>
   );
 }

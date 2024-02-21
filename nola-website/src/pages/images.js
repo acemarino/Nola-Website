@@ -1,5 +1,3 @@
-//other
-// Sp_LightOfMyLife
 //freshman
 import img1 from "./images/Freshman/first.jpg"
 import img2 from "./images/Freshman/PXL_20210125_012622218.jpg"
@@ -49,6 +47,7 @@ import img39 from "./images/Senior/SrPrincessAurelia.png"
 import img40 from "./images/Senior/SrTheComicBookShop.jpg"
 import img41 from "./images/Senior/SrTheJellyfishAndTheDragon.png"
 import img42 from "./images/Senior/SrMayIHaveThisDance.jpg"
+
 //other
 import logo from "./images/Other/granola_doodle_logo.png"
 import splash from "./images/Other/cluckySplash.png"

@@ -1,8 +1,7 @@
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import React, {Component, useState} from 'react'
+import React, {Component} from 'react'
 
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../pages/home';
@@ -12,25 +11,6 @@ import logo from "../pages/images/Other/granola_doodle_logo.png"
 
 export default class OffCanNav extends Component {
 
-///   [show, setShow] = useState(false);
-//handleClose = () => this.setShow(false);
-//handleShow = () => this.setShow(true);
-/*      <Tab eventKey={2} title="Sophmore"> </Tab>
-                          <Tab eventKey={3} title="Junior" > </Tab>
-                          <Tab eventKey={4} title="Senior"> </Tab>
-                          
-        <Nav.Item id="topR">
-                <Nav.Link as={Link}  to="/" eventKey="5">
-                  <span className='linkObj'>
-                    Home
-                  </span>
-                </Nav.Link>
-              </Nav.Item>                  
-                          
-                          
-                          
-                          */
- 
   constructor(props) {
     super(props);
     this.state = {
