@@ -107,58 +107,58 @@ export const Freshman = [
   
     {
       img:img1,
-      Title: 'target',
-      Medium: '',
-      Size: '',
+      Title: 'Afterparty',
+      Medium: 'Charcoal',
+      Size: '24x18 in.',
       Desc: ''
     },
     {
       img:img2,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Strawberries',
+      Medium: 'Gouache',
+      Size: '9x12 in.',
       Desc: ''
     },
     {
       img: img3,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Cup Study',
+      Medium: 'Graphite',
+      Size: '24x18 in.',
       Desc: ''
     },
     {
       img: img4,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Clucky Closeups',
+      Medium: 'Graphite',
+      Size: '24x18 in.',
       Desc: ''
     },
     {
       img:img5,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Chair Study',
+      Medium: 'Graphite',
+      Size: ' 24x18 in.',
       Desc: ''
     },
     {
       img: img6,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Watering Plant',
+      Medium: 'Graphite',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img: img7,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Hand Study',
+      Medium: 'Graphite',
+      Size: ' 24x18 in.',
       Desc: ''
     },
     {
       img: img8,
-      Title: 'Freshman',
-      Medium: '',
-      Size: '',
+      Title: 'Special Items',
+      Medium: 'Gouache',
+      Size: '9x12 in.',
       Desc: ''
     },
    
@@ -167,101 +167,101 @@ export const Freshman = [
   export const Sophmore = [
     {
       img: img9,
-      Title: '1',
-      Medium: '',
-      Size: '',
+      Title: 'Self Portrait without Self',
+      Medium: 'Charcoal',
+      Size: '24x18 in.',
       Desc: ''
     },
     {
       img: img10,
-      Title: '2',
-      Medium: '',
-      Size: '',
+      Title: 'Two Chairs Having a Conversation',
+      Medium: 'Charcoal',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img:img11,
-      Title: '3',
-      Medium: '',
-      Size: '',
+      Title: 'Dining Room Credenza',
+      Medium: 'Ink wash',
+      Size: '24x18 in.',
       Desc: ''
     },
     {
       img: img12,
-      Title: '4',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: ' Chicken Dinner',
+      Medium: 'Charcoal',
+      Size: '18x24 in.',
+      Desc: 'Won a Scholastics Gold Key.'
     },
     {
       img:img13,
-      Title: '5',
+      Title: 'Shoes',
       Medium: '',
       Size: '',
       Desc: ''
     },
     {
       img: img14,
-      Title: '6',
-      Medium: '',
-      Size: '',
+      Title: 'Clucky',
+      Medium: 'Oil paint',
+      Size: '9x12 in.',
       Desc: ''
     },
     {
       img:img15,
-      Title: '7',
-      Medium: '',
-      Size: '',
+      Title: 'Dad’s PEZ Collection',
+      Medium: ' Posca marker',
+      Size: ' 9x12 in.',
       Desc: ''
     },
     {
       img: img16,
-      Title: '8',
-      Medium: '',
-      Size: '',
+      Title: 'Afternoon Light',
+      Medium: 'Oil paint',
+      Size: '12x9 in.',
       Desc: ''
     },
     {
       img: img17,
-      Title: '9',
-      Medium: '',
-      Size: '',
+      Title: 'Neck',
+      Medium: 'Oil paint',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img: img18,
-      Title: '10',
-      Medium: '',
-      Size: '',
+      Title: 'Red Still Life',
+      Medium: 'Oil paint',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img: img19,
-      Title: '11',
-      Medium: '',
-      Size: '',
+      Title: 'So Many PEZ...',
+      Medium: ' Acrylic paint, Posca marker',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img: img20,
-      Title: '12',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: 'Laundry Day',
+      Medium: 'Acrylic paint, Posca marker',
+      Size: '18x24 in.',
+      Desc: ' First part of a diptych romanticizing mundane tasks, accompanied by “Dishes.”'
     },
     {
       img:img21,
-      Title: '13',
-      Medium: '',
-      Size: '',
+      Title: 'Hallway Study',
+      Medium: 'Oil paint',
+      Size: '16x20 in.',
       Desc: ''
     },
     {
       img: img22,
-      Title: '14',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: 'Dishes',
+      Medium: 'Acrylic paint, Posca marker',
+      Size: '18x24 in.',
+      Desc: 'Second part of a diptych romanticizing mundane tasks, following “Laundry Day.”'
     },
   
   ];
@@ -291,52 +291,52 @@ export const Freshman = [
     },
     {
       img: img26,
-      Title: '4',
-      Medium: '',
-      Size: '',
+      Title: 'Light of My Life',
+      Medium: 'Acrylic paint',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img: img27,
-      Title: '5',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: '1986',
+      Medium: 'Colored pencil, alcohol marker',
+      Size: ' 3.5x7 ft.',
+      Desc: 'Self portrait depicting myself in 80s clothes to reference my interest in the 80s due to my parents.'
     },
     {
       img: img28,
-      Title: '6',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: 'Childhood',
+      Medium: 'Acrylic paint, Posca marker',
+      Size: '18x24 in.',
+      Desc: 'Self portrait contrasting a mature figure with children’s toys to represent growing up too fast.'
     },
     {
       img: img29,
-      Title: '7',
-      Medium: '',
-      Size: '',
+      Title: 'Viva Magenta',
+      Medium: 'Oil paint',
+      Size: '24x18 in.',
       Desc: ''
     },
     {
       img: img30,
-      Title: '8',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: 'Call Me!',
+      Medium: 'Acrylic paint, Posca marker',
+      Size: '18x24 in.',
+      Desc: 'Created a mini comic following the lyrics to the Blondie song “Call Me.”'
     },
     {
       img: img31,
-      Title: '9',
-      Medium: '',
-      Size: '',
+      Title: 'My Shoes',
+      Medium: 'Acrylic paint, Posca marker',
+      Size: '18x24 in.',
       Desc: ''
     },
     {
       img: img32,
-      Title: '10',
-      Medium: '',
-      Size: '',
-      Desc: ''
+      Title: 'Boom Zap Pow',
+      Medium: 'Acrylic paint, Posca marker',
+      Size: '3x4 ft.',
+      Desc: 'Combined comic book style onomatopoeia with Gundam figures to depict the childhood experience of playing with toys.'
     },
   ];
   
