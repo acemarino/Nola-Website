@@ -97,19 +97,24 @@ export default function Gallery(props) {
     //takes in index from year.map((item, index) to set curValue
     setIsOpen(true)
     setcurValue(value)
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${window.scrollY}px`;
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+    const body = document.body;
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}`;
   }
   const closeModal = (value) => {
     //takes in index from year.map((item, index) to set curValue
     setIsOpen(false)
     setcurValue(value)
-    const scrollY = document.body.style.top;
-    document.body.style.position = '';
-    document.body.style.top = '';
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
- 
+  window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+  });
   //left carousel navigation
   const leftNav = () => {
     if((curValue-1)<0){
