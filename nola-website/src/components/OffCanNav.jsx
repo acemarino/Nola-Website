@@ -11,6 +11,7 @@ import logo from "../pages/images/Other/granola_doodle_logo.png"
 
 export default class OffCanNav extends Component {
 
+  
   constructor(props) {
     super(props);
     this.state = {
