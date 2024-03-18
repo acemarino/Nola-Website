@@ -1,5 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+/*Mui scaling is 8px so (pl:2)= 8px * 2 =16px8*/
 /*
 .nav-tabs .nav-link {
    
@@ -58,7 +58,8 @@
 .Logo{
     max-width: 200px;
     color:black;
-
+    padding-left: 28px;
+    
 }
 
 .linkObj:hover, .linkObj:focus {
@@ -134,6 +135,12 @@
 @include media-breakpoint-down(sm){
     #show{
         visibility: visible;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #gradeY{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
 }

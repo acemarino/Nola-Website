@@ -31,7 +31,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
     <>
     {/*modal box for caroseul gallery viewing*/}
     <div className="modal-box">
-      <div  onClick={onClose}>
+      <div onClick={onClose}>
         <img src={extra[4].img} alt={extra[4].Title} className="close" />
       </div>
     <div className="modalstuff">
@@ -97,6 +97,17 @@ export default function Gallery(props) {
     //takes in index from year.map((item, index) to set curValue
     setIsOpen(true)
     setcurValue(value)
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
+  }
+  const closeModal = (value) => {
+    //takes in index from year.map((item, index) to set curValue
+    setIsOpen(false)
+    setcurValue(value)
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
  
   //left carousel navigation
@@ -156,7 +167,7 @@ export default function Gallery(props) {
                 size={year[curValue].Size}
                 medium={year[curValue].Medium}
                 desc={year[curValue].Desc}
-                onClose={() => setIsOpen(false)}
+                onClose={() => closeModal()}
                 onLeft={()=> leftNav()}
                 onRight={()=> rightNav()}
               />
