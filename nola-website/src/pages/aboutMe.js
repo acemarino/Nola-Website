@@ -14,7 +14,7 @@ function About(){
                     About the Artist
                 </div>
                 <div id='bulk'>
-                Nola (they/them) is a 17-year-old artist with an interest in illustration and design. They primarily work digitally (Procreate and Clip Studio Paint) or use acrylic paint for their work. Their recent work focuses on storytelling and illustration through the use of their original characters. In the past, they’ve explored childhood and nostalgia in their work, still drawing from those inspirations today.
+                Nola (they/them) is a 18-year-old artist with an interest in illustration and design. They primarily work digitally (Procreate and Clip Studio Paint) or use acrylic paint for their work. Their recent work focuses on storytelling and illustration through the use of their original characters. In the past, they’ve explored childhood and nostalgia in their work, still drawing from those inspirations today.
                 </div>
 
                 <div id='header'>
