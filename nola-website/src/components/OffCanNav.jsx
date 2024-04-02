@@ -72,9 +72,9 @@ export default class OffCanNav extends Component {
         <Offcanvas.Body >
         <Nav activeKey="/home" onSelect={(this.handleSelect)}  >
               
-              <Nav.Item id="botR">
+              <Nav.Item >
                 <Nav.Link as={Link} to="/" eventKey="1"  >
-                  <span className='linkObj'>
+                  <span className='linkObj' id='hover-underline-animation'>
                     Freshman 
                   </span>
                 </Nav.Link>
@@ -82,7 +82,7 @@ export default class OffCanNav extends Component {
 
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="2" >
-                  <span className='linkObj'>
+                  <span className='linkObj' id='hover-underline-animation'>
                     Sophomore
                   </span>
                 </Nav.Link>
@@ -90,7 +90,7 @@ export default class OffCanNav extends Component {
 
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="3" >
-                  <span className='linkObj'>
+                  <span className='linkObj' id='hover-underline-animation'>
                     Junior 
                   </span>
                 </Nav.Link>
@@ -98,7 +98,7 @@ export default class OffCanNav extends Component {
 
               <Nav.Item id="botR">
                 <Nav.Link as={Link} to="/" eventKey="4" >
-                  <span className='linkObj'>
+                  <span className='linkObj' id='hover-underline-animation'>
                     Senior
                   </span>
                 </Nav.Link>
@@ -106,7 +106,7 @@ export default class OffCanNav extends Component {
               
               <Nav.Item id="topR">
                 <Nav.Link  as={Link} to="/aboutArtist" eventKey="6">
-                  <span className='linkObj'>
+                  <span className='linkObj' id='hover-underline-animation'>
                     About Me
                   </span>
                 </Nav.Link>
