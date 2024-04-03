@@ -42,7 +42,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
         <div >Title: {title}</div>
         <div >Size: {size}</div>
         <div >Medium: {medium}</div>
-       {description}
+        {description}
       </div>
       
       
