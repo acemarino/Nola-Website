@@ -69,31 +69,30 @@
 .nav-link{
     width:fit-content;
 }
-#hover-underline-animation {
-    display: inline-block; /* Display inline block */
-    position: relative; /* Set position relative */
+#hover-underline-animation:hover{
+    position:absolute;
+    background-position: 0% 100%;
+    animation: showhide;
+    padding-bottom: 5px;
+    width:100%;
+    background-repeat: repeat-x;
+    background-size: 250px;
+    background-image:url(https://daks2k3a4ib2z.cloudfront.net/5825f89e8ad305816466d37f/583e146240b743510c55b186_techhire-wavy.svg);
+   
+}
+  
+  #hover-underline-animation { 
+    
+    background-position: 0% 100%;
+   
+ }
+ @keyframes showHide {
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
 
-  }
-  
-  #hover-underline-animation:after {
-    content: ''; /* Add content after the element */
-    position: absolute; /* Position absolute for pseudo-element */
-    width: 100%; /* Full width */
-    transform: scaleX(0); /* Initial scale of 0 for underline effect */
-    height: 2px; /* Height of the underline */
-    bottom: 0; /* Align to bottom */
-    left: 0; /* Align to left */
-    background-color: 
-  #0087ca; /* Background color of the underline */
-    transform-origin: bottom right; /* Set transform origin */
-    transition: transform 0.25s ease-out; /* Transition effect for the underline */
-  }
-  
-  #hover-underline-animation:hover:after {
-    transform: scaleX(1); /* Scale the underline on hover */
-    transform-origin: bottom left; /* Set transform origin */
-  }
-  
 
 .nav-item{
     text-align: center;
