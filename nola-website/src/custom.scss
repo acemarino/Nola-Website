@@ -9,7 +9,7 @@
     color:black;
    
 }
-
+ background-image:url(https://daks2k3a4ib2z.cloudfront.net/5825f89e8ad305816466d37f/583e146240b743510c55b186_techhire-wavy.svg);
 .nav-tabs {
     border-bottom: none;
 }
@@ -36,6 +36,29 @@
         flex:1;
        
     }
+
+     @keyframes hover-underline-animation{
+  0%{
+    background-position: 0% 100%;
+    opacity: 0;
+}
+  25%{
+    background-position: 25% 100%;
+    opacity: .25;
+}
+  50%{
+    background-position: 50% 100%;
+    opacity: .50;
+}
+  75%{
+    background-position: 75% 100%;
+    opacity: .75;
+}
+  100%{
+    background-position: 100% 100%;
+    opacity: 1;
+}
+   }
 */
 
 .offcanvas-lg{
@@ -69,30 +92,30 @@
 .nav-link{
     width:fit-content;
 }
-#hover-underline-animation:hover{
-    position:absolute;
-    background-position: 0% 100%;
-    animation: showhide;
-    padding-bottom: 5px;
-    width:100%;
-    background-repeat: repeat-x;
-    background-size: 250px;
-    background-image:url(https://daks2k3a4ib2z.cloudfront.net/5825f89e8ad305816466d37f/583e146240b743510c55b186_techhire-wavy.svg);
-   
-}
-  
-  #hover-underline-animation { 
-    
-    background-position: 0% 100%;
-   
+
+#hover-underline-animation { 
+    display: inline-block;
+    position: relative;
  }
- @keyframes showHide {
-    0% {width:100%}
-    40% {width:0%}
-    60% {width:0%;}
-    100% {width:100%;}
+
+#hover-underline-animation:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+    background-color: #F23E71;
+   
 }
 
+#hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .nav-item{
     text-align: center;
