@@ -36,7 +36,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
       </div>
     <div className="modalstuff">
       <span className="modal-content" >
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt} className="modal-image"/>
       </span>
       <div className="caption">
         <div >Title: {title}</div>
