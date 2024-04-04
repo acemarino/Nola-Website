@@ -13,7 +13,25 @@ import { extra } from "./images";
 import Masonry from '@mui/lab/Masonry';
 import { Fade } from "@mui/material";
 import Box from '@mui/material/Box';
+import {
+  styled,
+  createTheme,
+  ThemeProvider,
+  useTheme,
+} from '@mui/material/styles';
 
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1204,
+      xl: 1536,
+      xxl: 2000,
+    },
+  },
+});
 
 //art description, var since the infromation changes based on the piece 
 var description;
@@ -138,9 +156,10 @@ export default function Gallery(props) {
   return (
     <>
     {/*MUI box to contain MUI masonry gallery*/}
+    <ThemeProvider theme={theme}>
     <Box sx={{ pl: 11, pr: 11, pt: 3, pb: 3 }} id='show' >
    
-      <Masonry columns={{ sm: 1, md: 2, lg:3 , xl: 4 }} spacing={5} sx={{ width: "auto" }} className="galleryImg" >
+      <Masonry columns={{ sm: 1, md: 2, lg:3 , xl: 3 , xxl: 4}} spacing={5} sx={{ width: "auto" }} className="galleryImg" >
         {year.map((item, index) => (
             <div key={index}>
             <Fade 
@@ -181,6 +200,7 @@ export default function Gallery(props) {
                 onRight={()=> rightNav()}
               />
               )}
+              </ThemeProvider>
     </>
   );
 }

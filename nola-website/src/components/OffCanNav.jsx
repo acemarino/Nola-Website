@@ -52,7 +52,6 @@ export default class OffCanNav extends Component {
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src= {logo} className='Logo' alt="Granola" />
               </Nav.Link>
-            
         </Nav>
           <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end d-lg-none'></img>
       </Container>

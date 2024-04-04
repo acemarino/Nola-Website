@@ -135,8 +135,8 @@
     display: block;
 }
 
-//md and up for timeline
-@include media-breakpoint-up(sm) {
+//lg and up for timeline
+@include media-breakpoint-up(lg) {
    .nav-item{
         justify-content: center;
         font-family: 'Epilogue';
@@ -164,8 +164,8 @@
 
 }
 
-//md and up for logo
-@include media-breakpoint-up(md) {
+//lg and up for logo
+@include media-breakpoint-up(lg) {
     .Logo{
         max-width:300px;
         padding-left: 28px;
@@ -177,7 +177,8 @@
 #show{
     visibility: visible;
 }
-@include media-breakpoint-down(sm){
+
+@include media-breakpoint-down(lg){
     #show{
         visibility: visible;
         padding-left: 40px;
