@@ -46,7 +46,7 @@ export default class OffCanNav extends Component {
   return (
     <>
     
-    <Navbar expand="lg" >
+    <Navbar expand="xs">
       <Container fluid>
         <Nav activeKey="/home" onSelect={(this.handleSelect)} >
               <Nav.Link as={Link}  to="/" eventKey="5">

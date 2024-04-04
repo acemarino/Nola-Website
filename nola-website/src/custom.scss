@@ -102,6 +102,14 @@
     width:fit-content;
 }
 
+.nav-item{
+    text-align: center;
+}
+.nav{
+
+    font-family: 'Epilogue';
+    display: block;
+}
 #hover-underline-animation { 
     display: inline-block;
     position: relative;
@@ -126,14 +134,7 @@
     transform-origin: bottom left;
   }
 
-.nav-item{
-    text-align: center;
-}
-.nav{
 
-    font-family: 'Epilogue';
-    display: block;
-}
 
 //lg and up for timeline
 @include media-breakpoint-up(lg) {
