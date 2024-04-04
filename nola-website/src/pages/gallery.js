@@ -35,14 +35,17 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
         <img src={extra[4].img} alt={extra[4].Title} className="close" />
       </div>
     <div className="modalstuff">
-      <span className="modal-content" >
+      <div className="modal-content" >
         <img src={src} alt={alt} className="modal-image"/>
-      </span>
+      </div>
       <div className="caption">
-        <div >Title: {title}</div>
-        <div >Size: {size}</div>
-        <div >Medium: {medium}</div>
-        {description}
+        <ul>
+          <li> Title: {title}</li>
+          <li>Size: {size}</li>
+          <li>Medium: {medium}</li>
+          <li>  {description}</li>
+        </ul>  
+
       </div>
       
       
