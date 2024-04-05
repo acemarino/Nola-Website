@@ -146,10 +146,18 @@ $grid-breakpoints: (
     transform-origin: bottom left;
   }
  
- 
+  .offcanCon{
+    display: flex;
+    flex-direction: row;
+
+ }
 //>lg and up for timeline
 
 @include media-breakpoint-up(lg){
+    .offcanCon{
+        display: flex;
+        flex-direction: column;
+     }
     #menuButton{
         opacity: 0;
       }
@@ -157,6 +165,8 @@ $grid-breakpoints: (
         justify-content: center;
         font-family: 'Epilogue';
         display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
    }
     .nav{
         display: flex;
@@ -176,9 +186,21 @@ $grid-breakpoints: (
         width:fit-content;
         --bs-nav-link-padding-x:3rem;
     }
+    .LogoBin{
+        float: left;
+    }
     .Logo{
         max-width:300px;
         padding-left: 28px;
+       
+    }
+    .offcanvas-body{
+        width: 100%;
+        background-color:#FFF8EE;
+        
+    }
+    .offcanvas-header{
+        background-color:#FFF8EE;
     }
 
 }
