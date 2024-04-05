@@ -47,19 +47,18 @@ export default class OffCanNav extends Component {
   
   return (
     <>
-
-    <Navbar>
+     <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end  '></img>
+    <Navbar expand='lg' >
     <Container fluid>
         <Nav activeKey="/home" onSelect={(this.handleSelect)} >
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src= {logo} className='Logo' alt="Granola" />
               </Nav.Link>
         </Nav>
-        <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end  '></img>
+       
           {console.log("show:"+this.state.show)}
-      </Container>
-    </Navbar>
-      <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'>
+ 
+      <Navbar.Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <Nav activeKey="/home" onSelect={(this.handleSelect)}>
@@ -115,8 +114,9 @@ export default class OffCanNav extends Component {
                 
                  
         </Offcanvas.Body>
-      </Offcanvas>
-     
+      </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
       <Home value= {this.state.num} />
     </>
    

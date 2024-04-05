@@ -1,3 +1,11 @@
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 900px,
+  lg: 1204px,
+  xl: 1536px,
+);
 @import "../node_modules/bootstrap/scss/bootstrap";
 /*Mui scaling is 8px so (pl:2)= 8px * 2 =16px8*/
 /*
@@ -82,16 +90,8 @@
 .offcanvas-header{
     background-color: #f8f7f3;
 }
-$grid-breakpoints: (
-  xs: 0,
-  sm: 600px,
-  md: 900px,
-  lg: 1204px,
-  xl: 1536px,
-  xxl: 2000px
-) ;
 
-@include media-breakpoint-down(lg){
+
 
 //smaller than lg logo
 .Logo{
@@ -121,7 +121,6 @@ $grid-breakpoints: (
 #menuButton{
     width: 50px;
   }
-}
 
 #hover-underline-animation { 
     display: inline-block;
