@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import React, {Component} from 'react'
 
+import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../pages/home';
 import { Link } from "react-router-dom";
@@ -18,7 +19,7 @@ export default class OffCanNav extends Component {
     this.state = {
       num: 1,
       title: "year",
-      doshow:false,
+      show:false,
       load:false
     };
   this.handleSelect = this.handleSelect.bind(this)
@@ -28,14 +29,14 @@ export default class OffCanNav extends Component {
   }
   handleSelect(key) {
     this.setState({num: key});
-    this.setState({doshow: false});
+    this.setState({show: false});
   }
 
   handleClose(show) {
-    this.setState({doshow: false});
+    this.setState({show: false});
   }
   handleShow(show) {
-    this.setState({doshow: true});
+    this.setState({show: true});
   }
 
   handleChange(load){
@@ -55,11 +56,10 @@ export default class OffCanNav extends Component {
               </Nav.Link>
         </Nav>
         <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end  '></img>
-          {console.log("show:"+this.state.doshow)}
+          {console.log("show:"+this.state.show)}
       </Container>
     </Navbar>
-  
-      <Offcanvas show={this.state.doshow} onHide={this.handleClose} placement='end' responsive='lg' >
+      <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <Nav activeKey="/home" onSelect={(this.handleSelect)}>

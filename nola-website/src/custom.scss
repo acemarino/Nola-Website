@@ -70,9 +70,6 @@
     xxl: 2000px
 */
 
-.offcanvas-lg{
-    visibility: inherit;
-}
 //navigation bar container
 .navigationBar{
    margin-top: 15px;
@@ -80,16 +77,23 @@
 .offcanvas-body{
     width: 100%;
     background-color: #f8f7f3;
-    visibility: visible !important;
     
 }
 .offcanvas-header{
     background-color: #f8f7f3;
-    visibility: visible !important;
 }
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 900px,
+  lg: 1204px,
+  xl: 1536px,
+  xxl: 2000px
+) ;
 
 @include media-breakpoint-down(lg){
-//smaller than md logo
+
+//smaller than lg logo
 .Logo{
     max-width: 225px;
     color:black;
@@ -112,7 +116,11 @@
 
     font-family: 'Epilogue';
     display: block;
+    
 }
+#menuButton{
+    width: 50px;
+  }
 }
 
 #hover-underline-animation { 
@@ -139,9 +147,7 @@
     transform-origin: bottom left;
   }
  
-  #menuButton{
-    width: 50px;
-  }
+ 
 //>lg and up for timeline
 
 @include media-breakpoint-up(lg){
@@ -184,6 +190,7 @@
     visibility: visible;
 }
 
+//smaller than large breakpoint
 @include media-breakpoint-down(lg){
     #show{
         visibility: visible;
