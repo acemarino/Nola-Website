@@ -13,12 +13,7 @@ import { extra } from "./images";
 import Masonry from '@mui/lab/Masonry';
 import { Fade } from "@mui/material";
 import Box from '@mui/material/Box';
-import {
-  styled,
-  createTheme,
-  ThemeProvider,
-  useTheme,
-} from '@mui/material/styles';
+import {styled,createTheme,ThemeProvider,useTheme,} from '@mui/material/styles';
 
 const theme = createTheme({
   breakpoints: {

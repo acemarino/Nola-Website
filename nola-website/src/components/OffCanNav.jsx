@@ -8,6 +8,7 @@ import Home from '../pages/home';
 import { Link } from "react-router-dom";
 import { extra } from '../pages/images';
 import logo from "../pages/images/Other/granola_doodle_logo.png"
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 export default class OffCanNav extends Component {
 
@@ -17,7 +18,7 @@ export default class OffCanNav extends Component {
     this.state = {
       num: 1,
       title: "year",
-      show:false,
+      doshow:false,
       load:false
     };
   this.handleSelect = this.handleSelect.bind(this)
@@ -27,14 +28,14 @@ export default class OffCanNav extends Component {
   }
   handleSelect(key) {
     this.setState({num: key});
-    this.setState({show: false});
+    this.setState({doshow: false});
   }
 
   handleClose(show) {
-    this.setState({show: false});
+    this.setState({doshow: false});
   }
   handleShow(show) {
-    this.setState({show: true});
+    this.setState({doshow: true});
   }
 
   handleChange(load){
@@ -45,20 +46,20 @@ export default class OffCanNav extends Component {
   
   return (
     <>
-    
-    <Navbar expand="xs">
-      <Container fluid>
+
+    <Navbar>
+    <Container fluid>
         <Nav activeKey="/home" onSelect={(this.handleSelect)} >
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src= {logo} className='Logo' alt="Granola" />
               </Nav.Link>
         </Nav>
-          <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end d-lg-none'></img>
+        <img src={extra[5].img} alt={extra[5].Title} id='menuButton' onClick={this.handleShow} className='float-end  '></img>
+          {console.log("show:"+this.state.doshow)}
       </Container>
     </Navbar>
-      
-   
-      <Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' responsive='lg'>
+  
+      <Offcanvas show={this.state.doshow} onHide={this.handleClose} placement='end' responsive='lg' >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <Nav activeKey="/home" onSelect={(this.handleSelect)}>
@@ -115,6 +116,7 @@ export default class OffCanNav extends Component {
                  
         </Offcanvas.Body>
       </Offcanvas>
+     
       <Home value= {this.state.num} />
     </>
    

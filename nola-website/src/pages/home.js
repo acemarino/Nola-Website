@@ -3,7 +3,7 @@ import Gallery from "./gallery";
 import React from 'react';
 import About from "./aboutMe";
 import splash from "./images/Other/cluckySplash.png"
-
+//<img src={splash} alt="clucky" id="splash"></img>
 var year;
 const onLoad="5";
 var test="false"
@@ -63,7 +63,7 @@ else{
         <>
         <div  className="splashArt">
        
-        <img src={splash} alt="clucky" id="splash"></img>
+        
         </div>
         </>
     );

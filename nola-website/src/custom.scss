@@ -65,15 +65,14 @@
     xs: 0,
     sm: 600px,
     md: 900px,
-    lg: 1200px,
+    lg: 1204px,
     xl: 1526px,
     xxl: 2000px
 */
 
 .offcanvas-lg{
-    --bs-offcanvas-width:250px;
+    visibility: inherit;
 }
-
 //navigation bar container
 .navigationBar{
    margin-top: 15px;
@@ -81,11 +80,15 @@
 .offcanvas-body{
     width: 100%;
     background-color: #f8f7f3;
+    visibility: visible !important;
+    
 }
 .offcanvas-header{
     background-color: #f8f7f3;
+    visibility: visible !important;
 }
 
+@include media-breakpoint-down(lg){
 //smaller than md logo
 .Logo{
     max-width: 225px;
@@ -110,6 +113,8 @@
     font-family: 'Epilogue';
     display: block;
 }
+}
+
 #hover-underline-animation { 
     display: inline-block;
     position: relative;
@@ -133,11 +138,16 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+ 
+  #menuButton{
+    width: 50px;
+  }
+//>lg and up for timeline
 
-
-
-//lg and up for timeline
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(lg){
+    #menuButton{
+        opacity: 0;
+      }
    .nav-item{
         justify-content: center;
         font-family: 'Epilogue';
@@ -161,18 +171,13 @@
         width:fit-content;
         --bs-nav-link-padding-x:3rem;
     }
-    
-
-}
-
-//lg and up for logo
-@include media-breakpoint-up(lg) {
     .Logo{
         max-width:300px;
         padding-left: 28px;
     }
-  
+
 }
+
 
 
 #show{
