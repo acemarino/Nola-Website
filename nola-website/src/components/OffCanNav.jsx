@@ -1,7 +1,7 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import React, {Component} from 'react'
+import React, {Component, useEffect} from 'react'
 
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
@@ -43,6 +43,8 @@ export default class OffCanNav extends Component {
     this.setState((prev) => !prev);
   };
 
+
+  
   render () {
   
   return (
@@ -61,7 +63,7 @@ export default class OffCanNav extends Component {
           {console.log("show:"+this.state.show)}
       <Navbar.Offcanvas show={this.state.show} onHide={this.handleClose} placement='end' >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>
+          <Offcanvas.Title >
             <Nav activeKey="/home" onSelect={(this.handleSelect)}>
               <Nav.Link as={Link}  to="/" eventKey="5">
                 <img src={logo} className='Logo' alt="Granola" />

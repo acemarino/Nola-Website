@@ -58,10 +58,8 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
           <li>Medium: {medium}</li>
           <li>  {description}</li>
         </ul>  
-
       </div>
-      
-      
+
     </div>
       <div className="left" onClick={onLeft}>
         <img src={extra[2].img} alt={extra[2].Title} className="left"  />
