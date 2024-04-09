@@ -156,7 +156,7 @@ body { font-family: sans-serif; }
  
 }
 /*directly on the modal image tag*/
-@media only screen and (min-width: 701px){
+@media only screen and (min-width: 1204px){
   .modal-image{
     height: 100%;
     width: 100%;
@@ -272,71 +272,46 @@ ul{
   }
 }
 
-
-@-webkit-keyframes Czoom {
-  from {
-    -webkit-transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0);
-  }
-}
-
-@keyframes Czoom {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-@media only screen and (max-width: 1204px){
-    .modalstuff{
-    max-width: 100%;
-    display: flex;
+@media only screen and (max-width: 1203.9px){
+  .modalstuff{
+    width: 100%;
+    flex-direction: column;
     position: fixed;
-    top:40%;
+    top:50%;
+    height: fit-content;
     justify-self: center;
     align-items: center;
-    transform: translate(-50%, -50%);
     flex-direction: column;
+    transform: translate(-50%, -50%);
   }
   .modal-content {
     flex: none;
     max-width: 50%;
-
-   
+    padding-left: 0px;
   }
-}
-
-@media only screen and (max-width: 1204px){ 
+  .modal-image{
+    width: 100%;
+    object-fit: contain;
+  }
+  .caption {
+    max-width: 100%;
+    color: #ccc;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 30px;
+    font-family: 'Epilogue';
+    
+  }
   #splash{
     padding-top: 20px;
     width: 100%;
   }
+
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modalstuff{
-    max-width: 100%;
-    display: flex;
-    position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-  }
-  
-  /*img of the modal*/
-  .modal-content {
-    width: 100%;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin: 0;
-  }
-  
-  /* Caption of Modal Image */
+@media only screen and (max-width: 900px) {
+/* Caption of Modal Image */
   .caption {
     width: 100%;
     padding-left: 35px;
@@ -348,7 +323,6 @@ ul{
     font-family: 'Epilogue';
     
   }
-
   .close {
     position: absolute;
     width: 20px;
