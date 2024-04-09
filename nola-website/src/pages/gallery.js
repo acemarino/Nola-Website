@@ -53,10 +53,10 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
       </div>
       <div className="caption">
         <ul>
-          <li> Title: {title}</li>
-          <li>Size: {size}</li>
-          <li>Medium: {medium}</li>
-          <li>  {description}</li>
+          <li style={{fontWeight:"bold"}}> Title: <span style={{fontWeight:"normal"}}> {title}</span></li>
+          <li style={{fontWeight:"bold"}}>Size: <span style={{fontWeight:"normal"}}>{size}</span></li>
+          <li style={{fontWeight:"bold"}}>Medium: <span style={{fontWeight:"normal"}}>{medium}</span></li>
+          <li style={{fontWeight:"bold"}}>  <span style={{fontWeight:"normal"}}>{description}</span></li>
         </ul>  
       </div>
 
