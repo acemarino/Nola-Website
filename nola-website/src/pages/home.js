@@ -3,9 +3,12 @@ import Gallery from "./gallery";
 import React from 'react';
 import About from "./aboutMe";
 import splash from "./images/Other/cluckySplash.png"
+import { extra } from "./images";
+import spriteL from "./images/Other/Vector 210.png"
 //
 var year;
 const onLoad="5";
+//<img src={extra[6].img} alt={extra[6].Title} ></img>
 var test="false"
 export default function Home (props){
     if(props.cur===true){
@@ -26,7 +29,12 @@ else if(props.value==="1"){
    
     return(
         <> 
-        <div id="gradeY">{year}</div>
+        <div>
+        <img src={spriteL} id='leftSprite'></img>
+        <span id="gradeY">{year}</span>
+        
+        </div>
+        
         <Gallery num={props.value} ></Gallery>
         </>
     );

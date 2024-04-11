@@ -38,7 +38,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   if(desc.length===0 ){
     description= <div></div>;
   }else{
-   description= <div >Description: {desc}</div>;
+   description= <div style={{fontWeight:"bold"}} >Description: <span style={{fontWeight:"normal"}}>{desc}</span></div>;
   }
   return (
     <>
@@ -56,7 +56,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
           <li style={{fontWeight:"bold"}}> Title: <span style={{fontWeight:"normal"}}> {title}</span></li>
           <li style={{fontWeight:"bold"}}>Size: <span style={{fontWeight:"normal"}}>{size}</span></li>
           <li style={{fontWeight:"bold"}}>Medium: <span style={{fontWeight:"normal"}}>{medium}</span></li>
-          <li style={{fontWeight:"bold"}}>  <span style={{fontWeight:"normal"}}>{description}</span></li>
+          <li >{description}</li>
         </ul>  
       </div>
 

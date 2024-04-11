@@ -55,6 +55,10 @@ import leftA from "./images/Other/LeftArrow.png"
 import rightA from "./images/Other/RightArrow.png"
 import closeX from "./images/Other/CloseIcon.png"
 import menu from "./images/Other/hamburger.png"
+import fresh from "./images/Other/freshman.png"
+import soph from "./images/Other/sophomore.png"
+import jun from "./images/Other/junior.png"
+import sen from "./images/Other/Senior.png"
 
 export const extra=[
   {
@@ -96,6 +100,34 @@ export const extra=[
   {
     img:menu,
     Title: 'MenuButton',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:fresh,
+    Title: 'Freshman header',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:soph,
+    Title: 'Sophomore header',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:jun,
+    Title: 'Junior header',
+    Medium: '',
+    Size: '',
+    Desc: ''
+  },
+  {
+    img:sen,
+    Title: 'Senior header',
     Medium: '',
     Size: '',
     Desc: ''
