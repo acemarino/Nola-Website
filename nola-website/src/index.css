@@ -100,12 +100,12 @@ body { font-family: sans-serif; }
 #gradeY{
   font-family: 'Archivo Black', sans-serif;
   font-size: 300%;
- 
-  padding-top: 15px;
+  padding-left: 88px;
   color: #3158E2;
 }
 #leftSprite{
   padding-left: 88px;
+  height: 108px;
 }
 
 /*bulk text i.e any large paragraphs or blocks of text*/
@@ -179,7 +179,8 @@ ul{
   color: #ccc;
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 5px;
+  margin-right: 10%;
   font-size: 30px;
   font-family: 'Epilogue';
   

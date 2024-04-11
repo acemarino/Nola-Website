@@ -30,9 +30,8 @@ else if(props.value==="1"){
     return(
         <> 
         <div>
-        <img src={spriteL} id='leftSprite'></img>
-        <span id="gradeY">{year}</span>
-        
+        <img src={extra[6].img} alt={extra[6].Title} id='leftSprite' ></img>
+       
         </div>
         
         <Gallery num={props.value} ></Gallery>
