@@ -38,7 +38,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   if(desc.length===0 ){
     description= <div></div>;
   }else{
-   description= <div style={{fontWeight:"bold"}} >Description: <span style={{fontWeight:"normal"}}>{desc}</span></div>;
+   description= <div className='tagStyle' >Description: <span className="contentStyle">{desc}</span></div>;
   }
   return (
     <>
@@ -52,10 +52,10 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
         <img src={src} alt={alt} className="modal-image"/>
       </div>
       <div className="caption">
-        <ul>
-          <li style={{fontWeight:"bold"}}> Title: <span style={{fontWeight:"normal"}}> {title}</span></li>
-          <li style={{fontWeight:"bold"}}>Size: <span style={{fontWeight:"normal"}}>{size}</span></li>
-          <li style={{fontWeight:"bold"}}>Medium: <span style={{fontWeight:"normal"}}>{medium}</span></li>
+        <ul className="captionList">
+          <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
+          <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
+          <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
           <li >{description}</li>
         </ul>  
       </div>
