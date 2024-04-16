@@ -4,7 +4,7 @@ import React from 'react';
 import About from "./aboutMe";
 import splash from "./images/Other/cluckySplash.png"
 import { extra } from "./images";
-import spriteL from "./images/Other/Vector 210.png"
+
 //
 var year;
 const onLoad="5";
@@ -29,9 +29,8 @@ else if(props.value==="1"){
    
     return(
         <> 
-        <div>
+        <div id='gradeY'>
         <img src={extra[6].img} alt={extra[6].Title} id='leftSprite' ></img>
-       
         </div>
         
         <Gallery num={props.value} ></Gallery>
@@ -42,7 +41,9 @@ else if(props.value==="2"){
     year="Sophmore";
     return(
         <>
-        <div id="gradeY">{year}</div>
+        <div id='gradeY'>
+        <img src={extra[7].img} alt={extra[7].Title} id='leftSprite' ></img>
+        </div>
         <Gallery num={props.value}></Gallery>
         </>
     );
@@ -51,7 +52,9 @@ else if(props.value==="3"){
     year="Junior";
     return(
         <>
-        <div id="gradeY">{year}</div>
+        <div id='gradeY'>
+        <img src={extra[8].img} alt={extra[8].Title} id='leftSprite' ></img>
+        </div>
         <Gallery num={props.value}></Gallery>
         </>
     );
@@ -60,7 +63,9 @@ else if(props.value==="4"){
     year="Senior";
     return(
         <>
-        <div id="gradeY">{year}</div>
+        <div id='gradeY'> 
+        <img src={extra[9].img} alt={extra[9].Title} id='leftSprite' ></img>
+        </div>
         <Gallery num={props.value}></Gallery>
         </>
     );
@@ -68,6 +73,9 @@ else if(props.value==="4"){
 else{
     return(
         <>
+        <div id="scroll-container">
+        <div id="scroll-text">Still under construction!</div>
+        </div>
         <div  className="splashArt">
         <img src={splash} alt="clucky" id="splash"></img>
         

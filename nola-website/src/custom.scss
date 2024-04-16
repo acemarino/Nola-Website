@@ -91,16 +91,17 @@ $grid-breakpoints: (
 }
 .offcanvas-header{
     background-color: #f8f7f3;
+    justify-content: center;
 }
 
 
 
 //smaller than lg logo
 .Logo{
-    max-width: 225px;
+    max-width: 250px;
     color:black;
     padding-left: 28px;
-    
+
 }
 .linkObj{
     color:black;
@@ -221,12 +222,6 @@ $grid-breakpoints: (
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 10px;
-    }
-    #gradeY{
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 10px;
-        font-size: 35px;
     }
 
 }

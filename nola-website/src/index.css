@@ -86,8 +86,50 @@ body { font-family: sans-serif; }
 .splashArt{
   display: flex;
   justify-content: center;
+  
+}
+#scroll-container {
+
+  overflow: hidden;
 }
 
+#scroll-text {
+  font-family: 'Epilogue';
+  font-size: 180%;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
 /* about me page css */
 .aboutPage{
   display: flex;
@@ -131,10 +173,8 @@ body { font-family: sans-serif; }
 
 /*grade year txt*/
 #gradeY{
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 300%;
-  padding-left: 88px;
-  color: #3158E2;
+  padding-top: 0px;
+  
 }
 #leftSprite{
   padding-left: 88px;
@@ -279,11 +319,18 @@ body { font-family: sans-serif; }
 /* Add Animation */
 .modal-content::-webkit-scrollbar{
   display: none;
+
 }
 .modal-box::-webkit-scrollbar{
   display: none;
+ 
 }
 .caption ::-webkit-scrollbar{
+  display: none;
+  
+ 
+}
+::-webkit-scrollbar {
   display: none;
 }
 .modal-content, .caption, .right, .left, .close{
@@ -318,6 +365,7 @@ body { font-family: sans-serif; }
     width: 100%;
     object-fit: contain;
   }
+
 }
 /*smaller than 1204*/ 
 @media only screen and (max-width: 1203.9px) and (min-width: 901px) {
@@ -357,7 +405,7 @@ body { font-family: sans-serif; }
     color: #ccc;
     display: flex;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 10%;
     font-family: 'Epilogue';
     
@@ -377,39 +425,53 @@ body { font-family: sans-serif; }
     padding-top: 20px;
     width: 100%;
   }
-
+  #leftSprite{
+    padding-left: 40px;
+    height:78.75px;
+  }
+  #gradeY{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 900px) {
+
   .modalstuff{
     width: 100%;
     flex-direction: column;
     position: fixed;
     top:50%;
     height: fit-content;
-    align-items: center;
+    overflow-y: scroll;
+    
     transform: translate(-50%, -50%);
   }
   .modal-content {
     min-height: 100%;
     max-width: 70%;
     flex: none;
-    margin: 0px;
-    align-items: start;
+
+    align-items:  center;
+
     padding-left: 0px;
+   
   }
   .modal-image{
     width: 100%;
+    margin-left: auto; 
+    margin-right: auto; 
     object-fit: contain;
   }
 /* Caption of Modal Image */
   .caption {
-    align-items: start;
+    align-items:  center;
     max-width: 100%;
-    padding-top: 15px;
-    margin: 0;
+    padding-top: 10px;
     color: #ccc;
+    
+    padding-left: 66.802px;
     font-family: 'Epilogue';
   }
   .tagStyle{
@@ -455,7 +517,27 @@ body { font-family: sans-serif; }
     padding-left: em;
     margin-left: 0;
   }
- 
+  #splash{
+    padding-top: 20px;
+    width: 100%;
+  }
+  #leftSprite{
+    padding-left: 40px;
+    height:78.75px;
+    max-width: 100%;
+  }
+  #gradeY{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  #leftSprite{
+    padding-left: 40px;
+    height:68px;
+    max-width: 100%;
+  }
 }
 *,
 *::before,
