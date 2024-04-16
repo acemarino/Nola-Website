@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.958459f4.css",
-    "main.js": "/static/js/main.1ffa3c6f.js",
+    "main.css": "/static/css/main.0f6deb02.css",
+    "main.js": "/static/js/main.c4fc1d76.js",
     "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.2808eeed7718fa5692c5.jpg",
     "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.14b074f3d2661885ee85.png",
     "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.210f3cc9f12970be7c63.png",
@@ -46,12 +46,13 @@
     "static/media/PXL_20210516_204939130.jpg": "/static/media/PXL_20210516_204939130.5abf947a9ba052c10d7b.jpg",
     "static/media/cluckySplash.png": "/static/media/cluckySplash.1d61282e9acfa9e4c0f6.png",
     "static/media/granola_doodle_logo.png": "/static/media/granola_doodle_logo.87531614e1aafbfa9236.png",
+    "static/media/freshman.png": "/static/media/freshman.e5a3bf92a59e0e75df8e.png",
     "index.html": "/index.html",
-    "main.958459f4.css.map": "/static/css/main.958459f4.css.map",
-    "main.1ffa3c6f.js.map": "/static/js/main.1ffa3c6f.js.map"
+    "main.0f6deb02.css.map": "/static/css/main.0f6deb02.css.map",
+    "main.c4fc1d76.js.map": "/static/js/main.c4fc1d76.js.map"
   },
   "entrypoints": [
-    "static/css/main.958459f4.css",
-    "static/js/main.1ffa3c6f.js"
+    "static/css/main.0f6deb02.css",
+    "static/js/main.c4fc1d76.js"
   ]
 }
