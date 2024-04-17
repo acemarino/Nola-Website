@@ -43,11 +43,11 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   return (
     <>
     {/*modal box for caroseul gallery viewing*/}
-    <div className="modal-box">
+    <div className="modal-box" >
       <div onClick={onClose}>
         <img src={extra[4].img} alt={extra[4].Title} className="close" />
       </div>
-    <div className="modalstuff">
+    <div className="modalstuff" >
       <div className="modal-content" >
         <img src={src} alt={alt} className="modal-image"/>
       </div>
