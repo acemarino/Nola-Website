@@ -166,24 +166,10 @@ export const Freshman = [
       Desc: ''
     },
     {
-      img:img5,
-      Title: 'Chair Study',
-      Medium: 'Graphite',
-      Size: ' 24x18 in.',
-      Desc: ''
-    },
-    {
       img: img6,
       Title: 'Watering Plant',
       Medium: 'Graphite',
       Size: '18x24 in.',
-      Desc: ''
-    },
-    {
-      img: img7,
-      Title: 'Hand Study',
-      Medium: 'Graphite',
-      Size: ' 24x18 in.',
       Desc: ''
     },
     {
@@ -193,6 +179,23 @@ export const Freshman = [
       Size: '9x12 in.',
       Desc: ''
     },
+  
+    {
+      img:img5,
+      Title: 'Chair Study',
+      Medium: 'Graphite',
+      Size: ' 24x18 in.',
+      Desc: ''
+    },
+    
+    {
+      img: img7,
+      Title: 'Hand Study',
+      Medium: 'Graphite',
+      Size: ' 24x18 in.',
+      Desc: ''
+    },
+    
    
   ];
   
@@ -219,20 +222,6 @@ export const Freshman = [
       Desc: ''
     },
     {
-      img: img12,
-      Title: ' Chicken Dinner',
-      Medium: 'Charcoal',
-      Size: '18x24 in.',
-      Desc: 'Won a Scholastics Gold Key.'
-    },
-    {
-      img:img13,
-      Title: 'Shoes',
-      Medium: '',
-      Size: '',
-      Desc: ''
-    },
-    {
       img: img14,
       Title: 'Clucky',
       Medium: 'Oil paint',
@@ -246,6 +235,21 @@ export const Freshman = [
       Size: ' 9x12 in.',
       Desc: ''
     },
+    {
+      img: img12,
+      Title: ' Chicken Dinner',
+      Medium: 'Charcoal',
+      Size: '18x24 in.',
+      Desc: 'Won a Scholastics Gold Key.'
+    },
+    {
+      img:img13,
+      Title: 'Shoes',
+      Medium: '',
+      Size: '',
+      Desc: ''
+    },
+ 
     {
       img: img16,
       Title: 'Afternoon Light',
@@ -261,25 +265,26 @@ export const Freshman = [
       Desc: ''
     },
     {
-      img: img18,
-      Title: 'Red Still Life',
-      Medium: 'Oil paint',
-      Size: '18x24 in.',
-      Desc: ''
-    },
-    {
       img: img19,
       Title: 'So Many PEZ...',
       Medium: ' Acrylic paint, Posca marker',
       Size: '18x24 in.',
       Desc: ''
     },
+  
     {
       img: img20,
       Title: 'Laundry Day',
       Medium: 'Acrylic paint, Posca marker',
       Size: '18x24 in.',
       Desc: ' First part of a diptych romanticizing mundane tasks, accompanied by “Dishes.”'
+    },
+    {
+      img: img18,
+      Title: 'Red Still Life',
+      Medium: 'Oil paint',
+      Size: '18x24 in.',
+      Desc: ''
     },
     {
       img:img21,
@@ -295,32 +300,13 @@ export const Freshman = [
       Size: '18x24 in.',
       Desc: 'Second part of a diptych romanticizing mundane tasks, following “Laundry Day.”'
     },
+ 
   
+
   ];
   
   export const Junior =[
-    {
-      img: img23,
-      Title: '1',
-      Medium: '',
-      Size: '',
-      Desc: ''
-
-    },
-    {
-      img: img24,
-      Title: '2',
-      Medium: '',
-      Size: '',
-      Desc: ''
-    },
-    {
-      img: img25,
-      Title: '3',
-      Medium: '',
-      Size: '',
-      Desc: ''
-    },
+   
     {
       img: img26,
       Title: 'Light of My Life',

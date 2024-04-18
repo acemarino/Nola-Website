@@ -16,8 +16,16 @@ import { Fade } from "@mui/material";
 import Box from '@mui/material/Box';
 import {styled,createTheme,ThemeProvider,useTheme,} from '@mui/material/styles';
 const styles = StyleSheet.create({
-  iosImage:{
-    height: '100px',
+  iosCaption:{
+    display:'flex',
+    alignitems:  'start',
+    maxwidth: '100%',
+    paddingTop: '10px',
+    color: '#ccc',
+    marginleft: '0',
+    paddingLeft: '68.5px',
+    paddingRight: '68.5px',
+    fontfamily: 'Epilogue',
   }
 
 });
@@ -48,10 +56,36 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
    description= <div className='tagStyle' >Description: <span className="contentStyle">{desc}</span></div>;
   }
 if(isIOS === true){
-  view=<img src={src} alt={alt} className="modal-image" style={styles.iosImage}/>;
+  view=
+  <div className="modalstuff" >
+    <div className="modal-content" >
+      <img src={src} alt={alt} className="modal-image" style={styles.iosImage}/>
+    </div>
+    <div style={styles.iosCaption}>
+      <ul className="captionList">
+        <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
+        <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
+        <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
+        <li >{description}</li>
+      </ul>  
+    </div>
+  </div>
 }
 else{
-  view=  <img src={src} alt={alt} className="modal-image"  />
+  view= 
+  <div className="modalstuff" >
+    <div className="modal-content" >
+      <img src={src} alt={alt} className="modal-image" />
+    </div>
+    <div className="caption">
+      <ul className="captionList">
+        <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
+        <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
+        <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
+        <li >{description}</li>
+      </ul>  
+    </div>
+  </div>
 }
   return (
     <>
@@ -60,20 +94,7 @@ else{
       <div onClick={onClose}>
         <img src={extra[4].img} alt={extra[4].Title} className="close" />
       </div>
-    <div className="modalstuff" >
-      <div className="modal-content" >
       {view}
-      </div>
-      <div className="caption">
-        <ul className="captionList">
-          <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
-          <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
-          <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
-          <li >{description}</li>
-        </ul>  
-      </div>
-
-    </div>
       <div className="left" onClick={onLeft}>
         <img src={extra[2].img} alt={extra[2].Title} className="left"  />
       </div>
@@ -103,7 +124,7 @@ export default function Gallery(props) {
   if(props.num === "3"){
     year=Junior;
     grade="Junior";
-    max=9;
+    max=6;
   }
   if(props.num === "4"){
     year=Senior;
