@@ -179,7 +179,6 @@ export const Freshman = [
       Size: '9x12 in.',
       Desc: ''
     },
-  
     {
       img:img5,
       Title: 'Chair Study',

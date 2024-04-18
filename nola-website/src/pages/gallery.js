@@ -22,10 +22,12 @@ const styles = StyleSheet.create({
     maxwidth: '100%',
     paddingTop: '10px',
     color: '#ccc',
-    marginleft: '0',
-    paddingLeft: '68.5px',
-    paddingRight: '68.5px',
+    padding: '0',
+    marginTop: '10px',
+    marginLeft:'18.5%',
+    marginRight:'18.5%',
     fontfamily: 'Epilogue',
+    
   }
 
 });
@@ -55,37 +57,37 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
   }else{
    description= <div className='tagStyle' >Description: <span className="contentStyle">{desc}</span></div>;
   }
-if(isIOS === true){
-  view=
-  <div className="modalstuff" >
-    <div className="modal-content" >
-      <img src={src} alt={alt} className="modal-image" style={styles.iosImage}/>
+  if(isIOS === true){
+    view=
+    <div className="modalstuff" >
+      <div className="modal-content" >
+        <img src={src} alt={alt} className="modal-image" style={styles.iosImage}/>
+      </div>
+      <div style={styles.iosCaption} className="iosCaptionAnimation" >
+        <ul className="captionList">
+          <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
+          <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
+          <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
+          <li >{description}</li>
+        </ul>  
+      </div>
     </div>
-    <div style={styles.iosCaption}>
-      <ul className="captionList">
-        <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
-        <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
-        <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
-        <li >{description}</li>
-      </ul>  
+  }
+  else{
+    view= 
+    <div className="modalstuff" >
+      <div className="modal-content" >
+        <img src={src} alt={alt} className="modal-image" />
+      </div>
+      <div className="caption">
+        <ul className="captionList">
+          <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
+          <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
+          <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
+          <li >{description}</li>
+        </ul>  
+      </div>
     </div>
-  </div>
-}
-else{
-  view= 
-  <div className="modalstuff" >
-    <div className="modal-content" >
-      <img src={src} alt={alt} className="modal-image" />
-    </div>
-    <div className="caption">
-      <ul className="captionList">
-        <li className='tagStyle'> Title: <span className="contentStyle"> {title}</span></li>
-        <li className='tagStyle'>Size: <span className="contentStyle">{size}</span></li>
-        <li className='tagStyle'>Medium: <span className="contentStyle">{medium}</span></li>
-        <li >{description}</li>
-      </ul>  
-    </div>
-  </div>
 }
   return (
     <>
@@ -95,10 +97,10 @@ else{
         <img src={extra[4].img} alt={extra[4].Title} className="close" />
       </div>
       {view}
-      <div className="left" onClick={onLeft}>
+      <div  onClick={onLeft} id='Larrows'>
         <img src={extra[2].img} alt={extra[2].Title} className="left"  />
       </div>
-      <div className="right" onClick={onRight}>
+      <div  onClick={onRight}id='Rarrows' >
         <img src={extra[3].img} alt={extra[3].Title}  className="right"/>
       </div>
     </div>

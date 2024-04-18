@@ -86,11 +86,11 @@ $grid-breakpoints: (
 }
 .offcanvas-body{
     width: 100%;
-    background-color: #f8f7f3;
+    background-color:#FFF8EE;
     
 }
 .offcanvas-header{
-    background-color: #f8f7f3;
+    background-color:#FFF8EE;
     justify-content: center;
 }
 
@@ -98,11 +98,9 @@ $grid-breakpoints: (
 
 //smaller than lg logo
 .Logo{
-    max-width: 250px;
+    max-width: 220px;
     color:black;
-    padding-left: 28px;
-    padding-right: 28px;
-
+  
 }
 .linkObj{
     color:black;
@@ -125,6 +123,13 @@ $grid-breakpoints: (
 #menuButton{
     width: 50px;
   }
+  #menuButton:hover,
+  #menuButton:focus{
+    opacity: 80%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 
 #hover-underline-animation { 
     display: inline-block;
@@ -191,11 +196,11 @@ $grid-breakpoints: (
         --bs-nav-link-padding-x:3rem;
     }
     .LogoBin{
-        float: left;
+      
     }
     .Logo{
         max-width:400px;
-        padding-left: 28px;
+        padding-left: 0px;
         padding-top: 15px;
        
     }
