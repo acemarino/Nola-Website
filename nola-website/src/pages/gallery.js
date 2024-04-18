@@ -1,6 +1,7 @@
 
 import React, { useState} from "react"
-
+import {IOSView, isIOS} from 'react-device-detect';
+import {StyleSheet} from 'react-native';
 //image imports
 import { Freshman } from "./images";
 import { Senior } from "./images"; //note: images are large and loading is choppy as a result
@@ -14,6 +15,12 @@ import Masonry from '@mui/lab/Masonry';
 import { Fade } from "@mui/material";
 import Box from '@mui/material/Box';
 import {styled,createTheme,ThemeProvider,useTheme,} from '@mui/material/styles';
+const styles = StyleSheet.create({
+  iosImage:{
+    height: '100px',
+  }
+
+});
 
 const theme = createTheme({
   breakpoints: {
@@ -30,16 +37,22 @@ const theme = createTheme({
 
 //art description, var since the infromation changes based on the piece 
 var description;
-
+var view;
 //modal component with parameters
-export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onRight}) => {
-  
+export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onRight }) => {
+ 
   //handles empty descriptions and non empty descriptions
   if(desc.length===0 ){
     description= <div></div>;
   }else{
    description= <div className='tagStyle' >Description: <span className="contentStyle">{desc}</span></div>;
   }
+if(isIOS === true){
+  view=<img src={src} alt={alt} className="modal-image" style={styles.iosImage}/>;
+}
+else{
+  view=  <img src={src} alt={alt} className="modal-image"  />
+}
   return (
     <>
     {/*modal box for caroseul gallery viewing*/}
@@ -49,7 +62,7 @@ export const Modal = ({ src, alt, title, size, desc, medium, onClose ,onLeft,onR
       </div>
     <div className="modalstuff" >
       <div className="modal-content" >
-        <img src={src} alt={alt} className="modal-image"/>
+      {view}
       </div>
       <div className="caption">
         <ul className="captionList">
