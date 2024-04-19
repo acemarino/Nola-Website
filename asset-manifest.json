@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.27b4a828.css",
-    "main.js": "/static/js/main.2318aa75.js",
+    "main.css": "/static/css/main.463dfada.css",
+    "main.js": "/static/js/main.6a23be11.js",
     "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.2808eeed7718fa5692c5.jpg",
     "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.14b074f3d2661885ee85.png",
     "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.210f3cc9f12970be7c63.png",
@@ -51,11 +51,11 @@
     "static/media/Senior.png": "/static/media/Senior.b192c9c68659488f9b4b.png",
     "static/media/junior.png": "/static/media/junior.60284f5fce28665025b9.png",
     "index.html": "/index.html",
-    "main.27b4a828.css.map": "/static/css/main.27b4a828.css.map",
-    "main.2318aa75.js.map": "/static/js/main.2318aa75.js.map"
+    "main.463dfada.css.map": "/static/css/main.463dfada.css.map",
+    "main.6a23be11.js.map": "/static/js/main.6a23be11.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b4a828.css",
-    "static/js/main.2318aa75.js"
+    "static/css/main.463dfada.css",
+    "static/js/main.6a23be11.js"
   ]
 }
