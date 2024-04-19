@@ -401,7 +401,7 @@ export const Freshman = [
       img: img38,
       Title: 'Lover’s Waltz',
       Medium: 'Digital art',
-      Size: '', 
+      Size: '6900 x 3900px', 
       Desc: 'My two original characters.'
     },
     {
