@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.463dfada.css",
-    "main.js": "/static/js/main.6a23be11.js",
-    "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.2808eeed7718fa5692c5.jpg",
-    "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.14b074f3d2661885ee85.png",
-    "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.210f3cc9f12970be7c63.png",
-    "static/media/SrTheJellyfishAndTheDragon.png": "/static/media/SrTheJellyfishAndTheDragon.97b50280f3554faaad45.png",
-    "static/media/SrMayIHaveThisDance.jpg": "/static/media/SrMayIHaveThisDance.a53eb7167b8b357c1a48.jpg",
-    "static/media/SrCherryCoke.PNG": "/static/media/SrCherryCoke.d08a97bb6c72fb577a7b.PNG",
+    "main.js": "/static/js/main.ec8119fe.js",
+    "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.607b308b46f4b87876d4.png",
+    "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.5699d15e74d5e3ad4e68.png",
     "static/media/IMG_1956.png": "/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
+    "static/media/SrTheJellyfishAndTheDragon.png": "/static/media/SrTheJellyfishAndTheDragon.b560187eefe455767fba.png",
+    "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.0bf05be358af17d25808.jpg",
     "static/media/PXL_20210210_201301713.jpg": "/static/media/PXL_20210210_201301713.14bc2095f4ead4f2e681.jpg",
+    "static/media/SrCherryCoke.PNG": "/static/media/SrCherryCoke.a66a540274840c600151.PNG",
     "static/media/first.jpg": "/static/media/first.18d62a404c6a8b4d98e1.jpg",
     "static/media/IMG_2075.png": "/static/media/IMG_2075.9c59dd60ada37396e6d3.png",
     "static/media/IMG_1735.png": "/static/media/IMG_1735.55f1c1ad98781cdb4b5f.png",
+    "static/media/SrMayIHaveThisDance.jpg": "/static/media/SrMayIHaveThisDance.909be1b8681c0f4265c9.jpg",
     "static/media/SpDadsPezCollection.jpg": "/static/media/SpDadsPezCollection.7b3a5e9c9eb4c2860456.jpg",
     "static/media/JrMyShoes.jpg": "/static/media/JrMyShoes.e3df295105903d568f37.jpg",
     "static/media/SpChickenDinner.jpg": "/static/media/SpChickenDinner.d97a2b2bac1ef89c0814.jpg",
@@ -52,10 +52,10 @@
     "static/media/junior.png": "/static/media/junior.60284f5fce28665025b9.png",
     "index.html": "/index.html",
     "main.463dfada.css.map": "/static/css/main.463dfada.css.map",
-    "main.6a23be11.js.map": "/static/js/main.6a23be11.js.map"
+    "main.ec8119fe.js.map": "/static/js/main.ec8119fe.js.map"
   },
   "entrypoints": [
     "static/css/main.463dfada.css",
-    "static/js/main.6a23be11.js"
+    "static/js/main.ec8119fe.js"
   ]
 }
