@@ -42,11 +42,17 @@ import img34 from "./images/Senior/SrCalpicoMockAds.jpg"
 import img35 from "./images/Senior/SrCherryCoke.PNG"
 import img36 from "./images/Senior/SrJeanTalonMarket.jpg"
 import img37 from "./images/Senior/SrLoveLetter.jpg"
-import img38 from "./images/Senior/SrLoversWaltz.png"
+import img38 from "./images/Senior/SrLoversWaltzNEW.jpg"
 import img39 from "./images/Senior/SrPrincessAurelia.png"
 import img40 from "./images/Senior/SrTheComicBookShop.jpg"
-import img41 from "./images/Senior/SrTheJellyfishAndTheDragon.png"
+import img41 from "./images/Senior/SrPopupBook.png"
 import img42 from "./images/Senior/SrMayIHaveThisDance.jpg"
+import img43 from "./images/Senior/SrAdmistOceanWaters.png"
+import img44 from "./images/Senior/SrDragonKing.jpg"
+import img45 from "./images/Senior/SrCoronation.png"
+import img46 from "./images/Senior/SrSpark.png"
+import img47 from "./images/Senior/SrSunAndMoon.png"
+import img48 from "./images/Senior/SrThroughTheSeaAndTheSky.png"
 
 //other
 import logo from "./images/Other/granola_doodle_logo.png"
@@ -432,7 +438,50 @@ export const Freshman = [
       Medium: 'Acrylic paint',
       Size: '5x4 ft.',
       Desc: 'Depicts the first meeting of my original characters, which takes place at a gala held once every decade for all the kingdoms of the sea.'
-    }
+    },
+    {
+      img:img43,
+      Title: 'Amidst Ocean Waters',
+      Medium: 'Digital art',
+      Size: '12x9 in.',
+      Desc: ''
+    },
+    {
+      img:img44,
+      Title: 'He Who Holds the World in His Hands',
+      Medium: 'Digital art',
+      Size: '11x18 in.',
+      Desc: 'Depicts my original character and the tensions between his desire to protect his kingdom and the means needed to do so.'
+    },
+    {
+      img:img45,
+      Title: 'Coronation',
+      Medium: 'Digital art',
+      Size: '27x18 in.',
+      Desc: 'A two-page comic depicting my original character’s progression from anxiety to resolve to protect his kingdom during his coronation'
+    },
+    {
+      img:img48,
+      Title: 'Through the Sea and the Sky',
+      Medium: 'Colored Pencil',
+      Size: '9x12 in.',
+      Desc: ''
+    },
+    {
+      img:img46,
+      Title: 'Spark',
+      Medium: 'Digital art',
+      Size: '9x12 in.',
+      Desc: 'An moment early on in my original character’s relationship.'
+    },
+    {
+      img:img47,
+      Title: 'The Sun and the Moon',
+      Medium: ' Digital art',
+      Size: '18x12 in.',
+      Desc: 'Diptych of my original characters. The king (the sun) reaches for the moon in admiration. The queen (the moon) holds the sun close to her heart.'
+    },
+   
 
   ];
   

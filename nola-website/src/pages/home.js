@@ -5,6 +5,7 @@ import About from "./aboutMe";
 import splash from "./images/Other/cluckySplash.png"
 import { extra } from "./images";
 
+
 //
 var year;
 const onLoad="5";
@@ -73,9 +74,7 @@ else if(props.value==="4"){
 else{
     return(
         <>
-        <div id="scroll-container">
-        <div id="scroll-text">Still under construction!</div>
-        </div>
+    
         <div  className="splashArt">
         <img src={splash} alt="clucky" id="splash"></img>
         

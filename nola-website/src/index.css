@@ -122,7 +122,8 @@ body { font-family: sans-serif; }
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 80%;
+
   justify-content: center;
   
 }
@@ -154,13 +155,26 @@ body { font-family: sans-serif; }
   font-family: 'Epilogue';
   font-size: 180%;
   word-wrap: break-word;
-  width: 80%;
+  width: 60%;
+  color: #393835;
 }
-
+#tag{
+  font-family: 'Epilogue';
+  font-size: 180%;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #393835;
+}
 /*grade year txt*/
 #gradeY{
   padding-top: 0px;
   
+}
+
+.instaIcon{
+  width: 45px;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
 /* The Modal (background) */
 
@@ -351,6 +365,9 @@ body { font-family: sans-serif; }
 }
 /*smaller than 1204*/ 
 @media only screen and (max-width: 1204px) and (min-width: 901px) {
+  #bulk{
+    width: 80%;
+  }
   .modal-image{
     height: 100%;
     width: 100%;
@@ -446,7 +463,7 @@ body { font-family: sans-serif; }
   /*about page images formatting*/
   .aboutImg{
     height: 100%;
-    width: 40%;
+    width: 60%;
     margin: 20px;
     object-fit: contain;
   }
@@ -568,6 +585,7 @@ body { font-family: sans-serif; }
     font-size: 20px;
     word-wrap: break-word;
     width: 100%;
+    margin-bottom: 25px;
   }
   #header{
     font-family: 'Archivo Black', sans-serif;
@@ -575,6 +593,13 @@ body { font-family: sans-serif; }
     margin-top: 40px;
     color: #3158E2;
   }
+  #tag{
+    font-family: 'Epilogue';
+    font-size: 20px;
+    margin-bottom: 15px;
+ 
+  }
+
   .pictSide{
     display: flex;
     flex-direction: column;
