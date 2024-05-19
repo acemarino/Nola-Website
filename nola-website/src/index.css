@@ -102,7 +102,7 @@ body { font-family: sans-serif; }
 /* about me page css */
 .aboutPage{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -110,7 +110,6 @@ body { font-family: sans-serif; }
 .txtSide{
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -119,11 +118,9 @@ body { font-family: sans-serif; }
 /*about me picture container*/
 .pictSide{
   display: flex;
-  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
-
   justify-content: center;
   
 }
@@ -131,7 +128,7 @@ body { font-family: sans-serif; }
 /*about page images formatting*/
 .aboutImg{
   height: 100%;
-  width: 40%;
+  width: 60%;
   margin: 20px;
   object-fit: contain;
 }
@@ -155,14 +152,14 @@ body { font-family: sans-serif; }
   font-family: 'Epilogue';
   font-size: 180%;
   word-wrap: break-word;
-  width: 60%;
+  width: 85%;
   color: #393835;
 }
-#tag{
+.tag{
   font-family: 'Epilogue';
   font-size: 180%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: #393835;
 }
@@ -172,10 +169,22 @@ body { font-family: sans-serif; }
   
 }
 
-.instaIcon{
+.Links{
+  display: flex;
+  flex-direction: row;
+}
+
+.insta2Icon{
   width: 45px;
   margin-top: 15px;
-  margin-left: 10px;
+  margin-left:0px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.inprintIcon{
+  width: 90px;
+  margin-top: 15px;
+  margin-left:30px;
   margin-right: 10px;
   margin-bottom: 15px;
 }
@@ -448,11 +457,17 @@ body { font-family: sans-serif; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
+  
+}
+.Links{
+  display: flex;
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
 }
-
 /*about me picture container*/
 .pictSide{
   display: flex;
@@ -469,6 +484,20 @@ body { font-family: sans-serif; }
     width: 60%;
     margin: 20px;
     object-fit: contain;
+  }
+  .insta2Icon{
+    width: 45px;
+    margin-top: 15px;
+    margin-left:0px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .inprintIcon{
+    width: 90px;
+    margin-top: 15px;
+    margin-left:30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
   }
 }
 
@@ -596,20 +625,18 @@ body { font-family: sans-serif; }
     margin-top: 40px;
     color: #3158E2;
   }
-  #tag{
+  .tag{
     font-family: 'Epilogue';
     font-size: 20px;
+    margin-top: 15px;
     margin-bottom: 15px;
  
   }
 
   .pictSide{
-    display: flex;
-    flex-direction: column;
     margin-left: 30px;
     margin-right: 30px;
     min-width: 80%;
-    justify-content: space-between;
   }
   
   /*about page images formatting*/
@@ -620,6 +647,31 @@ body { font-family: sans-serif; }
     margin: 0;
     margin-bottom: 30px;
   }
+  .aboutPage{
+    flex-direction: column;
+  }
+
+  .Links{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .insta2Icon{
+    width: 45px;
+    margin-top: 15px;
+    margin-left:0px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .inprintIcon{
+    width: 90px;
+    margin-top: 15px;
+    margin-left:30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .tag{
+  }
 }
 
 @media only screen and (max-width: 499px) {
@@ -628,7 +680,11 @@ body { font-family: sans-serif; }
     height:68px;
     max-width: 100%;
   }
+  .tag{
+    opacity: 0;
+  }
 }
+
 *,
 *::before,
 *::after {
