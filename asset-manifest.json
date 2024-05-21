@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e85d187.css",
-    "main.js": "/static/js/main.38344f01.js",
-    "static/media/SrLoversWaltz.png": "/static/media/SrLoversWaltz.607b308b46f4b87876d4.png",
+    "main.css": "/static/css/main.9fae5472.css",
+    "main.js": "/static/js/main.3c3e9099.js",
+    "static/media/SrDragonKing.jpg": "/static/media/SrDragonKing.dee42b65f2b7eaae9a25.jpg",
+    "static/media/WebSplash3.png": "/static/media/WebSplash3.f06f4fc7bfe3ce5436df.png",
+    "static/media/SrThroughTheSeaAndTheSky.png": "/static/media/SrThroughTheSeaAndTheSky.1b3b0d00866b02028a61.png",
+    "static/media/SrSpark.png": "/static/media/SrSpark.810d4de7106436344c79.png",
+    "static/media/SrCoronation.png": "/static/media/SrCoronation.0cbd4bbd956aad79c0c6.png",
+    "static/media/SrSelfPortrait.jpg": "/static/media/SrSelfPortrait.67777c678543d7382e23.jpg",
     "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.5699d15e74d5e3ad4e68.png",
+    "static/media/SrAdmistOceanWaters.png": "/static/media/SrAdmistOceanWaters.7a3f26683a1499ee762a.png",
     "static/media/IMG_1956.png": "/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
-    "static/media/SrTheJellyfishAndTheDragon.png": "/static/media/SrTheJellyfishAndTheDragon.b560187eefe455767fba.png",
+    "static/media/SrSunAndMoon.png": "/static/media/SrSunAndMoon.ae11049883f792c2a3ca.png",
+    "static/media/SrPopupBook.png": "/static/media/SrPopupBook.df7b07df007e65723b00.png",
     "static/media/SrASummerDay.jpg": "/static/media/SrASummerDay.0bf05be358af17d25808.jpg",
     "static/media/PXL_20210210_201301713.jpg": "/static/media/PXL_20210210_201301713.14bc2095f4ead4f2e681.jpg",
     "static/media/SrCherryCoke.PNG": "/static/media/SrCherryCoke.a66a540274840c600151.PNG",
+    "static/media/SrLoversWaltzNEW.jpg": "/static/media/SrLoversWaltzNEW.0d8d5724c5071d8886f2.jpg",
     "static/media/first.jpg": "/static/media/first.18d62a404c6a8b4d98e1.jpg",
     "static/media/IMG_2075.png": "/static/media/IMG_2075.9c59dd60ada37396e6d3.png",
     "static/media/IMG_1735.png": "/static/media/IMG_1735.55f1c1ad98781cdb4b5f.png",
@@ -50,12 +58,15 @@
     "static/media/freshman.png": "/static/media/freshman.e5a3bf92a59e0e75df8e.png",
     "static/media/Senior.png": "/static/media/Senior.b192c9c68659488f9b4b.png",
     "static/media/junior.png": "/static/media/junior.60284f5fce28665025b9.png",
+    "static/media/insta2.png": "/static/media/insta2.6d344b7eff830301ee0a.png",
+    "static/media/insta.png": "/static/media/insta.e3ba59eca30653a3861f.png",
+    "static/media/inprnt.svg": "/static/media/inprnt.c3f782cc06a0ac7fb0c79ad0f6955ebf.svg",
     "index.html": "/index.html",
-    "main.5e85d187.css.map": "/static/css/main.5e85d187.css.map",
-    "main.38344f01.js.map": "/static/js/main.38344f01.js.map"
+    "main.9fae5472.css.map": "/static/css/main.9fae5472.css.map",
+    "main.3c3e9099.js.map": "/static/js/main.3c3e9099.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e85d187.css",
-    "static/js/main.38344f01.js"
+    "static/css/main.9fae5472.css",
+    "static/js/main.3c3e9099.js"
   ]
 }
