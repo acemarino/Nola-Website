@@ -28,11 +28,15 @@ function About(){
                 </div>
                 <div className='Links'>
                     <div>
-                        <img src={insta} alt="Logo" className='insta2Icon'></img>
+                        <a href="https://www.instagram.com/art.by.granola/?hl=en" target="_blank" >
+                            <img src={insta} alt="Logo" className='insta2Icon'></img>
+                        </a>
                         <a href="https://www.instagram.com/art.by.granola/?hl=en" target="_blank" className='tag' >@art.by.granola</a>
                     </div>  
                     <div>
-                        <img src={inprint} alt="Logo" className='inprintIcon'></img>
+                        <a href="https://www.inprnt.com/gallery/art.by.granola/" target="_blank" >
+                            <img src={inprint} alt="Logo" className='inprintIcon'></img>
+                        </a>
                         <a href="https://www.inprnt.com/gallery/art.by.granola/" target="_blank" className='tag' >@art.by.granola</a>
                         </div> 
                 </div>
