@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.9fae5472.css",
-    "main.js": "/static/js/main.09c8602a.js",
+    "main.js": "/static/js/main.131d9a1b.js",
     "static/media/SrDragonKing.jpg": "/static/media/SrDragonKing.dee42b65f2b7eaae9a25.jpg",
-    "static/media/WebSplash3.png": "/static/media/WebSplash3.f06f4fc7bfe3ce5436df.png",
     "static/media/SrThroughTheSeaAndTheSky.png": "/static/media/SrThroughTheSeaAndTheSky.1b3b0d00866b02028a61.png",
     "static/media/SrSpark.png": "/static/media/SrSpark.810d4de7106436344c79.png",
     "static/media/SrCoronation.png": "/static/media/SrCoronation.0cbd4bbd956aad79c0c6.png",
     "static/media/SrSelfPortrait.jpg": "/static/media/SrSelfPortrait.67777c678543d7382e23.jpg",
+    "static/media/WebSplash3.png": "/static/media/WebSplash3.cb7dee3c840e3f5bd981.png",
     "static/media/SrPrincessAurelia.png": "/static/media/SrPrincessAurelia.5699d15e74d5e3ad4e68.png",
     "static/media/SrAdmistOceanWaters.png": "/static/media/SrAdmistOceanWaters.7a3f26683a1499ee762a.png",
     "static/media/IMG_1956.png": "/static/media/IMG_1956.b3ebfbf476fa2425992b.png",
@@ -63,10 +63,10 @@
     "static/media/inprnt.svg": "/static/media/inprnt.c3f782cc06a0ac7fb0c79ad0f6955ebf.svg",
     "index.html": "/index.html",
     "main.9fae5472.css.map": "/static/css/main.9fae5472.css.map",
-    "main.09c8602a.js.map": "/static/js/main.09c8602a.js.map"
+    "main.131d9a1b.js.map": "/static/js/main.131d9a1b.js.map"
   },
   "entrypoints": [
     "static/css/main.9fae5472.css",
-    "static/js/main.09c8602a.js"
+    "static/js/main.131d9a1b.js"
   ]
 }
