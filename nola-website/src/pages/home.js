@@ -2,7 +2,7 @@ import Gallery from "./gallery";
 
 import React from 'react';
 import About from "./aboutMe";
-import splash from "./images/Other/cluckySplash.png"
+import splash from "./images/Other/WebSplash3.png"
 import { extra } from "./images";
 
 
@@ -76,7 +76,7 @@ else{
         <>
     
         <div  className="splashArt">
-        <img src={splash} alt="clucky" id="splash"></img>
+        <img src={splash} alt="clucky" id="splash" ></img>
         
         </div>
         </>

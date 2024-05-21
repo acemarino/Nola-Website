@@ -56,7 +56,11 @@ body { font-family: sans-serif; }
 .splashArt{
   display: flex;
   justify-content: center;
-  
+}
+#splash{
+  width: 70%;
+
+
 }
 #scroll-container {
   overflow: hidden;
@@ -163,6 +167,9 @@ body { font-family: sans-serif; }
   text-decoration: none;
   color: #393835;
 }
+.tag:hover{
+  color: #DFABF1;
+}
 /*grade year txt*/
 #gradeY{
   padding-top: 0px;
@@ -172,6 +179,7 @@ body { font-family: sans-serif; }
 .Links{
   display: flex;
   flex-direction: row;
+  padding-bottom: 20px;
 }
 
 .insta2Icon{
